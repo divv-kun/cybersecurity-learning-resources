@@ -74,6 +74,7 @@ This list is organized by category to help beginners and advanced learners pract
 
 - OverTheWire Bandit — https://overthewire.org/wargames/bandit
 - Command Challenge — https://cmdchallenge.com
+- Linux Journey — https://linuxjourney.com
 
 ---
 
@@ -150,5 +151,41 @@ Advanced:
 - Real-world CTF competitions
 
 ---
+
+---
+
+## Reading & Reference Materials
+
+Useful notes, cheat sheets, blogs, and documentation for deeper understanding and quick reference.
+
+### General Security
+
+- HackTricks — https://book.hacktricks.xyz
+- Payloads All The Things — https://github.com/swisskyrepo/PayloadsAllTheThings
+- ired.team Notes — https://www.ired.team
+- 0xdf Hacks Stuff (CTF writeups & labs) — https://0xdf.gitlab.io
+- CISA Alerts & Advisories — https://www.cisa.gov/news-events/cybersecurity-advisories
+
+### Web Security
+
+- PortSwigger Web Security Academy Materials — https://portswigger.net/web-security
+- Web App Hacking Notes — https://github.com/theshyhat/hackerfrogs/blob/main/education_resources/web_app_hacking.md
+- SQL Injection Cheat Sheet — https://portswigger.net/web-security/sql-injection/cheat-sheet
+- Acunetix SQLi Example — https://www.acunetix.com/blog/articles/exploiting-sql-injection-example
+
+### Reverse Engineering & Exploitation
+
+- Awesome Reverse Engineering List — https://github.com/wtsxDev/reverse-engineering
+- LifeOfBinaries — https://lifeofbinaries.com
+- PE File Format Guide — https://0xrick.github.io/win-internals/pe-file-format
+- Vx Underground (malware research) — https://vx-underground.org
+- Malware Unicorn — https://malwareunicorn.org
+- Exploitation Notes (Gros) — https://gros.dev
+
+### CTF Writeups
+
+- pwnable.kr Writeups — https://github.com/IdanBanani/Pwnable.kr-CTF-Writeups
+- Additional pwnable.kr Writeups — https://github.com/guillaumehuet/pwnable.kr_writeups
+- CTF Wargame Lists — https://github.com/d4rkr00t-ctf/List-of-hacking-wargames
 
 Contributions and suggestions are welcome.
