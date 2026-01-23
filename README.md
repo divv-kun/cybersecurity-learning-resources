@@ -115,16 +115,12 @@ These platforms help improve problem-solving, scripting, and logical thinking sk
 
 - CodinGame — https://www.codingame.com  
   Interactive, game-based challenges to build logic and algorithmic thinking.
-
 - Codewars — https://www.codewars.com  
   Community-driven coding exercises (“kata”) to practice and compare solutions.
-
 - PyDéfis — https://pydefis.iut-larochelle.fr  
   Python-focused puzzles and mathematical challenges (site in French).
-
 - Exercism — https://exercism.org  
   Language-specific learning tracks with mentorship and code reviews.
-
 - Edabit — https://edabit.com  
   Short, beginner-friendly challenges for consistent daily practice.build a solid daily coding habit.
 
