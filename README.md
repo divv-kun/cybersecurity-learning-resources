@@ -1,12 +1,12 @@
 # Cybersecurity Practice Resources
 
-A curated collection of platforms, labs, and challenges for learning Cybersecurity, CTFs, Web Exploitation, Cryptography, Linux, and Security fundamentals.
+A curated collection of platforms, labs, and challenges for learning Cybersecurity, CTFs, Web Exploitation, Cryptography, Linux, Blue Teaming, OSINT, Reverse Engineering, and Security fundamentals.
 
-This list is organized by category to help beginners and advanced learners practice efficiently.
+This repository focuses on hands-on practice and real-world skills.
 
 ---
 
-## CTF Platforms (General Practice)
+# CTF Platforms (General Practice)
 
 - 316CTF — https://play.316ctf.com/challenges
 - picoCTF — https://play.picoctf.org/practice
@@ -24,10 +24,10 @@ This list is organized by category to help beginners and advanced learners pract
 
 ---
 
-## Boot2Root / Vulnerable Machines Practice
+# Boot2Root / Vulnerable Machines
 
-- TryHackMe — https://tryhackme.com (free + paid)
-- Hack The Box — https://hackthebox.com (free + paid)
+- TryHackMe — https://tryhackme.com
+- Hack The Box — https://hackthebox.com
 - VulnHub — https://www.vulnhub.com
 - HackMyVM — https://hackmyvm.eu
 - PwnTillDawn — https://online.pwntilldawn.com
@@ -36,32 +36,27 @@ This list is organized by category to help beginners and advanced learners pract
 
 ---
 
-## Web Exploitation / Web Security
+# Web Exploitation / Web Security
 
-### References
+## References
 
 - Payloads All The Things — https://github.com/swisskyrepo/PayloadsAllTheThings
-- PortSwigger Web Security Academy — https://portswigger.net/web-security
+- PortSwigger Academy — https://portswigger.net/web-security
 
-### Beginner
+## Practice
 
 - Websec — https://websec.fr
-- OverTheWire Narnia — https://overthewire.org/wargames/narnia
-- XSS Game — https://xss-game.appspot.com
-
-### Intermediate
-
 - HackThisSite — https://www.hackthissite.org
 - Webhacking.kr — https://webhacking.kr
 - OWASP Juice Shop — https://owasp.org/www-project-juice-shop
-- BeeWap — http://beewap.weebly.com
 - Lord of SQLInjection — https://los.rubiya.kr
-- Hack The Web — https://hacktheweb.org
 - BugForge — https://app.bugforge.io/login
+- XSS Game — https://xss-game.appspot.com
+- OverTheWire Narnia — https://overthewire.org/wargames/narnia
 
 ---
 
-## Cryptography
+# Cryptography
 
 - CryptoHack — https://cryptohack.org/challenges
 - Cryptopals — https://cryptopals.com
@@ -70,7 +65,7 @@ This list is organized by category to help beginners and advanced learners pract
 
 ---
 
-## Linux Practice
+# Linux & Command Line Practice
 
 - OverTheWire Bandit — https://overthewire.org/wargames/bandit
 - Command Challenge — https://cmdchallenge.com
@@ -78,29 +73,52 @@ This list is organized by category to help beginners and advanced learners pract
 
 ---
 
-## SQL Practice
+# SQL Practice
 
 - SQL Island — https://sql-island.informatik.uni-kl.de
 - SQL Murder Mystery — https://mystery.knightlab.com
 
 ---
 
-## Android Security / Mobile CTF
+# Blue Team / DFIR
+
+- CyberDefenders — https://cyberdefenders.org
+- Blue Team Labs Online — https://blueteamlabs.online
+- Malware Traffic Analysis — https://www.malware-traffic-analysis.net
+- Digital Corpora DFIR Images — https://digitalcorpora.org
+- Wireshark Sample Captures — https://wiki.wireshark.org/SampleCaptures
+
+---
+
+# OSINT (Open-Source Intelligence)
+
+- Hacktoria — https://hacktoria.com
+- OSINT Industries — https://ctf.osint.industries/
+- OSINT Starter Challenges — https://www.osintstarter.com/challenges/
+- Trace Labs — https://www.tracelabs.org
+- TryHackMe OSINT Rooms — https://tryhackme.com
+- Gralhix Exercises — https://gralhix.com/list-of-osint-exercises/
+- Sourcing.Games — https://sourcing.games
+- GeoGuessr — https://www.geoguessr.com
+- OSINT Challenges Repo — https://github.com/LinusKay/osint-challenges
+
+---
+
+# Android / Mobile Security
 
 - hpAndro Android AppSec — https://hpandro.raviramesh.info
 
 ---
 
-## Free Industry Certifications
+# Free Industry Certifications
 
 - IBM SkillsBuild — https://skillsbuild.org
-- Cisco Introduction to Cybersecurity — https://skillsforall.com/course/introduction-to-cybersecurity
+- Cisco SkillsForAll — https://skillsforall.com/course/introduction-to-cybersecurity
+- Google Cybersecurity Certificate — https://skills.google.com
 
 ---
 
-## Logic & Programming Practice (Optional but Useful)
-
-These help build problem-solving skills useful for CTFs and security:
+# Coding & Logic Practice
 
 - CodinGame — https://www.codingame.com
 - Codewars — https://www.codewars.com
@@ -110,82 +128,55 @@ These help build problem-solving skills useful for CTFs and security:
 
 ---
 
-## Coding & Logic Practice
+# Reading & Reference Materials
 
-These platforms help improve problem-solving, scripting, and logical thinking skills that are highly useful for CTFs and cybersecurity.
+## General
 
-- CodinGame — https://www.codingame.com  
-  Interactive, game-based challenges to build logic and algorithmic thinking.
-- Codewars — https://www.codewars.com  
-  Community-driven coding exercises (“kata”) to practice and compare solutions.
-- PyDéfis — https://pydefis.iut-larochelle.fr  
-  Python-focused puzzles and mathematical challenges (site in French).
-- Exercism — https://exercism.org  
-  Language-specific learning tracks with mentorship and code reviews.
-- Edabit — https://edabit.com  
-  Short, beginner-friendly challenges for consistent daily practice.build a solid daily coding habit.
+- HackTricks — https://book.hacktricks.xyz
+- Payloads All The Things — https://github.com/swisskyrepo/PayloadsAllTheThings
+- ired.team Notes — https://www.ired.team
+- 0xdf Writeups — https://0xdf.gitlab.io
+- CISA Advisories — https://www.cisa.gov/news-events/cybersecurity-advisories
+
+## Web Security
+
+- SQL Injection Cheat Sheet — https://portswigger.net/web-security/sql-injection/cheat-sheet
+- Web App Hacking Notes — https://github.com/theshyhat/hackerfrogs/blob/main/education_resources/web_app_hacking.md
+
+## Reverse Engineering & Exploitation
+
+- Awesome Reverse Engineering — https://github.com/wtsxDev/reverse-engineering
+- LifeOfBinaries — https://lifeofbinaries.com
+- PE File Guide — https://0xrick.github.io/win-internals/pe-file-format
+- Vx Underground — https://vx-underground.org
+- Malware Unicorn — https://malwareunicorn.org
+
+## CTF Writeups
+
+- pwnable.kr Writeups — https://github.com/IdanBanani/Pwnable.kr-CTF-Writeups
+- Wargame Lists — https://github.com/d4rkr00t-ctf/List-of-hacking-wargames
 
 ---
 
-## Suggested Learning Path
+# Suggested Learning Path
 
-Beginner:
+## Beginner
 
-- Bandit (Linux)
+- Bandit
 - picoCTF
 - PortSwigger Academy
 - CryptoHack
 
-Intermediate:
+## Intermediate
 
 - Root-Me
 - HackTheBox / TryHackMe
 - Webhacking.kr
 - Cryptopals
 
-Advanced:
+## Advanced
 
 - pwnable.xyz
 - VulnHub machines
 - Exploit Education
 - Real-world CTF competitions
-
----
-
----
-
-## Reading & Reference Materials
-
-Useful notes, cheat sheets, blogs, and documentation for deeper understanding and quick reference.
-
-### General Security
-
-- HackTricks — https://book.hacktricks.xyz
-- Payloads All The Things — https://github.com/swisskyrepo/PayloadsAllTheThings
-- ired.team Notes — https://www.ired.team
-- 0xdf Hacks Stuff (CTF writeups & labs) — https://0xdf.gitlab.io
-- CISA Alerts & Advisories — https://www.cisa.gov/news-events/cybersecurity-advisories
-
-### Web Security
-
-- PortSwigger Web Security Academy Materials — https://portswigger.net/web-security
-- Web App Hacking Notes — https://github.com/theshyhat/hackerfrogs/blob/main/education_resources/web_app_hacking.md
-- SQL Injection Cheat Sheet — https://portswigger.net/web-security/sql-injection/cheat-sheet
-- Acunetix SQLi Example — https://www.acunetix.com/blog/articles/exploiting-sql-injection-example
-
-### Reverse Engineering & Exploitation
-
-- Awesome Reverse Engineering List — https://github.com/wtsxDev/reverse-engineering
-- LifeOfBinaries — https://lifeofbinaries.com
-- PE File Format Guide — https://0xrick.github.io/win-internals/pe-file-format
-- Vx Underground (malware research) — https://vx-underground.org
-- Malware Unicorn — https://malwareunicorn.org
-- Exploitation Notes (Gros) — https://gros.dev
-
-### CTF Writeups
-
-- pwnable.kr Writeups — https://github.com/IdanBanani/Pwnable.kr-CTF-Writeups
-- Additional pwnable.kr Writeups — https://github.com/guillaumehuet/pwnable.kr_writeups
-- CTF Wargame Lists — https://github.com/d4rkr00t-ctf/List-of-hacking-wargames
-
-Contributions and suggestions are welcome.

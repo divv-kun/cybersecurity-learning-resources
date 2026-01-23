@@ -4,22 +4,34 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
     <meta name="viewport" content="width=device-width,initial-scale=1" />
     <meta charset="UTF-8" />
+
     <title>Cybersecurity Practice Resources</title>
+
     <link
       rel="stylesheet"
-      href="//cdn.jsdelivr.net/npm/docsify/lib/themes/dark.css"
+      href="//cdn.jsdelivr.net/npm/docsify/lib/themes/vue.css"
     />
   </head>
+
   <body>
     <div id="app">Loading resources...</div>
+
     <script>
       window.$docsify = {
-        name: "Cyber Resources",
+        name: "Cyber Security Resources",
         repo: "https://github.com/divv-kun",
         auto2top: true,
-        copyCode: { buttonText: "Copy" },
+        subMaxLevel: 2,
+
+        footer: {
+          copy: "© 2026 Debyansh Kar",
+          auth: "Cybersecurity Practice Resources • Contributions welcome",
+        },
       };
     </script>
+
+    <!-- order matters -->
     <script src="//cdn.jsdelivr.net/npm/docsify/lib/docsify.min.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/docsify-footer/dist/docsify-footer.min.js"></script>
   </body>
 </html>
