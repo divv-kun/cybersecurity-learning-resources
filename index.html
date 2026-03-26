@@ -1,37 +1,2182 @@
 <!doctype html>
-<html>
+<html lang="en" data-theme="dark">
   <head>
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-    <meta name="viewport" content="width=device-width,initial-scale=1" />
     <meta charset="UTF-8" />
-
-    <title>Cybersecurity Practice Resources</title>
-
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>sec/resources — Cybersecurity Learning Index</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700;800&display=swap"
       rel="stylesheet"
-      href="//cdn.jsdelivr.net/npm/docsify/lib/themes/vue.css"
     />
-  </head>
+    <style>
+      @import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/variable/pretendardvariable.css");
 
+      *,
+      *::before,
+      *::after {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+
+      :root {
+        --font:
+          "Pretendard Variable", pretendard, -apple-system, BlinkMacSystemFont,
+          system-ui, Roboto, "Helvetica Neue", "Segoe UI", sans-serif;
+
+        /* PASTEL CATEGORY COLORS */
+        --c-ctf: #a8d8ea;
+        --c-pwn: #ffb3ba;
+        --c-web: #b5ead7;
+        --c-crypto: #ffdac1;
+        --c-re: #d4b8e0;
+        --c-malware: #ffb3ba;
+        --c-blue: #a2d2ff;
+        --c-osint: #fde89a;
+        --c-uni: #b5ead7;
+        --c-blog: #a8d8ea;
+        --c-cloud: #a2d2ff;
+        --c-mobile: #d4b8e0;
+        --c-archive: #d6d6d6;
+      }
+
+      [data-theme="dark"] {
+        --bg: #13141a;
+        --bg2: #1a1c24;
+        --bg3: #20222d;
+        --surface: #22242f;
+        --surface2: #2a2d3a;
+        --border: #2e3142;
+        --border2: #383b52;
+        --text: #e8eaf0;
+        --text2: #a0a4b8;
+        --text3: #666980;
+        --shadow: rgba(0, 0, 0, 0.4);
+        --glow: rgba(168, 216, 234, 0.08);
+      }
+
+      [data-theme="light"] {
+        --bg: #f4f5f9;
+        --bg2: #eceef5;
+        --bg3: #e4e6ef;
+        --surface: #ffffff;
+        --surface2: #f8f9fc;
+        --border: #dde0ed;
+        --border2: #c8ccdf;
+        --text: #1a1c2e;
+        --text2: #4a4e6a;
+        --text3: #8a8ea8;
+        --shadow: rgba(0, 0, 0, 0.08);
+        --glow: rgba(168, 216, 234, 0.15);
+      }
+
+      html {
+        scroll-behavior: smooth;
+      }
+
+      body {
+        font-family: var(--font);
+        background: var(--bg);
+        color: var(--text);
+        min-height: 100vh;
+        transition:
+          background 0.3s,
+          color 0.3s;
+        line-height: 1.6;
+      }
+
+      /* ── HEADER ── */
+      header {
+        position: sticky;
+        top: 0;
+        z-index: 200;
+        background: var(--bg);
+        border-bottom: 1px solid var(--border);
+        backdrop-filter: blur(20px);
+        -webkit-backdrop-filter: blur(20px);
+      }
+
+      .header-inner {
+        max-width: 1280px;
+        margin: 0 auto;
+        padding: 0 1.5rem;
+        height: 60px;
+        display: flex;
+        align-items: center;
+        gap: 1.25rem;
+      }
+
+      .logo {
+        font-size: 1.1rem;
+        font-weight: 800;
+        color: var(--text);
+        text-decoration: none;
+        letter-spacing: -0.03em;
+        white-space: nowrap;
+        display: flex;
+        align-items: center;
+        gap: 0.4rem;
+      }
+
+      .logo-dot {
+        width: 8px;
+        height: 8px;
+        border-radius: 50%;
+        background: var(--c-ctf);
+        display: inline-block;
+      }
+
+      .search-wrap {
+        flex: 1;
+        max-width: 380px;
+        position: relative;
+      }
+
+      .search-wrap svg {
+        position: absolute;
+        left: 0.85rem;
+        top: 50%;
+        transform: translateY(-50%);
+        color: var(--text3);
+        width: 15px;
+        height: 15px;
+      }
+
+      .search-wrap input {
+        width: 100%;
+        background: var(--surface);
+        border: 1.5px solid var(--border);
+        color: var(--text);
+        font-family: var(--font);
+        font-size: 0.82rem;
+        padding: 0.52rem 1rem 0.52rem 2.4rem;
+        border-radius: 10px;
+        outline: none;
+        transition:
+          border-color 0.2s,
+          box-shadow 0.2s;
+      }
+
+      .search-wrap input:focus {
+        border-color: var(--c-ctf);
+        box-shadow: 0 0 0 3px var(--glow);
+      }
+
+      .search-wrap input::placeholder {
+        color: var(--text3);
+      }
+
+      .kbd {
+        position: absolute;
+        right: 0.7rem;
+        top: 50%;
+        transform: translateY(-50%);
+        background: var(--bg3);
+        border: 1px solid var(--border2);
+        color: var(--text3);
+        font-size: 0.6rem;
+        padding: 0.1rem 0.35rem;
+        border-radius: 4px;
+        font-family: var(--font);
+      }
+
+      /* THEME TOGGLE */
+      .theme-toggle {
+        width: 38px;
+        height: 38px;
+        border-radius: 10px;
+        border: 1.5px solid var(--border);
+        background: var(--surface);
+        color: var(--text2);
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: all 0.2s;
+        flex-shrink: 0;
+      }
+
+      .theme-toggle:hover {
+        border-color: var(--border2);
+        background: var(--surface2);
+        color: var(--text);
+      }
+
+      /* STATS */
+      .header-stats {
+        display: flex;
+        gap: 1.25rem;
+        margin-left: auto;
+      }
+
+      .hstat {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        gap: 0;
+      }
+
+      .hstat-num {
+        font-size: 1rem;
+        font-weight: 800;
+        color: var(--text);
+        line-height: 1.1;
+        letter-spacing: -0.03em;
+      }
+
+      .hstat-label {
+        font-size: 0.6rem;
+        color: var(--text3);
+        text-transform: uppercase;
+        letter-spacing: 0.06em;
+      }
+
+      /* ── MAIN LAYOUT ── */
+      .layout {
+        max-width: 1280px;
+        margin: 0 auto;
+        padding: 1.5rem;
+        display: grid;
+        grid-template-columns: 220px 1fr;
+        gap: 1.5rem;
+        align-items: start;
+      }
+
+      /* ── SIDEBAR ── */
+      .sidebar {
+        position: sticky;
+        top: 76px;
+      }
+
+      .sidebar-title {
+        font-size: 0.65rem;
+        font-weight: 700;
+        color: var(--text3);
+        text-transform: uppercase;
+        letter-spacing: 0.1em;
+        margin-bottom: 0.6rem;
+        padding: 0 0.5rem;
+      }
+
+      .nav-item {
+        display: flex;
+        align-items: center;
+        gap: 0.6rem;
+        padding: 0.52rem 0.75rem;
+        border-radius: 10px;
+        cursor: pointer;
+        border: none;
+        background: transparent;
+        color: var(--text2);
+        font-family: var(--font);
+        font-size: 0.83rem;
+        font-weight: 500;
+        width: 100%;
+        text-align: left;
+        transition: all 0.15s;
+        margin-bottom: 0.15rem;
+      }
+
+      .nav-item:hover {
+        background: var(--surface);
+        color: var(--text);
+      }
+
+      .nav-item.active {
+        background: var(--surface2);
+        color: var(--text);
+        font-weight: 700;
+      }
+
+      .nav-dot {
+        width: 8px;
+        height: 8px;
+        border-radius: 50%;
+        flex-shrink: 0;
+      }
+
+      .nav-count {
+        margin-left: auto;
+        font-size: 0.68rem;
+        color: var(--text3);
+        font-weight: 500;
+      }
+
+      /* ── CONTENT AREA ── */
+      .content-area {
+        min-width: 0;
+      }
+
+      /* CATEGORY HEADER */
+      .cat-header {
+        display: flex;
+        align-items: center;
+        gap: 0.75rem;
+        margin-bottom: 1rem;
+      }
+
+      .cat-pill {
+        font-size: 0.68rem;
+        font-weight: 700;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+        padding: 0.25rem 0.7rem;
+        border-radius: 20px;
+      }
+
+      .cat-title {
+        font-size: 1.05rem;
+        font-weight: 800;
+        color: var(--text);
+        letter-spacing: -0.02em;
+      }
+
+      .cat-sub {
+        font-size: 0.75rem;
+        color: var(--text3);
+      }
+
+      /* CARD GRID */
+      .card-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(270px, 1fr));
+        gap: 0.75rem;
+        margin-bottom: 2.5rem;
+      }
+
+      /* ── RESOURCE CARD ── */
+      .card {
+        background: var(--surface);
+        border: 1.5px solid var(--border);
+        border-radius: 14px;
+        padding: 1rem 1.1rem;
+        text-decoration: none;
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+        transition: all 0.2s cubic-bezier(0.34, 1.56, 0.64, 1);
+        position: relative;
+        overflow: hidden;
+        cursor: pointer;
+      }
+
+      .card::after {
+        content: "";
+        position: absolute;
+        inset: 0;
+        border-radius: 14px;
+        opacity: 0;
+        transition: opacity 0.2s;
+        pointer-events: none;
+      }
+
+      .card:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 8px 28px var(--shadow);
+        border-color: var(--hover-color, var(--c-ctf));
+      }
+
+      .card:hover::after {
+        opacity: 1;
+        background: linear-gradient(
+          135deg,
+          color-mix(in srgb, var(--hover-color, var(--c-ctf)) 6%, transparent),
+          transparent 60%
+        );
+      }
+
+      /* CARD TOP ROW */
+      .card-top {
+        display: flex;
+        align-items: flex-start;
+        gap: 0.65rem;
+      }
+
+      .card-icon {
+        width: 36px;
+        height: 36px;
+        border-radius: 9px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 1rem;
+        flex-shrink: 0;
+        overflow: hidden;
+        background: var(--bg3);
+      }
+
+      .card-icon img {
+        width: 22px;
+        height: 22px;
+        object-fit: contain;
+      }
+
+      .card-icon-fallback {
+        width: 22px;
+        height: 22px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 0.9rem;
+      }
+
+      .card-meta {
+        flex: 1;
+        min-width: 0;
+      }
+
+      .card-name {
+        font-size: 0.88rem;
+        font-weight: 700;
+        color: var(--text);
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        letter-spacing: -0.01em;
+      }
+
+      .card-url {
+        font-size: 0.65rem;
+        color: var(--text3);
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
+
+      /* STARS */
+      .card-stars {
+        display: flex;
+        align-items: center;
+        gap: 1px;
+        margin-left: auto;
+        flex-shrink: 0;
+      }
+
+      .star {
+        font-size: 0.7rem;
+        line-height: 1;
+      }
+
+      .star.filled {
+        color: #fbbf24;
+      }
+      .star.empty {
+        color: var(--border2);
+      }
+
+      /* CARD DESC */
+      .card-desc {
+        font-size: 0.74rem;
+        color: var(--text2);
+        line-height: 1.55;
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+      }
+
+      /* CARD FOOTER */
+      .card-footer {
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+        margin-top: 0.1rem;
+      }
+
+      .card-tag {
+        font-size: 0.62rem;
+        font-weight: 600;
+        padding: 0.18rem 0.55rem;
+        border-radius: 20px;
+        letter-spacing: 0.04em;
+      }
+
+      .card-difficulty {
+        margin-left: auto;
+        font-size: 0.65rem;
+        color: var(--text3);
+        font-weight: 500;
+      }
+
+      /* NO RESULTS */
+      #no-results {
+        display: none;
+        text-align: center;
+        padding: 5rem 2rem;
+        color: var(--text3);
+      }
+
+      #no-results .nr-emoji {
+        font-size: 2.5rem;
+        margin-bottom: 0.75rem;
+      }
+      #no-results .nr-title {
+        font-size: 0.9rem;
+        font-weight: 700;
+        color: var(--text2);
+        margin-bottom: 0.25rem;
+      }
+      #no-results .nr-sub {
+        font-size: 0.75rem;
+      }
+
+      /* FOOTER */
+      footer {
+        text-align: center;
+        padding: 2rem;
+        font-size: 0.72rem;
+        color: var(--text3);
+        border-top: 1px solid var(--border);
+      }
+
+      footer span {
+        color: var(--text2);
+        font-weight: 600;
+      }
+
+      /* SCROLLBAR */
+      ::-webkit-scrollbar {
+        width: 5px;
+      }
+      ::-webkit-scrollbar-track {
+        background: transparent;
+      }
+      ::-webkit-scrollbar-thumb {
+        background: var(--border2);
+        border-radius: 3px;
+      }
+
+      @media (max-width: 900px) {
+        .layout {
+          grid-template-columns: 1fr;
+        }
+        .sidebar {
+          position: static;
+          display: flex;
+          flex-wrap: wrap;
+          gap: 0.4rem;
+        }
+        .sidebar-title {
+          display: none;
+        }
+        .nav-item {
+          width: auto;
+          padding: 0.35rem 0.7rem;
+          border-radius: 20px;
+          background: var(--surface);
+          font-size: 0.75rem;
+        }
+        .nav-item.active {
+          background: var(--surface2);
+        }
+        .nav-count {
+          display: none;
+        }
+        .header-stats {
+          display: none;
+        }
+      }
+
+      @media (max-width: 600px) {
+        .header-inner {
+          gap: 0.75rem;
+        }
+        .search-wrap {
+          max-width: none;
+          flex: 1;
+        }
+        .kbd {
+          display: none;
+        }
+      }
+    </style>
+  </head>
   <body>
-    <div id="app">Loading resources...</div>
+    <header>
+      <div class="header-inner">
+        <a class="logo" href="#">
+          <span class="logo-dot"></span>
+          sec/resources
+        </a>
+        <div class="search-wrap">
+          <svg
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2.5"
+          >
+            <circle cx="11" cy="11" r="8" />
+            <path d="m21 21-4.35-4.35" />
+          </svg>
+          <input
+            type="text"
+            id="search"
+            placeholder="Search resources..."
+            autocomplete="off"
+            spellcheck="false"
+          />
+          <span class="kbd">/</span>
+        </div>
+        <div class="header-stats">
+          <div class="hstat">
+            <span class="stat-num hstat-num" id="total-count">0</span
+            ><span class="hstat-label">Total</span>
+          </div>
+          <div class="hstat">
+            <span class="stat-num hstat-num" id="visible-count">0</span
+            ><span class="hstat-label">Shown</span>
+          </div>
+        </div>
+        <button class="theme-toggle" id="theme-toggle" title="Toggle theme">
+          <svg
+            id="icon-sun"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            width="17"
+            height="17"
+            style="display: none"
+          >
+            <circle cx="12" cy="12" r="5" />
+            <path
+              d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"
+            />
+          </svg>
+          <svg
+            id="icon-moon"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            width="17"
+            height="17"
+          >
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z" />
+          </svg>
+        </button>
+      </div>
+    </header>
+
+    <div class="layout">
+      <aside class="sidebar" id="sidebar">
+        <div class="sidebar-title">Categories</div>
+      </aside>
+      <main class="content-area">
+        <div id="content"></div>
+        <div id="no-results">
+          <div class="nr-emoji">🔍</div>
+          <div class="nr-title">No results found</div>
+          <div class="nr-sub">Try a different search term or category</div>
+        </div>
+      </main>
+    </div>
+
+    <footer>
+      built by <span>divvkun</span> · cybersecurity resources index · 2025
+    </footer>
 
     <script>
-      window.$docsify = {
-        name: "Cyber Security Resources",
-        repo: "https://github.com/divv-kun",
-        auto2top: true,
-        subMaxLevel: 2,
-
-        footer: {
-          copy: "© 2026 Debyansh Kar",
-          auth: "Cybersecurity Practice Resources • Contributions welcome",
+      // ── DATA ──────────────────────────────────────────────────────────────────────
+      const DATA = {
+        "CTF Platforms": {
+          tag: "ctf",
+          color: "var(--c-ctf)",
+          emoji: "🚩",
+          items: [
+            {
+              name: "picoCTF",
+              url: "https://play.picoctf.org/practice",
+              desc: "CMU's beginner-friendly CTF. Massive challenge bank across all categories.",
+              stars: 5,
+              diff: "Beginner",
+            },
+            {
+              name: "CTFlearn",
+              url: "https://ctflearn.com",
+              desc: "Community-driven CTF challenges. Good variety, active community.",
+              stars: 4,
+              diff: "Beginner",
+            },
+            {
+              name: "247CTF",
+              url: "https://247ctf.com",
+              desc: "Always-on challenges — no competition schedule. Great for solo grinding.",
+              stars: 4,
+              diff: "Mid",
+            },
+            {
+              name: "Dreamhack Wargames",
+              url: "https://dreamhack.io",
+              desc: "Korean platform with high-quality pwn, web, and RE. 1500+ challenges.",
+              stars: 5,
+              diff: "Mid",
+            },
+            {
+              name: "Root-Me",
+              url: "https://www.root-me.org",
+              desc: "Massive French platform — 400+ challenges across all domains.",
+              stars: 5,
+              diff: "Mid",
+            },
+            {
+              name: "RingZer0",
+              url: "https://ringzer0ctf.com",
+              desc: "Points-based CTF with wide challenge variety.",
+              stars: 3,
+              diff: "Mid",
+            },
+            {
+              name: "pwnable.xyz",
+              url: "https://pwnable.xyz",
+              desc: "Binary exploitation focused challenges.",
+              stars: 4,
+              diff: "Mid",
+            },
+            {
+              name: "WeChall",
+              url: "https://www.wechall.net",
+              desc: "Aggregates your scores from multiple wargame platforms.",
+              stars: 3,
+              diff: "All",
+            },
+            {
+              name: "SmashTheStack",
+              url: "https://smashthestack.org",
+              desc: "Classic old-school wargame — IO, Blowfish, Loki layers.",
+              stars: 3,
+              diff: "Hard",
+            },
+            {
+              name: "316CTF",
+              url: "https://play.316ctf.com/challenges",
+              desc: "Active CTF platform with varied challenge pool.",
+              stars: 3,
+              diff: "Mid",
+            },
+            {
+              name: "AlpacaHack",
+              url: "https://alpacahack.com/ctfs",
+              desc: "Japanese CTF platform with regular events.",
+              stars: 3,
+              diff: "Mid",
+            },
+            {
+              name: "CyberEDU",
+              url: "https://app.cyber-edu.co/?tenant=cyberedu",
+              desc: "Romanian platform — solid challenge quality.",
+              stars: 4,
+              diff: "Mid",
+            },
+            {
+              name: "Hackropole",
+              url: "https://hackropole.fr/en/challenges/",
+              desc: "French CTF archive with high-quality challenges.",
+              stars: 4,
+              diff: "Mid",
+            },
+            {
+              name: "Viblo CTF",
+              url: "https://ctf.viblo.asia/puzzles",
+              desc: "Vietnamese CTF platform with solid puzzle variety.",
+              stars: 3,
+              diff: "Mid",
+            },
+            {
+              name: "Atenea",
+              url: "https://atenea.ccn-cert.cni.es/challenges",
+              desc: "Spain's CCN-CERT official CTF platform.",
+              stars: 3,
+              diff: "Mid",
+            },
+            {
+              name: "0xf.at",
+              url: "https://0xf.at/",
+              desc: "Classic hackits-style CTF site.",
+              stars: 3,
+              diff: "Mid",
+            },
+            {
+              name: "CTFtime",
+              url: "https://ctftime.org",
+              desc: "Global CTF calendar, team rankings, writeup aggregator.",
+              stars: 5,
+              diff: "All",
+            },
+            {
+              name: "Plaid CTF 2025",
+              url: "https://plaidctf.com/challenge",
+              desc: "PPP's elite annual CTF — very hard.",
+              stars: 5,
+              diff: "Expert",
+            },
+            {
+              name: "YesWeHack Dojo",
+              url: "https://dojo-yeswehack.com/challenge-of-the-month",
+              desc: "Monthly challenge from major bug bounty platform.",
+              stars: 3,
+              diff: "Mid",
+            },
+            {
+              name: "w3challs",
+              url: "https://w3challs.com/",
+              desc: "Web and misc CTF challenges.",
+              stars: 3,
+              diff: "Beginner",
+            },
+            {
+              name: "hackxor",
+              url: "https://hackxor.net/",
+              desc: "Realistic web app hacking challenges.",
+              stars: 4,
+              diff: "Mid",
+            },
+            {
+              name: "OSIRIS RecruitCTF",
+              url: "https://recruit.osiris.cyber.nyu.edu/challenges",
+              desc: "NYU OSIRIS team recruitment CTF.",
+              stars: 4,
+              diff: "Mid",
+            },
+            {
+              name: "MysteryTwister",
+              url: "https://mysterytwister.org/challenges",
+              desc: "Crypto-focused challenge platform — historical and modern.",
+              stars: 4,
+              diff: "Mid",
+            },
+          ],
+        },
+        "Boot2Root / Labs": {
+          tag: "ctf",
+          color: "var(--c-ctf)",
+          emoji: "🖥️",
+          items: [
+            {
+              name: "Hack The Box",
+              url: "https://hackthebox.com",
+              desc: "Industry standard — machines, ProLabs, Battlegrounds. Competitive ranking.",
+              stars: 5,
+              diff: "Mid",
+            },
+            {
+              name: "TryHackMe",
+              url: "https://tryhackme.com",
+              desc: "Guided rooms with learning paths. Best onboarding experience.",
+              stars: 5,
+              diff: "Beginner",
+            },
+            {
+              name: "VulnHub",
+              url: "https://www.vulnhub.com",
+              desc: "Download-and-run vulnerable VMs. Huge archive of machines.",
+              stars: 4,
+              diff: "Mid",
+            },
+            {
+              name: "HackMyVM",
+              url: "https://hackmyvm.eu",
+              desc: "Community-built vulnerable machines.",
+              stars: 3,
+              diff: "Mid",
+            },
+            {
+              name: "HackingClub",
+              url: "https://app.hackingclub.com/",
+              desc: "Boot2root platform — good quality.",
+              stars: 4,
+              diff: "Mid",
+            },
+            {
+              name: "SEED Labs",
+              url: "https://seedsecuritylabs.org/",
+              desc: "Syracuse University structured lab exercises with full instructor materials.",
+              stars: 5,
+              diff: "Beginner",
+            },
+            {
+              name: "Exploit Education",
+              url: "https://exploit.education",
+              desc: "VMs designed specifically for exploit development practice.",
+              stars: 4,
+              diff: "Mid",
+            },
+            {
+              name: "Roppers Academy",
+              url: "https://www.roppers.org/",
+              desc: "CTF bootcamp and fundamentals training.",
+              stars: 4,
+              diff: "Beginner",
+            },
+          ],
+        },
+        "Binary Exploitation": {
+          tag: "pwn",
+          color: "var(--c-pwn)",
+          emoji: "💀",
+          items: [
+            {
+              name: "pwn.college",
+              url: "https://pwn.college",
+              desc: "ASU's flagship pwn dojo — structured from basics to kernel. The gold standard.",
+              stars: 5,
+              diff: "Mid",
+            },
+            {
+              name: "ROP Emporium",
+              url: "https://ropemporium.com/",
+              desc: "Dedicated ROP chain challenges, escalating complexity. Essential.",
+              stars: 5,
+              diff: "Mid",
+            },
+            {
+              name: "pwnable.tw",
+              url: "https://pwnable.tw/",
+              desc: "High-quality binary exploitation — hard.",
+              stars: 5,
+              diff: "Hard",
+            },
+            {
+              name: "pwnable.kr",
+              url: "https://pwnable.kr",
+              desc: "Classic Korean pwn wargame — tiered difficulty.",
+              stars: 4,
+              diff: "Mid",
+            },
+            {
+              name: "Microcorruption",
+              url: "https://microcorruption.com/login",
+              desc: "Embedded CTF in MSP430 assembly. Unique and excellent.",
+              stars: 4,
+              diff: "Mid",
+            },
+            {
+              name: "Nightmare",
+              url: "https://guyinatuxedo.github.io/",
+              desc: "CTF-based pwn and RE course by guyinatuxedo. Comprehensive.",
+              stars: 5,
+              diff: "Mid",
+            },
+            {
+              name: "RPISEC MBE",
+              url: "https://security.cs.rpi.edu/courses/binexp/",
+              desc: "RPI Modern Binary Exploitation — full slides + labs. Must-have.",
+              stars: 5,
+              diff: "Hard",
+            },
+            {
+              name: "ir0nstone Notes",
+              url: "https://ir0nstone.gitbook.io/",
+              desc: "Structured binary exploitation notes — stack, heap, format strings.",
+              stars: 5,
+              diff: "Mid",
+            },
+            {
+              name: "RET2 / deusx64",
+              url: "https://deusx64.ai/",
+              desc: "AI-guided RE and pwn training from RET2 Systems.",
+              stars: 4,
+              diff: "Mid",
+            },
+            {
+              name: "Azeria Labs",
+              url: "https://azeria-labs.com/",
+              desc: "ARM exploitation full course — assembly to shellcode.",
+              stars: 5,
+              diff: "Mid",
+            },
+            {
+              name: "xcellerator",
+              url: "https://xcellerator.github.io/",
+              desc: "Linux kernel exploitation writeup series — deep technical content.",
+              stars: 5,
+              diff: "Expert",
+            },
+            {
+              name: "Georgia Tech CS6265",
+              url: "https://tc.gts3.org/cs6265/",
+              desc: "InfoSec Lab — full slides + labs. Pwn and RE focused.",
+              stars: 5,
+              diff: "Hard",
+            },
+          ],
+        },
+        "Web Security": {
+          tag: "web",
+          color: "var(--c-web)",
+          emoji: "🌐",
+          items: [
+            {
+              name: "PortSwigger Academy",
+              url: "https://portswigger.net/web-security",
+              desc: "The definitive web security platform. Labs for every vuln class. Free.",
+              stars: 5,
+              diff: "All",
+            },
+            {
+              name: "WebhackingKr",
+              url: "https://webhacking.kr/",
+              desc: "Korean web wargame — creative challenge design.",
+              stars: 4,
+              diff: "Mid",
+            },
+            {
+              name: "Websec.fr",
+              url: "https://websec.fr/",
+              desc: "French web security challenges.",
+              stars: 3,
+              diff: "Mid",
+            },
+            {
+              name: "PayloadsAllTheThings",
+              url: "https://github.com/swisskyrepo/PayloadsAllTheThings",
+              desc: "Comprehensive payload reference by swisskyrepo. Bookmark forever.",
+              stars: 5,
+              diff: "All",
+            },
+            {
+              name: "HackTricks",
+              url: "https://book.hacktricks.xyz",
+              desc: "Living pentest reference — web, privesc, AD, everything.",
+              stars: 5,
+              diff: "All",
+            },
+            {
+              name: "OWASP Juice Shop",
+              url: "https://owasp.org/www-project-juice-shop",
+              desc: "Intentionally vulnerable Node app — all OWASP Top 10.",
+              stars: 5,
+              diff: "Beginner",
+            },
+            {
+              name: "Lord of SQLi",
+              url: "https://los.rubiya.kr/",
+              desc: "SQL injection wargame — 50 levels escalating.",
+              stars: 4,
+              diff: "Mid",
+            },
+            {
+              name: "XSS Game (Google)",
+              url: "https://xss-game.appspot.com/",
+              desc: "Google's XSS challenge game — 6 levels.",
+              stars: 4,
+              diff: "Beginner",
+            },
+            {
+              name: "DomGoat",
+              url: "https://domgo.at/cxss/intro",
+              desc: "Client-side XSS learning — DOM-based attacks.",
+              stars: 4,
+              diff: "Mid",
+            },
+            {
+              name: "Stanford CS253",
+              url: "https://web.stanford.edu/class/cs253/",
+              desc: "Feross Aboukhadijeh's Stanford web security — full lecture videos public.",
+              stars: 5,
+              diff: "Mid",
+            },
+            {
+              name: "appsec.guide",
+              url: "https://appsec.guide/",
+              desc: "Web app security reference guide.",
+              stars: 4,
+              diff: "All",
+            },
+            {
+              name: "SQLNoir",
+              url: "https://www.sqlnoir.com/",
+              desc: "Learn SQL by solving detective cases — gamified.",
+              stars: 3,
+              diff: "Beginner",
+            },
+            {
+              name: "BugForge",
+              url: "https://app.bugforge.io/login",
+              desc: "Bug bounty style web app challenges.",
+              stars: 3,
+              diff: "Mid",
+            },
+          ],
+        },
+        Cryptography: {
+          tag: "crypto",
+          color: "var(--c-crypto)",
+          emoji: "🔐",
+          items: [
+            {
+              name: "CryptoHack",
+              url: "https://cryptohack.org/challenges/",
+              desc: "Best crypto CTF platform. Covers RSA, ECC, block ciphers, protocols.",
+              stars: 5,
+              diff: "Mid",
+            },
+            {
+              name: "Cryptopals",
+              url: "https://cryptopals.com/",
+              desc: "Matasano crypto challenges — build attacks from scratch. Essential.",
+              stars: 5,
+              diff: "Mid",
+            },
+            {
+              name: "id0-rsa",
+              url: "https://id0-rsa.pub/",
+              desc: "RSA and related crypto challenges.",
+              stars: 4,
+              diff: "Mid",
+            },
+            {
+              name: "MysteryTwister",
+              url: "https://mysterytwister.org/challenges",
+              desc: "Historical and modern crypto challenges.",
+              stars: 4,
+              diff: "Mid",
+            },
+            {
+              name: "Boneh+Shoup Textbook",
+              url: "https://toc.cryptobook.us/",
+              desc: "A Graduate Course in Applied Cryptography — free full textbook.",
+              stars: 5,
+              diff: "All",
+            },
+            {
+              name: "Boneh Crypto (Stanford)",
+              url: "https://crypto.stanford.edu/~dabo/courses/OnlineCrypto/",
+              desc: "Boneh's full crypto course slides.",
+              stars: 5,
+              diff: "All",
+            },
+            {
+              name: "Katz Crypto (UMD)",
+              url: "https://www.cs.umd.edu/~jkatz/teaching/",
+              desc: "Jonathan Katz's intro and graduate crypto courses.",
+              stars: 4,
+              diff: "All",
+            },
+            {
+              name: "SpiderLabs CryptOMG",
+              url: "https://github.com/SpiderLabs/CryptOMG",
+              desc: "Crypto CTF challenges on GitHub.",
+              stars: 3,
+              diff: "Mid",
+            },
+          ],
+        },
+        "Reverse Engineering": {
+          tag: "re",
+          color: "var(--c-re)",
+          emoji: "🔬",
+          items: [
+            {
+              name: "ReversingHero",
+              url: "https://www.reversinghero.com/",
+              desc: "Structured RE challenges from beginner to advanced.",
+              stars: 5,
+              diff: "All",
+            },
+            {
+              name: "Reverse.Challenges",
+              url: "https://challenges.re/",
+              desc: "RE challenges by Dennis Yurichev — author of RE4B.",
+              stars: 5,
+              diff: "All",
+            },
+            {
+              name: "Binary Auditing",
+              url: "https://www.binary-auditing.com/",
+              desc: "Rolf Rolles — free full RE course, high quality.",
+              stars: 5,
+              diff: "Mid",
+            },
+            {
+              name: "xorpd",
+              url: "https://www.xorpd.net/",
+              desc: "Assembly puzzles and RE learning.",
+              stars: 4,
+              diff: "Mid",
+            },
+            {
+              name: "Max Kersten Binary Analysis",
+              url: "https://maxkersten.nl/binary-analysis-course/",
+              desc: "Free binary analysis course.",
+              stars: 4,
+              diff: "Mid",
+            },
+            {
+              name: "Malware Unicorn",
+              url: "https://malwareunicorn.org/",
+              desc: "RE workshops — malware-focused.",
+              stars: 5,
+              diff: "Mid",
+            },
+            {
+              name: "Frida Labs",
+              url: "https://github.com/DERE-ad2001/Frida-Labs",
+              desc: "Frida dynamic instrumentation labs.",
+              stars: 4,
+              diff: "Mid",
+            },
+            {
+              name: "learnfrida.info",
+              url: "https://learnfrida.info/",
+              desc: "Structured Frida learning resource.",
+              stars: 4,
+              diff: "Mid",
+            },
+            {
+              name: "io.netgarage",
+              url: "https://io.netgarage.org/",
+              desc: "Classic RE/pwn wargame — old school, still solid.",
+              stars: 3,
+              diff: "Mid",
+            },
+          ],
+        },
+        "Malware Analysis": {
+          tag: "malware",
+          color: "var(--c-malware)",
+          emoji: "🦠",
+          items: [
+            {
+              name: "MalwareTech Labs",
+              url: "https://malwaretech.com/labs/",
+              desc: "Marcus Hutchins' malware analysis labs.",
+              stars: 5,
+              diff: "Mid",
+            },
+            {
+              name: "Malops.io",
+              url: "https://malops.io/challenges",
+              desc: "Malware-focused CTF challenges.",
+              stars: 3,
+              diff: "Mid",
+            },
+            {
+              name: "VX Underground",
+              url: "https://vx-underground.org/",
+              desc: "Largest malware archive + research papers. Essential.",
+              stars: 5,
+              diff: "All",
+            },
+            {
+              name: "hasherezade",
+              url: "https://hasherezade.github.io/",
+              desc: "Deep malware analysis, PE internals — top researcher.",
+              stars: 5,
+              diff: "Hard",
+            },
+            {
+              name: "cocomelonc",
+              url: "https://cocomelonc.github.io/",
+              desc: "Windows maldev and shellcoding writeups.",
+              stars: 5,
+              diff: "Hard",
+            },
+            {
+              name: "0xdarkvortex",
+              url: "https://0xdarkvortex.dev/",
+              desc: "Maldev and offensive research.",
+              stars: 4,
+              diff: "Hard",
+            },
+            {
+              name: "Maldev Academy",
+              url: "https://maldevacademy.com/",
+              desc: "Structured malware development course.",
+              stars: 5,
+              diff: "Hard",
+            },
+            {
+              name: "Contagio Dump",
+              url: "https://contagiodump.blogspot.com/",
+              desc: "Malware sample dump — real samples for analysis.",
+              stars: 4,
+              diff: "Mid",
+            },
+            {
+              name: "embee research",
+              url: "https://www.embeeresearch.io/",
+              desc: "Practical malware analysis writeups.",
+              stars: 5,
+              diff: "Mid",
+            },
+            {
+              name: "dr4k0nia",
+              url: "https://dr4k0nia.github.io/",
+              desc: ".NET reversing and maldev.",
+              stars: 4,
+              diff: "Hard",
+            },
+          ],
+        },
+        "Blue Team / DFIR": {
+          tag: "blue",
+          color: "var(--c-blue)",
+          emoji: "🛡️",
+          items: [
+            {
+              name: "CyberDefenders",
+              url: "https://cyberdefenders.org/",
+              desc: "Blue team CTF platform — DFIR, threat hunting, forensics.",
+              stars: 5,
+              diff: "Mid",
+            },
+            {
+              name: "Blue Team Labs Online",
+              url: "https://blueteamlabs.online/",
+              desc: "Free blue team challenges — log analysis, malware, forensics.",
+              stars: 5,
+              diff: "Beginner",
+            },
+            {
+              name: "Malware Traffic Analysis",
+              url: "https://www.malware-traffic-analysis.net/",
+              desc: "PCAP exercises with real malware traffic.",
+              stars: 5,
+              diff: "Mid",
+            },
+            {
+              name: "Digital Corpora",
+              url: "https://digitalcorpora.org/",
+              desc: "DFIR disk images and forensic datasets.",
+              stars: 4,
+              diff: "Mid",
+            },
+            {
+              name: "Splunk BOTS",
+              url: "https://bots.splunk.com/",
+              desc: "Boss of the SOC — SOC analyst simulation.",
+              stars: 5,
+              diff: "Mid",
+            },
+            {
+              name: "KC7 Cyber",
+              url: "https://kc7cyber.com/",
+              desc: "KQL-based threat hunting game.",
+              stars: 4,
+              diff: "Mid",
+            },
+            {
+              name: "The DFIR Report",
+              url: "https://thedfirreport.com/",
+              desc: "Real incident reports — initial access to ransomware.",
+              stars: 5,
+              diff: "Mid",
+            },
+            {
+              name: "MemLabs",
+              url: "https://github.com/stuxnet999/MemLabs",
+              desc: "Memory forensics CTF labs.",
+              stars: 4,
+              diff: "Mid",
+            },
+            {
+              name: "Wireshark Samples",
+              url: "https://wiki.wireshark.org/SampleCaptures",
+              desc: "Official Wireshark sample capture collection.",
+              stars: 4,
+              diff: "Beginner",
+            },
+          ],
+        },
+        OSINT: {
+          tag: "osint",
+          color: "var(--c-osint)",
+          emoji: "🕵️",
+          items: [
+            {
+              name: "Trace Labs",
+              url: "https://www.tracelabs.org/",
+              desc: "OSINT CTF for missing persons — real-world impact.",
+              stars: 5,
+              diff: "Mid",
+            },
+            {
+              name: "Gralhix Exercises",
+              url: "https://gralhix.com/list-of-osint-exercises/",
+              desc: "Sofia Santos' OSINT exercises — geolocation, image analysis.",
+              stars: 5,
+              diff: "Beginner",
+            },
+            {
+              name: "OSINT Industries CTF",
+              url: "https://ctf.osint.industries/",
+              desc: "OSINT-focused CTF platform.",
+              stars: 4,
+              diff: "Mid",
+            },
+            {
+              name: "Bellingcat Challenge",
+              url: "https://challenge.bellingcat.com/",
+              desc: "OSINT challenges from world's top investigative collective.",
+              stars: 5,
+              diff: "Mid",
+            },
+            {
+              name: "UK OSINT CTF",
+              url: "https://ctf.osint.uk/",
+              desc: "UK OSINT community CTF.",
+              stars: 3,
+              diff: "Mid",
+            },
+            {
+              name: "inteltechniques.com",
+              url: "https://inteltechniques.com/",
+              desc: "Michael Bazzell's OSINT resources — deep web, social media.",
+              stars: 5,
+              diff: "All",
+            },
+            {
+              name: "OSINT Framework",
+              url: "https://osintframework.com/",
+              desc: "Mind map of OSINT tools by category.",
+              stars: 5,
+              diff: "All",
+            },
+            {
+              name: "sourcing.games",
+              url: "https://sourcing.games/",
+              desc: "OSINT sourcing games — intuition building.",
+              stars: 4,
+              diff: "Beginner",
+            },
+            {
+              name: "GeoGuessr",
+              url: "https://www.geoguessr.com/",
+              desc: "Geolocation game — essential GEOINT training.",
+              stars: 4,
+              diff: "Beginner",
+            },
+            {
+              name: "Hacktoria",
+              url: "https://hacktoria.com/",
+              desc: "Narrative OSINT CTF — case-based investigations.",
+              stars: 4,
+              diff: "Mid",
+            },
+          ],
+        },
+        "Cloud Security": {
+          tag: "cloud",
+          color: "var(--c-cloud)",
+          emoji: "☁️",
+          items: [
+            {
+              name: "flAWS.cloud",
+              url: "http://flaws.cloud/",
+              desc: "AWS security challenges — misconfig, IAM, S3. Must-do.",
+              stars: 5,
+              diff: "Mid",
+            },
+            {
+              name: "flAWS2.cloud",
+              url: "http://flaws2.cloud/",
+              desc: "flAWS sequel — attacker and defender paths.",
+              stars: 5,
+              diff: "Mid",
+            },
+            {
+              name: "Big IAM Challenge",
+              url: "https://bigiamchallenge.com/challenge/1",
+              desc: "IAM policy exploitation challenges.",
+              stars: 5,
+              diff: "Mid",
+            },
+            {
+              name: "EKS Cluster Games",
+              url: "https://eksclustergames.com/",
+              desc: "Kubernetes/EKS security challenges.",
+              stars: 4,
+              diff: "Hard",
+            },
+            {
+              name: "Kubernetes LAN Party",
+              url: "https://k8slanparty.com/",
+              desc: "Wiz's K8s network security challenge.",
+              stars: 4,
+              diff: "Hard",
+            },
+            {
+              name: "CloudGoat",
+              url: "https://github.com/RhinoSecurityLabs/cloudgoat",
+              desc: "Rhino Security's vulnerable-by-design AWS tool.",
+              stars: 4,
+              diff: "Mid",
+            },
+            {
+              name: "Broken Azure",
+              url: "https://www.brokenazure.cloud/",
+              desc: "Azure security training challenges.",
+              stars: 4,
+              diff: "Mid",
+            },
+          ],
+        },
+        "Mobile Security": {
+          tag: "mobile",
+          color: "var(--c-mobile)",
+          emoji: "📱",
+          items: [
+            {
+              name: "Mobile Hacking Lab",
+              url: "https://www.mobilehackinglab.com/",
+              desc: "Labs and courses for Android/iOS security.",
+              stars: 5,
+              diff: "Mid",
+            },
+            {
+              name: "hpAndro AppSec",
+              url: "https://hpandro.raviramesh.info/",
+              desc: "Free Android AppSec challenges.",
+              stars: 4,
+              diff: "Mid",
+            },
+            {
+              name: "8ksec Android Labs",
+              url: "https://academy.8ksec.io/course/android-application-exploitation-challenges?register=true",
+              desc: "Android exploitation challenge labs.",
+              stars: 4,
+              diff: "Mid",
+            },
+            {
+              name: "Android App RE 101",
+              url: "https://www.ragingrock.com/AndroidAppRE/index.html",
+              desc: "Free Android reverse engineering course.",
+              stars: 5,
+              diff: "Mid",
+            },
+          ],
+        },
+        "Blockchain / Web3": {
+          tag: "ctf",
+          color: "var(--c-ctf)",
+          emoji: "⛓️",
+          items: [
+            {
+              name: "Capture the Ether",
+              url: "https://capturetheether.com/challenges/",
+              desc: "Classic Ethereum smart contract security challenges.",
+              stars: 4,
+              diff: "Mid",
+            },
+            {
+              name: "Ethernaut",
+              url: "https://github.com/OpenZeppelin/ethernaut",
+              desc: "OpenZeppelin's Web3/Solidity wargame.",
+              stars: 5,
+              diff: "Mid",
+            },
+            {
+              name: "Damn Vulnerable DeFi",
+              url: "https://www.damnvulnerabledefi.xyz/",
+              desc: "DeFi protocol exploitation challenges — advanced.",
+              stars: 5,
+              diff: "Hard",
+            },
+            {
+              name: "Node Guardians",
+              url: "https://nodeguardians.io/campaigns",
+              desc: "Gamified blockchain programming campaigns.",
+              stars: 3,
+              diff: "Mid",
+            },
+            {
+              name: "Cyfrin Updraft",
+              url: "https://updraft.cyfrin.io/courses",
+              desc: "Blockchain security courses.",
+              stars: 4,
+              diff: "Mid",
+            },
+          ],
+        },
+        "University Courses": {
+          tag: "uni",
+          color: "var(--c-uni)",
+          emoji: "🎓",
+          items: [
+            {
+              name: "MIT 6.858 (Zeldovich)",
+              url: "https://css.csail.mit.edu/6.858/",
+              desc: "MIT Systems Security — live labs, full readings. Best academic security course.",
+              stars: 5,
+              diff: "Hard",
+            },
+            {
+              name: "Stanford CS253 (Feross)",
+              url: "https://web.stanford.edu/class/cs253/",
+              desc: "Stanford Web Security — full videos public, deep XSS/CSRF/CSP coverage.",
+              stars: 5,
+              diff: "Mid",
+            },
+            {
+              name: "UC Berkeley CS161",
+              url: "https://sp26.cs161.org/",
+              desc: "Berkeley's flagship security course. Slides + labs public.",
+              stars: 5,
+              diff: "Mid",
+            },
+            {
+              name: "Georgia Tech CS6265",
+              url: "https://tc.gts3.org/cs6265/",
+              desc: "InfoSec Lab — full slides + labs. Pwn and RE focused.",
+              stars: 5,
+              diff: "Hard",
+            },
+            {
+              name: "ASU mahaloz",
+              url: "https://cse194.mahaloz.re/",
+              desc: "Binary exploitation course — ASU.",
+              stars: 5,
+              diff: "Mid",
+            },
+            {
+              name: "RPI MBE",
+              url: "https://rpis.ec/",
+              desc: "RPISEC Modern Binary Exploitation — full course public.",
+              stars: 5,
+              diff: "Hard",
+            },
+            {
+              name: "CMU Brumley",
+              url: "https://users.ece.cmu.edu/~dbrumley/courses/",
+              desc: "David Brumley's binary analysis + exploitation courses.",
+              stars: 5,
+              diff: "Hard",
+            },
+            {
+              name: "EPFL HexHive",
+              url: "https://hexhive.epfl.ch/education/",
+              desc: "Mathias Payer's lab — sanitizers, fuzzing, exploitation. Elite.",
+              stars: 5,
+              diff: "Expert",
+            },
+            {
+              name: "Boneh Crypto (Stanford)",
+              url: "https://crypto.stanford.edu/~dabo/courses/OnlineCrypto/",
+              desc: "Boneh's full crypto course slides.",
+              stars: 5,
+              diff: "Mid",
+            },
+            {
+              name: "UMD Dumitra",
+              url: "https://user.eng.umd.edu/~tdumitra/courses/",
+              desc: "UMD Cybersecurity — slides + labs.",
+              stars: 4,
+              diff: "Mid",
+            },
+            {
+              name: "Cornell CS5434",
+              url: "https://www.cs.cornell.edu/courses/cs5434/",
+              desc: "Cornell Defending Computer Networks.",
+              stars: 4,
+              diff: "Mid",
+            },
+            {
+              name: "UC Irvine Goodrich",
+              url: "https://ics.uci.edu/~goodrich/teach/cs201p/",
+              desc: "Full lecture notes — BOF to crypto.",
+              stars: 4,
+              diff: "Mid",
+            },
+            {
+              name: "OpenSecurityTraining2",
+              url: "https://p.ost2.fyi/",
+              desc: "OST2 — free structured courses: malware, RE, kernel exploitation.",
+              stars: 5,
+              diff: "All",
+            },
+            {
+              name: "OpenSecurityTraining",
+              url: "https://opensecuritytraining.info/",
+              desc: "Xeno Kovah's full courses — malware, RE, x86. Slides + videos.",
+              stars: 5,
+              diff: "All",
+            },
+            {
+              name: "Naval Postgrad Cyber",
+              url: "https://nps.edu/web/c3o/cyber/",
+              desc: "Naval Postgraduate School cyber curriculum.",
+              stars: 4,
+              diff: "Mid",
+            },
+          ],
+        },
+        "Research Blogs": {
+          tag: "blog",
+          color: "var(--c-blog)",
+          emoji: "✍️",
+          items: [
+            {
+              name: "ired.team",
+              url: "https://www.ired.team/",
+              desc: "Red team notes — living doc, extremely comprehensive.",
+              stars: 5,
+              diff: "All",
+            },
+            {
+              name: "0xdf",
+              url: "https://0xdf.gitlab.io/",
+              desc: "HTB writeups + deep technical dives.",
+              stars: 5,
+              diff: "All",
+            },
+            {
+              name: "secret.club",
+              url: "https://secret.club/",
+              desc: "Elite RE and exploit research — low-level, serious content.",
+              stars: 5,
+              diff: "Expert",
+            },
+            {
+              name: "dayzerosec",
+              url: "https://dayzerosec.com/",
+              desc: "Vuln research and binary exploitation.",
+              stars: 5,
+              diff: "Expert",
+            },
+            {
+              name: "zerosum0x0",
+              url: "https://zerosum0x0.blogspot.com/",
+              desc: "Kernel exploits and vulnerability research.",
+              stars: 5,
+              diff: "Expert",
+            },
+            {
+              name: "perfect.blue",
+              url: "https://perfect.blue/",
+              desc: "Top CTF team blog — high quality technical writeups.",
+              stars: 5,
+              diff: "Hard",
+            },
+            {
+              name: "xcellerator",
+              url: "https://xcellerator.github.io/",
+              desc: "Linux kernel exploitation series.",
+              stars: 5,
+              diff: "Expert",
+            },
+            {
+              name: "wrongbaud",
+              url: "https://wrongbaud.github.io/",
+              desc: "Hardware and firmware hacking.",
+              stars: 5,
+              diff: "Hard",
+            },
+            {
+              name: "voidstarsec",
+              url: "https://voidstarsec.com/",
+              desc: "Hardware security blog.",
+              stars: 4,
+              diff: "Hard",
+            },
+            {
+              name: "samwho.dev",
+              url: "https://samwho.dev/",
+              desc: "Low-level systems — beautifully visualized.",
+              stars: 5,
+              diff: "All",
+            },
+            {
+              name: "exploitreversing",
+              url: "https://exploitreversing.com/",
+              desc: "Exploit + RE research.",
+              stars: 4,
+              diff: "Hard",
+            },
+            {
+              name: "redops.at",
+              url: "https://redops.at/",
+              desc: "Red team and C2 research.",
+              stars: 4,
+              diff: "Hard",
+            },
+            {
+              name: "blog.bushidotoken",
+              url: "https://blog.bushidotoken.net/",
+              desc: "Threat intel and APT research.",
+              stars: 4,
+              diff: "All",
+            },
+            {
+              name: "cocomelonc",
+              url: "https://cocomelonc.github.io/",
+              desc: "Windows maldev and shellcoding writeups.",
+              stars: 5,
+              diff: "Hard",
+            },
+            {
+              name: "securelist",
+              url: "https://securelist.com/",
+              desc: "Kaspersky threat research.",
+              stars: 4,
+              diff: "All",
+            },
+            {
+              name: "guidedhacking",
+              url: "https://guidedhacking.com/",
+              desc: "Game hacking and low-level systems.",
+              stars: 4,
+              diff: "Mid",
+            },
+          ],
+        },
+        "CTF Archives": {
+          tag: "archive",
+          color: "var(--c-archive)",
+          emoji: "📦",
+          items: [
+            {
+              name: "DEF CON CTF Archive",
+              url: "https://archive.ooo/",
+              desc: "Official DEF CON CTF archive — OOO.",
+              stars: 5,
+              diff: "All",
+            },
+            {
+              name: "ImaginaryCTF Archive",
+              url: "https://imaginaryctf.org/ArchivedChallenges/",
+              desc: "ImaginaryCTF permanent challenge archive.",
+              stars: 4,
+              diff: "All",
+            },
+            {
+              name: "Shell-Storm CTF",
+              url: "https://shell-storm.org/repo/CTF/",
+              desc: "Large CTF challenge and writeup repo.",
+              stars: 4,
+              diff: "All",
+            },
+            {
+              name: "CTFtime Writeups",
+              url: "https://ctftime.org/writeups/",
+              desc: "Massive writeup collection from CTFtime.",
+              stars: 5,
+              diff: "All",
+            },
+            {
+              name: "github/ctfs",
+              url: "https://github.com/ctfs/",
+              desc: "Massive CTF writeup and challenge org on GitHub.",
+              stars: 5,
+              diff: "All",
+            },
+            {
+              name: "awesome-ctf",
+              url: "https://github.com/apsdehal/awesome-ctf/",
+              desc: "Awesome CTF list — tools, resources, platforms.",
+              stars: 5,
+              diff: "All",
+            },
+            {
+              name: "Project SEKAI CTF",
+              url: "https://github.com/project-sekai-ctf/",
+              desc: "Project SEKAI CTF challenges.",
+              stars: 4,
+              diff: "Hard",
+            },
+            {
+              name: "xairy Linux Kernel",
+              url: "https://github.com/xairy/linux-kernel-exploitation/",
+              desc: "Linux kernel exploitation resource collection.",
+              stars: 5,
+              diff: "Expert",
+            },
+            {
+              name: "MemLabs (GitHub)",
+              url: "https://github.com/stuxnet999/MemLabs/",
+              desc: "Memory forensics CTF labs.",
+              stars: 4,
+              diff: "Mid",
+            },
+            {
+              name: "Fuzzing 101 Solutions",
+              url: "https://github.com/epi052/fuzzing-101-solutions/",
+              desc: "Fuzzing101 exercise solutions.",
+              stars: 4,
+              diff: "Mid",
+            },
+            {
+              name: "VX Underground Archive",
+              url: "https://vx-underground.org/Archive/",
+              desc: "VX Underground malware and paper archive.",
+              stars: 5,
+              diff: "All",
+            },
+            {
+              name: "HITCON",
+              url: "https://hitcon.org/",
+              desc: "Taiwan HITCON CTF archive.",
+              stars: 4,
+              diff: "All",
+            },
+            {
+              name: "Nautilus Institute",
+              url: "https://nautilus.institute/",
+              desc: "DEF CON 30/31 CTF organizing team archive.",
+              stars: 4,
+              diff: "All",
+            },
+          ],
         },
       };
-    </script>
 
-    <!-- order matters -->
-    <script src="//cdn.jsdelivr.net/npm/docsify/lib/docsify.min.js"></script>
-    <script src="//cdn.jsdelivr.net/npm/docsify-footer/dist/docsify-footer.min.js"></script>
+      // ── RENDER ────────────────────────────────────────────────────────────────────
+
+      function stars(n) {
+        let s = "";
+        for (let i = 1; i <= 5; i++)
+          s += `<span class="star ${i <= n ? "filled" : "empty"}">★</span>`;
+        return s;
+      }
+
+      function favicon(url) {
+        try {
+          const h = new URL(url).hostname;
+          return `https://www.google.com/s2/favicons?domain=${h}&sz=32`;
+        } catch {
+          return "";
+        }
+      }
+
+      function hostname(url) {
+        try {
+          return new URL(url).hostname.replace("www.", "");
+        } catch {
+          return url;
+        }
+      }
+
+      function colorAlpha(cssVar, alpha) {
+        // Returns a light tinted bg using the color
+        return cssVar;
+      }
+
+      const tagColors = {
+        ctf: "var(--c-ctf)",
+        pwn: "var(--c-pwn)",
+        web: "var(--c-web)",
+        crypto: "var(--c-crypto)",
+        re: "var(--c-re)",
+        malware: "var(--c-malware)",
+        blue: "var(--c-blue)",
+        osint: "var(--c-osint)",
+        uni: "var(--c-uni)",
+        blog: "var(--c-blog)",
+        cloud: "var(--c-cloud)",
+        mobile: "var(--c-mobile)",
+        archive: "var(--c-archive)",
+      };
+
+      const diffColors = {
+        Beginner: "#86efac",
+        Mid: "#93c5fd",
+        Hard: "#fca5a5",
+        Expert: "#c4b5fd",
+        All: "#d1d5db",
+      };
+
+      let allCards = [];
+      let activeFilter = "all";
+      let searchQuery = "";
+
+      function buildPage() {
+        const content = document.getElementById("content");
+        const sidebar = document.getElementById("sidebar");
+        let totalItems = 0;
+
+        // Sidebar "All" button
+        const allBtn = document.createElement("button");
+        allBtn.className = "nav-item active";
+        allBtn.dataset.filter = "all";
+        const totalCount = Object.values(DATA).reduce(
+          (a, s) => a + s.items.length,
+          0,
+        );
+        allBtn.innerHTML = `<span class="nav-dot" style="background:#a0a4b8"></span>All<span class="nav-count">${totalCount}</span>`;
+        sidebar.appendChild(allBtn);
+
+        Object.entries(DATA).forEach(([sectionName, sd]) => {
+          totalItems += sd.items.length;
+
+          // Sidebar nav item
+          const navBtn = document.createElement("button");
+          navBtn.className = "nav-item";
+          navBtn.dataset.filter = sd.tag;
+          navBtn.dataset.section = sectionName;
+          navBtn.innerHTML = `<span style="font-size:0.85rem">${sd.emoji}</span>${sectionName}<span class="nav-count">${sd.items.length}</span>`;
+          sidebar.appendChild(navBtn);
+
+          // Section
+          const section = document.createElement("div");
+          section.className = "section";
+          section.dataset.section = sectionName.toLowerCase();
+          section.dataset.tag = sd.tag;
+
+          // Header
+          const catHeader = document.createElement("div");
+          catHeader.className = "cat-header";
+          catHeader.innerHTML = `
+      <span class="cat-pill" style="background:color-mix(in srgb,${sd.color} 18%,transparent);color:color-mix(in srgb,${sd.color} 80%,#333)">${sd.tag.toUpperCase()}</span>
+      <span style="font-size:1.15rem">${sd.emoji}</span>
+      <span class="cat-title">${sectionName}</span>
+      <span class="cat-sub" style="margin-left:auto">${sd.items.length} resources</span>
+    `;
+
+          const grid = document.createElement("div");
+          grid.className = "card-grid";
+
+          sd.items.forEach((item) => {
+            const card = document.createElement("a");
+            card.className = "card";
+            card.href = item.url;
+            card.target = "_blank";
+            card.rel = "noopener noreferrer";
+            card.style.setProperty("--hover-color", sd.color);
+            card.dataset.name = item.name.toLowerCase();
+            card.dataset.desc = item.desc.toLowerCase();
+            card.dataset.tag = sd.tag;
+            card.dataset.section = sectionName.toLowerCase();
+
+            const fav = favicon(item.url);
+            const tagColor = sd.color;
+            const dc = diffColors[item.diff] || "#d1d5db";
+
+            card.innerHTML = `
+        <div class="card-top">
+          <div class="card-icon" style="background:color-mix(in srgb,${tagColor} 12%,var(--bg3))">
+            <img src="${fav}" alt="" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'" loading="lazy">
+            <div class="card-icon-fallback" style="display:none">${sd.emoji}</div>
+          </div>
+          <div class="card-meta">
+            <div class="card-name">${item.name}</div>
+            <div class="card-url">${hostname(item.url)}</div>
+          </div>
+          <div class="card-stars">${stars(item.stars)}</div>
+        </div>
+        <div class="card-desc">${item.desc}</div>
+        <div class="card-footer">
+          <span class="card-tag" style="background:color-mix(in srgb,${tagColor} 15%,transparent);color:color-mix(in srgb,${tagColor} 90%,#222)">${sd.tag}</span>
+          <span class="card-difficulty" style="color:${dc}">${item.diff}</span>
+        </div>
+      `;
+
+            allCards.push(card);
+            grid.appendChild(card);
+          });
+
+          section.appendChild(catHeader);
+          section.appendChild(grid);
+          content.appendChild(section);
+        });
+
+        document.getElementById("total-count").textContent = totalItems;
+        document.getElementById("visible-count").textContent = totalItems;
+
+        // Sidebar click
+        sidebar.addEventListener("click", (e) => {
+          const btn = e.target.closest(".nav-item");
+          if (!btn) return;
+          sidebar
+            .querySelectorAll(".nav-item")
+            .forEach((b) => b.classList.remove("active"));
+          btn.classList.add("active");
+          activeFilter = btn.dataset.filter;
+          if (btn.dataset.section) {
+            // scroll to section
+            const sec = document.querySelector(
+              `.section[data-section="${btn.dataset.section.toLowerCase()}"]`,
+            );
+            if (sec) {
+              activeFilter = "all";
+              applyFilters();
+              setTimeout(
+                () =>
+                  sec.scrollIntoView({ behavior: "smooth", block: "start" }),
+                50,
+              );
+              return;
+            }
+          }
+          applyFilters();
+        });
+      }
+
+      function applyFilters() {
+        let visible = 0;
+        const sections = document.querySelectorAll(".section");
+
+        sections.forEach((section) => {
+          let sv = 0;
+          section.querySelectorAll(".card").forEach((card) => {
+            const mf =
+              activeFilter === "all" || card.dataset.tag === activeFilter;
+            const ms =
+              !searchQuery ||
+              card.dataset.name.includes(searchQuery) ||
+              card.dataset.desc.includes(searchQuery) ||
+              card.dataset.section.includes(searchQuery);
+            if (mf && ms) {
+              card.style.display = "";
+              sv++;
+              visible++;
+            } else card.style.display = "none";
+          });
+          section.style.display = sv === 0 ? "none" : "";
+        });
+
+        document.getElementById("visible-count").textContent = visible;
+        document.getElementById("no-results").style.display =
+          visible === 0 ? "block" : "none";
+      }
+
+      // Search
+      document.getElementById("search").addEventListener("input", (e) => {
+        searchQuery = e.target.value.toLowerCase().trim();
+        applyFilters();
+      });
+
+      // Keyboard
+      document.addEventListener("keydown", (e) => {
+        if (
+          e.key === "/" &&
+          document.activeElement !== document.getElementById("search")
+        ) {
+          e.preventDefault();
+          document.getElementById("search").focus();
+        }
+        if (e.key === "Escape") {
+          document.getElementById("search").value = "";
+          searchQuery = "";
+          applyFilters();
+        }
+      });
+
+      // Theme toggle
+      const toggle = document.getElementById("theme-toggle");
+      const sun = document.getElementById("icon-sun");
+      const moon = document.getElementById("icon-moon");
+      let theme = localStorage.getItem("theme") || "dark";
+
+      function setTheme(t) {
+        theme = t;
+        document.documentElement.setAttribute("data-theme", t);
+        localStorage.setItem("theme", t);
+        if (t === "dark") {
+          sun.style.display = "none";
+          moon.style.display = "block";
+        } else {
+          sun.style.display = "block";
+          moon.style.display = "none";
+        }
+      }
+
+      setTheme(theme);
+      toggle.addEventListener("click", () =>
+        setTheme(theme === "dark" ? "light" : "dark"),
+      );
+
+      buildPage();
+    </script>
   </body>
 </html>
