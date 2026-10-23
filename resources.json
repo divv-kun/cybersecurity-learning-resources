@@ -1,1374 +1,2382 @@
 {
-        "CTF Platforms": {
-          "tag": "ctf",
-          "color": "var(--c-ctf)",
-          "emoji": "🚩",
-          "items": [
-            {
-              "name": "picoCTF",
-              "url": "https://play.picoctf.org/practice",
-              "desc": "CMU's beginner-friendly CTF. Massive challenge bank across all categories.",
-              "stars": 5,
-              "diff": "Beginner"
-            },
-            {
-              "name": "CTFlearn",
-              "url": "https://ctflearn.com",
-              "desc": "Community-driven CTF challenges. Good variety, active community.",
-              "stars": 4,
-              "diff": "Beginner"
-            },
-            {
-              "name": "247CTF",
-              "url": "https://247ctf.com",
-              "desc": "Always-on challenges — no competition schedule. Great for solo grinding.",
-              "stars": 4,
-              "diff": "Mid"
-            },
-            {
-              "name": "Dreamhack Wargames",
-              "url": "https://dreamhack.io",
-              "desc": "Korean platform with high-quality pwn, web, and RE. 1500+ challenges.",
-              "stars": 5,
-              "diff": "Mid"
-            },
-            {
-              "name": "Root-Me",
-              "url": "https://www.root-me.org",
-              "desc": "Massive French platform — 400+ challenges across all domains.",
-              "stars": 5,
-              "diff": "Mid"
-            },
-            {
-              "name": "RingZer0",
-              "url": "https://ringzer0ctf.com",
-              "desc": "Points-based CTF with wide challenge variety.",
-              "stars": 3,
-              "diff": "Mid"
-            },
-            {
-              "name": "pwnable.xyz",
-              "url": "https://pwnable.xyz",
-              "desc": "Binary exploitation focused challenges.",
-              "stars": 4,
-              "diff": "Mid"
-            },
-            {
-              "name": "WeChall",
-              "url": "https://www.wechall.net",
-              "desc": "Aggregates your scores from multiple wargame platforms.",
-              "stars": 3,
-              "diff": "All"
-            },
-            {
-              "name": "SmashTheStack",
-              "url": "https://smashthestack.org",
-              "desc": "Classic old-school wargame — IO, Blowfish, Loki layers.",
-              "stars": 3,
-              "diff": "Hard"
-            },
-            {
-              "name": "316CTF",
-              "url": "https://play.316ctf.com/challenges",
-              "desc": "Active CTF platform with varied challenge pool.",
-              "stars": 3,
-              "diff": "Mid"
-            },
-            {
-              "name": "AlpacaHack",
-              "url": "https://alpacahack.com/ctfs",
-              "desc": "Japanese CTF platform with regular events.",
-              "stars": 3,
-              "diff": "Mid"
-            },
-            {
-              "name": "CyberEDU",
-              "url": "https://app.cyber-edu.co/?tenant=cyberedu",
-              "desc": "Romanian platform — solid challenge quality.",
-              "stars": 4,
-              "diff": "Mid"
-            },
-            {
-              "name": "Hackropole",
-              "url": "https://hackropole.fr/en/challenges/",
-              "desc": "French CTF archive with high-quality challenges.",
-              "stars": 4,
-              "diff": "Mid"
-            },
-            {
-              "name": "Viblo CTF",
-              "url": "https://ctf.viblo.asia/puzzles",
-              "desc": "Vietnamese CTF platform with solid puzzle variety.",
-              "stars": 3,
-              "diff": "Mid"
-            },
-            {
-              "name": "Atenea",
-              "url": "https://atenea.ccn-cert.cni.es/challenges",
-              "desc": "Spain's CCN-CERT official CTF platform.",
-              "stars": 3,
-              "diff": "Mid"
-            },
-            {
-              "name": "0xf.at",
-              "url": "https://0xf.at/",
-              "desc": "Classic hackits-style CTF site.",
-              "stars": 3,
-              "diff": "Mid"
-            },
-            {
-              "name": "CTFtime",
-              "url": "https://ctftime.org",
-              "desc": "Global CTF calendar, team rankings, writeup aggregator.",
-              "stars": 5,
-              "diff": "All"
-            },
-            {
-              "name": "Plaid CTF 2025",
-              "url": "https://plaidctf.com/challenge",
-              "desc": "PPP's elite annual CTF — very hard.",
-              "stars": 5,
-              "diff": "Expert"
-            },
-            {
-              "name": "YesWeHack Dojo",
-              "url": "https://dojo-yeswehack.com/challenge-of-the-month",
-              "desc": "Monthly challenge from major bug bounty platform.",
-              "stars": 3,
-              "diff": "Mid"
-            },
-            {
-              "name": "w3challs",
-              "url": "https://w3challs.com/",
-              "desc": "Web and misc CTF challenges.",
-              "stars": 3,
-              "diff": "Beginner"
-            },
-            {
-              "name": "hackxor",
-              "url": "https://hackxor.net/",
-              "desc": "Realistic web app hacking challenges.",
-              "stars": 4,
-              "diff": "Mid"
-            },
-            {
-              "name": "OSIRIS RecruitCTF",
-              "url": "https://recruit.osiris.cyber.nyu.edu/challenges",
-              "desc": "NYU OSIRIS team recruitment CTF.",
-              "stars": 4,
-              "diff": "Mid"
-            },
-            {
-              "name": "MysteryTwister",
-              "url": "https://mysterytwister.org/challenges",
-              "desc": "Crypto-focused challenge platform — historical and modern.",
-              "stars": 4,
-              "diff": "Mid"
-            },
-            {
-              "name": "HackBBS",
-              "url": "https://hackbbs.org/index.php",
-              "desc": "Old-school hacking forum with challenges and wargames.",
-              "stars": 3,
-              "diff": "Mid"
-            },
-            {
-              "name": "Sinfocol Wargames",
-              "url": "https://wow.sinfocol.org/",
-              "desc": "Spanish wargame platform with varied challenges.",
-              "stars": 3,
-              "diff": "Mid"
-            },
-            {
-              "name": "Yoire",
-              "url": "https://yoire.com/",
-              "desc": "CTF challenge platform.",
-              "stars": 3,
-              "diff": "Mid"
-            },
-            {
-              "name": "CodeShell",
-              "url": "https://codeshell.kr/challenges/search/",
-              "desc": "Korean CTF challenge platform.",
-              "stars": 3,
-              "diff": "Mid"
-            },
-            {
-              "name": "TDHack",
-              "url": "https://www.tdhack.com/",
-              "desc": "Hacking challenge platform.",
-              "stars": 3,
-              "diff": "Mid"
-            },
-            {
-              "name": "NSA Codebreaker",
-              "url": "https://nsa-codebreaker.org/resources",
-              "desc": "NSA's annual reverse engineering challenge for students.",
-              "stars": 5,
-              "diff": "Hard"
-            },
-            {
-              "name": "CTFCyber Practice",
-              "url": "https://practice.ctfcyber.org/challenges",
-              "desc": "Practice CTF challenges.",
-              "stars": 3,
-              "diff": "Mid"
-            },
-            {
-              "name": "DiceCTF",
-              "url": "https://ctf.dicega.ng/",
-              "desc": "DiceGang's CTF — high quality web, crypto, and pwn challenges.",
-              "stars": 5,
-              "diff": "Hard"
-            },
-            {
-              "name": "CyberTruck Challenge",
-              "url": "https://www.cybertruckchallenge.org/",
-              "desc": "Automotive and embedded hardware security CTF.",
-              "stars": 4,
-              "diff": "Hard"
-            },
-            {
-              "name": "MITRE eCTF",
-              "url": "https://ectfmitre.gitlab.io/ectf-website/2024/index.html",
-              "desc": "MITRE embedded systems CTF — hardware security focused.",
-              "stars": 4,
-              "diff": "Hard"
-            },
-            {
-              "name": "SunshineCTF",
-              "url": "https://sunshinectf.org/",
-              "desc": "International CTF competition — annual event.",
-              "stars": 4,
-              "diff": "Mid"
-            },
-            {
-              "name": "JerseyCTF",
-              "url": "https://ctf.jerseyctf.com/challenges",
-              "desc": "NJIT's annual CTF event.",
-              "stars": 3,
-              "diff": "Mid"
-            }
-          ]
-        },
-        "Boot2Root / Labs": {
-          "tag": "ctf",
-          "color": "var(--c-ctf)",
-          "emoji": "🖥️",
-          "items": [
-            {
-              "name": "Hack The Box",
-              "url": "https://hackthebox.com",
-              "desc": "Industry standard — machines, ProLabs, Battlegrounds. Competitive ranking.",
-              "stars": 5,
-              "diff": "Mid"
-            },
-            {
-              "name": "TryHackMe",
-              "url": "https://tryhackme.com",
-              "desc": "Guided rooms with learning paths. Best onboarding experience.",
-              "stars": 5,
-              "diff": "Beginner"
-            },
-            {
-              "name": "VulnHub",
-              "url": "https://www.vulnhub.com",
-              "desc": "Download-and-run vulnerable VMs. Huge archive of machines.",
-              "stars": 4,
-              "diff": "Mid"
-            },
-            {
-              "name": "HackMyVM",
-              "url": "https://hackmyvm.eu",
-              "desc": "Community-built vulnerable machines.",
-              "stars": 3,
-              "diff": "Mid"
-            },
-            {
-              "name": "HackingClub",
-              "url": "https://app.hackingclub.com/",
-              "desc": "Boot2root platform — good quality.",
-              "stars": 4,
-              "diff": "Mid"
-            },
-            {
-              "name": "SEED Labs",
-              "url": "https://seedsecuritylabs.org/",
-              "desc": "Syracuse University structured lab exercises with full instructor materials.",
-              "stars": 5,
-              "diff": "Beginner"
-            },
-            {
-              "name": "Exploit Education",
-              "url": "https://exploit.education",
-              "desc": "VMs designed specifically for exploit development practice.",
-              "stars": 4,
-              "diff": "Mid"
-            },
-            {
-              "name": "Roppers Academy",
-              "url": "https://www.roppers.org/",
-              "desc": "CTF bootcamp and fundamentals training.",
-              "stars": 4,
-              "diff": "Beginner"
-            }
-          ]
-        },
-        "Binary Exploitation": {
-          "tag": "pwn",
-          "color": "var(--c-pwn)",
-          "emoji": "💀",
-          "items": [
-            {
-              "name": "pwn.college",
-              "url": "https://pwn.college",
-              "desc": "ASU's flagship pwn dojo — structured from basics to kernel. The gold standard.",
-              "stars": 5,
-              "diff": "Mid"
-            },
-            {
-              "name": "ROP Emporium",
-              "url": "https://ropemporium.com/",
-              "desc": "Dedicated ROP chain challenges, escalating complexity. Essential.",
-              "stars": 5,
-              "diff": "Mid"
-            },
-            {
-              "name": "pwnable.tw",
-              "url": "https://pwnable.tw/",
-              "desc": "High-quality binary exploitation — hard.",
-              "stars": 5,
-              "diff": "Hard"
-            },
-            {
-              "name": "pwnable.kr",
-              "url": "https://pwnable.kr",
-              "desc": "Classic Korean pwn wargame — tiered difficulty.",
-              "stars": 4,
-              "diff": "Mid"
-            },
-            {
-              "name": "Microcorruption",
-              "url": "https://microcorruption.com/login",
-              "desc": "Embedded CTF in MSP430 assembly. Unique and excellent.",
-              "stars": 4,
-              "diff": "Mid"
-            },
-            {
-              "name": "Nightmare",
-              "url": "https://guyinatuxedo.github.io/",
-              "desc": "CTF-based pwn and RE course by guyinatuxedo. Comprehensive.",
-              "stars": 5,
-              "diff": "Mid"
-            },
-            {
-              "name": "RPISEC MBE",
-              "url": "https://security.cs.rpi.edu/courses/binexp/",
-              "desc": "RPI Modern Binary Exploitation — full slides + labs. Must-have.",
-              "stars": 5,
-              "diff": "Hard"
-            },
-            {
-              "name": "ir0nstone Notes",
-              "url": "https://ir0nstone.gitbook.io/",
-              "desc": "Structured binary exploitation notes — stack, heap, format strings.",
-              "stars": 5,
-              "diff": "Mid"
-            },
-            {
-              "name": "RET2 / deusx64",
-              "url": "https://deusx64.ai/",
-              "desc": "AI-guided RE and pwn training from RET2 Systems.",
-              "stars": 4,
-              "diff": "Mid"
-            },
-            {
-              "name": "Azeria Labs",
-              "url": "https://azeria-labs.com/",
-              "desc": "ARM exploitation full course — assembly to shellcode.",
-              "stars": 5,
-              "diff": "Mid"
-            },
-            {
-              "name": "xcellerator",
-              "url": "https://xcellerator.github.io/",
-              "desc": "Linux kernel exploitation writeup series — deep technical content.",
-              "stars": 5,
-              "diff": "Expert"
-            },
-            {
-              "name": "Georgia Tech CS6265",
-              "url": "https://tc.gts3.org/cs6265/",
-              "desc": "InfoSec Lab — full slides + labs. Pwn and RE focused.",
-              "stars": 5,
-              "diff": "Hard"
-            }
-          ]
-        },
-        "Web Security": {
-          "tag": "web",
-          "color": "var(--c-web)",
-          "emoji": "🌐",
-          "items": [
-            {
-              "name": "PortSwigger Academy",
-              "url": "https://portswigger.net/web-security",
-              "desc": "The definitive web security platform. Labs for every vuln class. Free.",
-              "stars": 5,
-              "diff": "All"
-            },
-            {
-              "name": "WebhackingKr",
-              "url": "https://webhacking.kr/",
-              "desc": "Korean web wargame — creative challenge design.",
-              "stars": 4,
-              "diff": "Mid"
-            },
-            {
-              "name": "Websec.fr",
-              "url": "https://websec.fr/",
-              "desc": "French web security challenges.",
-              "stars": 3,
-              "diff": "Mid"
-            },
-            {
-              "name": "PayloadsAllTheThings",
-              "url": "https://github.com/swisskyrepo/PayloadsAllTheThings",
-              "desc": "Comprehensive payload reference by swisskyrepo. Bookmark forever.",
-              "stars": 5,
-              "diff": "All"
-            },
-            {
-              "name": "HackTricks",
-              "url": "https://book.hacktricks.xyz",
-              "desc": "Living pentest reference — web, privesc, AD, everything.",
-              "stars": 5,
-              "diff": "All"
-            },
-            {
-              "name": "OWASP Juice Shop",
-              "url": "https://owasp.org/www-project-juice-shop",
-              "desc": "Intentionally vulnerable Node app — all OWASP Top 10.",
-              "stars": 5,
-              "diff": "Beginner"
-            },
-            {
-              "name": "Lord of SQLi",
-              "url": "https://los.rubiya.kr/",
-              "desc": "SQL injection wargame — 50 levels escalating.",
-              "stars": 4,
-              "diff": "Mid"
-            },
-            {
-              "name": "XSS Game (Google)",
-              "url": "https://xss-game.appspot.com/",
-              "desc": "Google's XSS challenge game — 6 levels.",
-              "stars": 4,
-              "diff": "Beginner"
-            },
-            {
-              "name": "DomGoat",
-              "url": "https://domgo.at/cxss/intro",
-              "desc": "Client-side XSS learning — DOM-based attacks.",
-              "stars": 4,
-              "diff": "Mid"
-            },
-            {
-              "name": "Stanford CS253",
-              "url": "https://web.stanford.edu/class/cs253/",
-              "desc": "Feross Aboukhadijeh's Stanford web security — full lecture videos public.",
-              "stars": 5,
-              "diff": "Mid"
-            },
-            {
-              "name": "appsec.guide",
-              "url": "https://appsec.guide/",
-              "desc": "Web app security reference guide.",
-              "stars": 4,
-              "diff": "All"
-            },
-            {
-              "name": "SQLNoir",
-              "url": "https://www.sqlnoir.com/",
-              "desc": "Learn SQL by solving detective cases — gamified.",
-              "stars": 3,
-              "diff": "Beginner"
-            },
-            {
-              "name": "BugForge",
-              "url": "https://app.bugforge.io/login",
-              "desc": "Bug bounty style web app challenges.",
-              "stars": 3,
-              "diff": "Mid"
-            },
-            {
-              "name": "WebVerse Labs Pro",
-              "url": "https://webverselabs-pro.com/labs",
-              "desc": "Pro web security labs — hands-on vulnerability practice.",
-              "stars": 3,
-              "diff": "Mid"
-            }
-          ]
-        },
-        "Cryptography": {
-          "tag": "crypto",
-          "color": "var(--c-crypto)",
-          "emoji": "🔐",
-          "items": [
-            {
-              "name": "CryptoHack",
-              "url": "https://cryptohack.org/challenges/",
-              "desc": "Best crypto CTF platform. Covers RSA, ECC, block ciphers, protocols.",
-              "stars": 5,
-              "diff": "Mid"
-            },
-            {
-              "name": "Cryptopals",
-              "url": "https://cryptopals.com/",
-              "desc": "Matasano crypto challenges — build attacks from scratch. Essential.",
-              "stars": 5,
-              "diff": "Mid"
-            },
-            {
-              "name": "id0-rsa",
-              "url": "https://id0-rsa.pub/",
-              "desc": "RSA and related crypto challenges.",
-              "stars": 4,
-              "diff": "Mid"
-            },
-            {
-              "name": "MysteryTwister",
-              "url": "https://mysterytwister.org/challenges",
-              "desc": "Historical and modern crypto challenges.",
-              "stars": 4,
-              "diff": "Mid"
-            },
-            {
-              "name": "Boneh+Shoup Textbook",
-              "url": "https://toc.cryptobook.us/",
-              "desc": "A Graduate Course in Applied Cryptography — free full textbook.",
-              "stars": 5,
-              "diff": "All"
-            },
-            {
-              "name": "Boneh Crypto (Stanford)",
-              "url": "https://crypto.stanford.edu/~dabo/courses/OnlineCrypto/",
-              "desc": "Boneh's full crypto course slides.",
-              "stars": 5,
-              "diff": "All"
-            },
-            {
-              "name": "Katz Crypto (UMD)",
-              "url": "https://www.cs.umd.edu/~jkatz/teaching/",
-              "desc": "Jonathan Katz's intro and graduate crypto courses.",
-              "stars": 4,
-              "diff": "All"
-            },
-            {
-              "name": "SpiderLabs CryptOMG",
-              "url": "https://github.com/SpiderLabs/CryptOMG",
-              "desc": "Crypto CTF challenges on GitHub.",
-              "stars": 3,
-              "diff": "Mid"
-            }
-          ]
-        },
-        "Reverse Engineering": {
-          "tag": "re",
-          "color": "var(--c-re)",
-          "emoji": "🔬",
-          "items": [
-            {
-              "name": "ReversingHero",
-              "url": "https://www.reversinghero.com/",
-              "desc": "Structured RE challenges from beginner to advanced.",
-              "stars": 5,
-              "diff": "All"
-            },
-            {
-              "name": "Reverse.Challenges",
-              "url": "https://challenges.re/",
-              "desc": "RE challenges by Dennis Yurichev — author of RE4B.",
-              "stars": 5,
-              "diff": "All"
-            },
-            {
-              "name": "Binary Auditing",
-              "url": "https://www.binary-auditing.com/",
-              "desc": "Rolf Rolles — free full RE course, high quality.",
-              "stars": 5,
-              "diff": "Mid"
-            },
-            {
-              "name": "xorpd",
-              "url": "https://www.xorpd.net/",
-              "desc": "Assembly puzzles and RE learning.",
-              "stars": 4,
-              "diff": "Mid"
-            },
-            {
-              "name": "Max Kersten Binary Analysis",
-              "url": "https://maxkersten.nl/binary-analysis-course/",
-              "desc": "Free binary analysis course.",
-              "stars": 4,
-              "diff": "Mid"
-            },
-            {
-              "name": "Malware Unicorn",
-              "url": "https://malwareunicorn.org/",
-              "desc": "RE workshops — malware-focused.",
-              "stars": 5,
-              "diff": "Mid"
-            },
-            {
-              "name": "Frida Labs",
-              "url": "https://github.com/DERE-ad2001/Frida-Labs",
-              "desc": "Frida dynamic instrumentation labs.",
-              "stars": 4,
-              "diff": "Mid"
-            },
-            {
-              "name": "learnfrida.info",
-              "url": "https://learnfrida.info/",
-              "desc": "Structured Frida learning resource.",
-              "stars": 4,
-              "diff": "Mid"
-            },
-            {
-              "name": "io.netgarage",
-              "url": "https://io.netgarage.org/",
-              "desc": "Classic RE/pwn wargame — old school, still solid.",
-              "stars": 3,
-              "diff": "Mid"
-            }
-          ]
-        },
-        "Malware Analysis": {
-          "tag": "malware",
-          "color": "var(--c-malware)",
-          "emoji": "🦠",
-          "items": [
-            {
-              "name": "MalwareTech Labs",
-              "url": "https://malwaretech.com/labs/",
-              "desc": "Marcus Hutchins' malware analysis labs.",
-              "stars": 5,
-              "diff": "Mid"
-            },
-            {
-              "name": "Malops.io",
-              "url": "https://malops.io/challenges",
-              "desc": "Malware-focused CTF challenges.",
-              "stars": 3,
-              "diff": "Mid"
-            },
-            {
-              "name": "VX Underground",
-              "url": "https://vx-underground.org/",
-              "desc": "Largest malware archive + research papers. Essential.",
-              "stars": 5,
-              "diff": "All"
-            },
-            {
-              "name": "hasherezade",
-              "url": "https://hasherezade.github.io/",
-              "desc": "Deep malware analysis, PE internals — top researcher.",
-              "stars": 5,
-              "diff": "Hard"
-            },
-            {
-              "name": "cocomelonc",
-              "url": "https://cocomelonc.github.io/",
-              "desc": "Windows maldev and shellcoding writeups.",
-              "stars": 5,
-              "diff": "Hard"
-            },
-            {
-              "name": "0xdarkvortex",
-              "url": "https://0xdarkvortex.dev/",
-              "desc": "Maldev and offensive research.",
-              "stars": 4,
-              "diff": "Hard"
-            },
-            {
-              "name": "Maldev Academy",
-              "url": "https://maldevacademy.com/",
-              "desc": "Structured malware development course.",
-              "stars": 5,
-              "diff": "Hard"
-            },
-            {
-              "name": "Contagio Dump",
-              "url": "https://contagiodump.blogspot.com/",
-              "desc": "Malware sample dump — real samples for analysis.",
-              "stars": 4,
-              "diff": "Mid"
-            },
-            {
-              "name": "embee research",
-              "url": "https://www.embeeresearch.io/",
-              "desc": "Practical malware analysis writeups.",
-              "stars": 5,
-              "diff": "Mid"
-            },
-            {
-              "name": "dr4k0nia",
-              "url": "https://dr4k0nia.github.io/",
-              "desc": ".NET reversing and maldev.",
-              "stars": 4,
-              "diff": "Hard"
-            }
-          ]
-        },
-        "Blue Team / DFIR": {
-          "tag": "blue",
-          "color": "var(--c-blue)",
-          "emoji": "🛡️",
-          "items": [
-            {
-              "name": "CyberDefenders",
-              "url": "https://cyberdefenders.org/",
-              "desc": "Blue team CTF platform — DFIR, threat hunting, forensics.",
-              "stars": 5,
-              "diff": "Mid"
-            },
-            {
-              "name": "Blue Team Labs Online",
-              "url": "https://blueteamlabs.online/",
-              "desc": "Free blue team challenges — log analysis, malware, forensics.",
-              "stars": 5,
-              "diff": "Beginner"
-            },
-            {
-              "name": "Malware Traffic Analysis",
-              "url": "https://www.malware-traffic-analysis.net/",
-              "desc": "PCAP exercises with real malware traffic.",
-              "stars": 5,
-              "diff": "Mid"
-            },
-            {
-              "name": "Digital Corpora",
-              "url": "https://digitalcorpora.org/",
-              "desc": "DFIR disk images and forensic datasets.",
-              "stars": 4,
-              "diff": "Mid"
-            },
-            {
-              "name": "Splunk BOTS",
-              "url": "https://bots.splunk.com/",
-              "desc": "Boss of the SOC — SOC analyst simulation.",
-              "stars": 5,
-              "diff": "Mid"
-            },
-            {
-              "name": "KC7 Cyber",
-              "url": "https://kc7cyber.com/",
-              "desc": "KQL-based threat hunting game.",
-              "stars": 4,
-              "diff": "Mid"
-            },
-            {
-              "name": "The DFIR Report",
-              "url": "https://thedfirreport.com/",
-              "desc": "Real incident reports — initial access to ransomware.",
-              "stars": 5,
-              "diff": "Mid"
-            },
-            {
-              "name": "MemLabs",
-              "url": "https://github.com/stuxnet999/MemLabs",
-              "desc": "Memory forensics CTF labs.",
-              "stars": 4,
-              "diff": "Mid"
-            },
-            {
-              "name": "Wireshark Samples",
-              "url": "https://wiki.wireshark.org/SampleCaptures",
-              "desc": "Official Wireshark sample capture collection.",
-              "stars": 4,
-              "diff": "Beginner"
-            }
-          ]
-        },
-        "OSINT": {
-          "tag": "osint",
-          "color": "var(--c-osint)",
-          "emoji": "🕵️",
-          "items": [
-            {
-              "name": "Trace Labs",
-              "url": "https://www.tracelabs.org/",
-              "desc": "OSINT CTF for missing persons — real-world impact.",
-              "stars": 5,
-              "diff": "Mid"
-            },
-            {
-              "name": "Gralhix Exercises",
-              "url": "https://gralhix.com/list-of-osint-exercises/",
-              "desc": "Sofia Santos' OSINT exercises — geolocation, image analysis.",
-              "stars": 5,
-              "diff": "Beginner"
-            },
-            {
-              "name": "OSINT Industries CTF",
-              "url": "https://ctf.osint.industries/",
-              "desc": "OSINT-focused CTF platform.",
-              "stars": 4,
-              "diff": "Mid"
-            },
-            {
-              "name": "Bellingcat Challenge",
-              "url": "https://challenge.bellingcat.com/",
-              "desc": "OSINT challenges from world's top investigative collective.",
-              "stars": 5,
-              "diff": "Mid"
-            },
-            {
-              "name": "UK OSINT CTF",
-              "url": "https://ctf.osint.uk/",
-              "desc": "UK OSINT community CTF.",
-              "stars": 3,
-              "diff": "Mid"
-            },
-            {
-              "name": "inteltechniques.com",
-              "url": "https://inteltechniques.com/",
-              "desc": "Michael Bazzell's OSINT resources — deep web, social media.",
-              "stars": 5,
-              "diff": "All"
-            },
-            {
-              "name": "OSINT Framework",
-              "url": "https://osintframework.com/",
-              "desc": "Mind map of OSINT tools by category.",
-              "stars": 5,
-              "diff": "All"
-            },
-            {
-              "name": "sourcing.games",
-              "url": "https://sourcing.games/",
-              "desc": "OSINT sourcing games — intuition building.",
-              "stars": 4,
-              "diff": "Beginner"
-            },
-            {
-              "name": "GeoGuessr",
-              "url": "https://www.geoguessr.com/",
-              "desc": "Geolocation game — essential GEOINT training.",
-              "stars": 4,
-              "diff": "Beginner"
-            },
-            {
-              "name": "Hacktoria",
-              "url": "https://hacktoria.com/",
-              "desc": "Narrative OSINT CTF — case-based investigations.",
-              "stars": 4,
-              "diff": "Mid"
-            }
-          ]
-        },
-        "Cloud Security": {
-          "tag": "cloud",
-          "color": "var(--c-cloud)",
-          "emoji": "☁️",
-          "items": [
-            {
-              "name": "flAWS.cloud",
-              "url": "http://flaws.cloud/",
-              "desc": "AWS security challenges — misconfig, IAM, S3. Must-do.",
-              "stars": 5,
-              "diff": "Mid"
-            },
-            {
-              "name": "flAWS2.cloud",
-              "url": "http://flaws2.cloud/",
-              "desc": "flAWS sequel — attacker and defender paths.",
-              "stars": 5,
-              "diff": "Mid"
-            },
-            {
-              "name": "Big IAM Challenge",
-              "url": "https://bigiamchallenge.com/challenge/1",
-              "desc": "IAM policy exploitation challenges.",
-              "stars": 5,
-              "diff": "Mid"
-            },
-            {
-              "name": "EKS Cluster Games",
-              "url": "https://eksclustergames.com/",
-              "desc": "Kubernetes/EKS security challenges.",
-              "stars": 4,
-              "diff": "Hard"
-            },
-            {
-              "name": "Kubernetes LAN Party",
-              "url": "https://k8slanparty.com/",
-              "desc": "Wiz's K8s network security challenge.",
-              "stars": 4,
-              "diff": "Hard"
-            },
-            {
-              "name": "CloudGoat",
-              "url": "https://github.com/RhinoSecurityLabs/cloudgoat",
-              "desc": "Rhino Security's vulnerable-by-design AWS tool.",
-              "stars": 4,
-              "diff": "Mid"
-            },
-            {
-              "name": "Broken Azure",
-              "url": "https://www.brokenazure.cloud/",
-              "desc": "Azure security training challenges.",
-              "stars": 4,
-              "diff": "Mid"
-            },
-            {
-              "name": "PwnedLabs",
-              "url": "https://pwnedlabs.io/",
-              "desc": "Cloud pentesting labs — AWS, Azure, GCP scenarios.",
-              "stars": 4,
-              "diff": "Mid"
-            }
-          ]
-        },
-        "Mobile Security": {
-          "tag": "mobile",
-          "color": "var(--c-mobile)",
-          "emoji": "📱",
-          "items": [
-            {
-              "name": "Mobile Hacking Lab",
-              "url": "https://www.mobilehackinglab.com/",
-              "desc": "Labs and courses for Android/iOS security.",
-              "stars": 5,
-              "diff": "Mid"
-            },
-            {
-              "name": "hpAndro AppSec",
-              "url": "https://hpandro.raviramesh.info/",
-              "desc": "Free Android AppSec challenges.",
-              "stars": 4,
-              "diff": "Mid"
-            },
-            {
-              "name": "8ksec Android Labs",
-              "url": "https://academy.8ksec.io/course/android-application-exploitation-challenges?register=true",
-              "desc": "Android exploitation challenge labs.",
-              "stars": 4,
-              "diff": "Mid"
-            },
-            {
-              "name": "Android App RE 101",
-              "url": "https://www.ragingrock.com/AndroidAppRE/index.html",
-              "desc": "Free Android reverse engineering course.",
-              "stars": 5,
-              "diff": "Mid"
-            }
-          ]
-        },
-        "Blockchain / Web3": {
-          "tag": "ctf",
-          "color": "var(--c-ctf)",
-          "emoji": "⛓️",
-          "items": [
-            {
-              "name": "Capture the Ether",
-              "url": "https://capturetheether.com/challenges/",
-              "desc": "Classic Ethereum smart contract security challenges.",
-              "stars": 4,
-              "diff": "Mid"
-            },
-            {
-              "name": "Ethernaut",
-              "url": "https://github.com/OpenZeppelin/ethernaut",
-              "desc": "OpenZeppelin's Web3/Solidity wargame.",
-              "stars": 5,
-              "diff": "Mid"
-            },
-            {
-              "name": "Damn Vulnerable DeFi",
-              "url": "https://www.damnvulnerabledefi.xyz/",
-              "desc": "DeFi protocol exploitation challenges — advanced.",
-              "stars": 5,
-              "diff": "Hard"
-            },
-            {
-              "name": "Node Guardians",
-              "url": "https://nodeguardians.io/campaigns",
-              "desc": "Gamified blockchain programming campaigns.",
-              "stars": 3,
-              "diff": "Mid"
-            },
-            {
-              "name": "Cyfrin Updraft",
-              "url": "https://updraft.cyfrin.io/courses",
-              "desc": "Blockchain security courses.",
-              "stars": 4,
-              "diff": "Mid"
-            }
-          ]
-        },
-        "University Courses": {
-          "tag": "uni",
-          "color": "var(--c-uni)",
-          "emoji": "🎓",
-          "items": [
-            {
-              "name": "MIT 6.858 (Zeldovich)",
-              "url": "https://css.csail.mit.edu/6.858/",
-              "desc": "MIT Systems Security — live labs, full readings. Best academic security course.",
-              "stars": 5,
-              "diff": "Hard"
-            },
-            {
-              "name": "Stanford CS253 (Feross)",
-              "url": "https://web.stanford.edu/class/cs253/",
-              "desc": "Stanford Web Security — full videos public, deep XSS/CSRF/CSP coverage.",
-              "stars": 5,
-              "diff": "Mid"
-            },
-            {
-              "name": "UC Berkeley CS161",
-              "url": "https://sp26.cs161.org/",
-              "desc": "Berkeley's flagship security course. Slides + labs public.",
-              "stars": 5,
-              "diff": "Mid"
-            },
-            {
-              "name": "Georgia Tech CS6265",
-              "url": "https://tc.gts3.org/cs6265/",
-              "desc": "InfoSec Lab — full slides + labs. Pwn and RE focused.",
-              "stars": 5,
-              "diff": "Hard"
-            },
-            {
-              "name": "ASU mahaloz",
-              "url": "https://cse194.mahaloz.re/",
-              "desc": "Binary exploitation course — ASU.",
-              "stars": 5,
-              "diff": "Mid"
-            },
-            {
-              "name": "RPI MBE",
-              "url": "https://rpis.ec/",
-              "desc": "RPISEC Modern Binary Exploitation — full course public.",
-              "stars": 5,
-              "diff": "Hard"
-            },
-            {
-              "name": "CMU Brumley",
-              "url": "https://users.ece.cmu.edu/~dbrumley/courses/",
-              "desc": "David Brumley's binary analysis + exploitation courses.",
-              "stars": 5,
-              "diff": "Hard"
-            },
-            {
-              "name": "EPFL HexHive",
-              "url": "https://hexhive.epfl.ch/education/",
-              "desc": "Mathias Payer's lab — sanitizers, fuzzing, exploitation. Elite.",
-              "stars": 5,
-              "diff": "Expert"
-            },
-            {
-              "name": "Boneh Crypto (Stanford)",
-              "url": "https://crypto.stanford.edu/~dabo/courses/OnlineCrypto/",
-              "desc": "Boneh's full crypto course slides.",
-              "stars": 5,
-              "diff": "Mid"
-            },
-            {
-              "name": "UMD Dumitra",
-              "url": "https://user.eng.umd.edu/~tdumitra/courses/",
-              "desc": "UMD Cybersecurity — slides + labs.",
-              "stars": 4,
-              "diff": "Mid"
-            },
-            {
-              "name": "Cornell CS5434",
-              "url": "https://www.cs.cornell.edu/courses/cs5434/",
-              "desc": "Cornell Defending Computer Networks.",
-              "stars": 4,
-              "diff": "Mid"
-            },
-            {
-              "name": "UC Irvine Goodrich",
-              "url": "https://ics.uci.edu/~goodrich/teach/cs201p/",
-              "desc": "Full lecture notes — BOF to crypto.",
-              "stars": 4,
-              "diff": "Mid"
-            },
-            {
-              "name": "OpenSecurityTraining2",
-              "url": "https://p.ost2.fyi/",
-              "desc": "OST2 — free structured courses: malware, RE, kernel exploitation.",
-              "stars": 5,
-              "diff": "All"
-            },
-            {
-              "name": "OpenSecurityTraining",
-              "url": "https://opensecuritytraining.info/",
-              "desc": "Xeno Kovah's full courses — malware, RE, x86. Slides + videos.",
-              "stars": 5,
-              "diff": "All"
-            },
-            {
-              "name": "Naval Postgrad Cyber",
-              "url": "https://nps.edu/web/c3o/cyber/",
-              "desc": "Naval Postgraduate School cyber curriculum.",
-              "stars": 4,
-              "diff": "Mid"
-            }
-          ]
-        },
-        "Research Blogs": {
-          "tag": "blog",
-          "color": "var(--c-blog)",
-          "emoji": "✍️",
-          "items": [
-            {
-              "name": "ired.team",
-              "url": "https://www.ired.team/",
-              "desc": "Red team notes — living doc, extremely comprehensive.",
-              "stars": 5,
-              "diff": "All"
-            },
-            {
-              "name": "0xdf",
-              "url": "https://0xdf.gitlab.io/",
-              "desc": "HTB writeups + deep technical dives.",
-              "stars": 5,
-              "diff": "All"
-            },
-            {
-              "name": "secret.club",
-              "url": "https://secret.club/",
-              "desc": "Elite RE and exploit research — low-level, serious content.",
-              "stars": 5,
-              "diff": "Expert"
-            },
-            {
-              "name": "dayzerosec",
-              "url": "https://dayzerosec.com/",
-              "desc": "Vuln research and binary exploitation.",
-              "stars": 5,
-              "diff": "Expert"
-            },
-            {
-              "name": "zerosum0x0",
-              "url": "https://zerosum0x0.blogspot.com/",
-              "desc": "Kernel exploits and vulnerability research.",
-              "stars": 5,
-              "diff": "Expert"
-            },
-            {
-              "name": "perfect.blue",
-              "url": "https://perfect.blue/",
-              "desc": "Top CTF team blog — high quality technical writeups.",
-              "stars": 5,
-              "diff": "Hard"
-            },
-            {
-              "name": "xcellerator",
-              "url": "https://xcellerator.github.io/",
-              "desc": "Linux kernel exploitation series.",
-              "stars": 5,
-              "diff": "Expert"
-            },
-            {
-              "name": "wrongbaud",
-              "url": "https://wrongbaud.github.io/",
-              "desc": "Hardware and firmware hacking.",
-              "stars": 5,
-              "diff": "Hard"
-            },
-            {
-              "name": "voidstarsec",
-              "url": "https://voidstarsec.com/",
-              "desc": "Hardware security blog.",
-              "stars": 4,
-              "diff": "Hard"
-            },
-            {
-              "name": "samwho.dev",
-              "url": "https://samwho.dev/",
-              "desc": "Low-level systems — beautifully visualized.",
-              "stars": 5,
-              "diff": "All"
-            },
-            {
-              "name": "exploitreversing",
-              "url": "https://exploitreversing.com/",
-              "desc": "Exploit + RE research.",
-              "stars": 4,
-              "diff": "Hard"
-            },
-            {
-              "name": "redops.at",
-              "url": "https://redops.at/",
-              "desc": "Red team and C2 research.",
-              "stars": 4,
-              "diff": "Hard"
-            },
-            {
-              "name": "blog.bushidotoken",
-              "url": "https://blog.bushidotoken.net/",
-              "desc": "Threat intel and APT research.",
-              "stars": 4,
-              "diff": "All"
-            },
-            {
-              "name": "cocomelonc",
-              "url": "https://cocomelonc.github.io/",
-              "desc": "Windows maldev and shellcoding writeups.",
-              "stars": 5,
-              "diff": "Hard"
-            },
-            {
-              "name": "securelist",
-              "url": "https://securelist.com/",
-              "desc": "Kaspersky threat research.",
-              "stars": 4,
-              "diff": "All"
-            },
-            {
-              "name": "guidedhacking",
-              "url": "https://guidedhacking.com/",
-              "desc": "Game hacking and low-level systems.",
-              "stars": 4,
-              "diff": "Mid"
-            }
-          ]
-        },
-        "CTF Archives": {
-          "tag": "archive",
-          "color": "var(--c-archive)",
-          "emoji": "📦",
-          "items": [
-            {
-              "name": "DEF CON CTF Archive",
-              "url": "https://archive.ooo/",
-              "desc": "Official DEF CON CTF archive — OOO.",
-              "stars": 5,
-              "diff": "All"
-            },
-            {
-              "name": "DownUnderCTF Archive",
-              "url": "https://archives.duc.tf/",
-              "desc": "DownUnderCTF challenge archive — Australian CTF team.",
-              "stars": 4,
-              "diff": "All"
-            },
-            {
-              "name": "ImaginaryCTF Archive",
-              "url": "https://imaginaryctf.org/ArchivedChallenges/",
-              "desc": "ImaginaryCTF permanent challenge archive.",
-              "stars": 4,
-              "diff": "All"
-            },
-            {
-              "name": "Shell-Storm CTF",
-              "url": "https://shell-storm.org/repo/CTF/",
-              "desc": "Large CTF challenge and writeup repo.",
-              "stars": 4,
-              "diff": "All"
-            },
-            {
-              "name": "CTFtime Writeups",
-              "url": "https://ctftime.org/writeups/",
-              "desc": "Massive writeup collection from CTFtime.",
-              "stars": 5,
-              "diff": "All"
-            },
-            {
-              "name": "github/ctfs",
-              "url": "https://github.com/ctfs/",
-              "desc": "Massive CTF writeup and challenge org on GitHub.",
-              "stars": 5,
-              "diff": "All"
-            },
-            {
-              "name": "awesome-ctf",
-              "url": "https://github.com/apsdehal/awesome-ctf/",
-              "desc": "Awesome CTF list — tools, resources, platforms.",
-              "stars": 5,
-              "diff": "All"
-            },
-            {
-              "name": "Project SEKAI CTF",
-              "url": "https://github.com/project-sekai-ctf/",
-              "desc": "Project SEKAI CTF challenges.",
-              "stars": 4,
-              "diff": "Hard"
-            },
-            {
-              "name": "xairy Linux Kernel",
-              "url": "https://github.com/xairy/linux-kernel-exploitation/",
-              "desc": "Linux kernel exploitation resource collection.",
-              "stars": 5,
-              "diff": "Expert"
-            },
-            {
-              "name": "MemLabs (GitHub)",
-              "url": "https://github.com/stuxnet999/MemLabs/",
-              "desc": "Memory forensics CTF labs.",
-              "stars": 4,
-              "diff": "Mid"
-            },
-            {
-              "name": "Fuzzing 101 Solutions",
-              "url": "https://github.com/epi052/fuzzing-101-solutions/",
-              "desc": "Fuzzing101 exercise solutions.",
-              "stars": 4,
-              "diff": "Mid"
-            },
-            {
-              "name": "VX Underground Archive",
-              "url": "https://vx-underground.org/Archive/",
-              "desc": "VX Underground malware and paper archive.",
-              "stars": 5,
-              "diff": "All"
-            },
-            {
-              "name": "HITCON",
-              "url": "https://hitcon.org/",
-              "desc": "Taiwan HITCON CTF archive.",
-              "stars": 4,
-              "diff": "All"
-            },
-            {
-              "name": "Nautilus Institute",
-              "url": "https://nautilus.institute/",
-              "desc": "DEF CON 30/31 CTF organizing team archive.",
-              "stars": 4,
-              "diff": "All"
-            }
-          ]
-        },
-        "Courses & Certifications": {
-          "tag": "course",
-          "color": "var(--c-course)",
-          "emoji": "📜",
-          "items": [
-            {
-              "name": "HackSmarter",
-              "url": "https://www.hacksmarter.org/",
-              "desc": "Free cybersecurity training and certification prep.",
-              "stars": 3,
-              "diff": "Beginner"
-            }
-          ]
-        },
-        "References & Lists": {
-          "tag": "reference",
-          "color": "var(--c-ref)",
-          "emoji": "📚",
-          "items": [
-            {
-              "name": "CAE Cyber Atlas",
-              "url": "https://cyber-atlas.caecommunity.org/",
-              "desc": "NSA CAE community cybersecurity resource atlas.",
-              "stars": 4,
-              "diff": "All"
-            }
-          ]
-        }
+  "CTF Platforms": {
+    "tag": "ctf",
+    "color": "var(--c-ctf)",
+    "emoji": "🚩",
+    "items": [
+      {
+        "name": "picoCTF",
+        "url": "https://play.picoctf.org/practice",
+        "desc": "CMU's beginner-friendly CTF. Massive challenge bank across all categories.",
+        "stars": 5,
+        "diff": "Beginner"
+      },
+      {
+        "name": "CTFlearn",
+        "url": "https://ctflearn.com",
+        "desc": "Community-driven CTF challenges. Good variety, active community.",
+        "stars": 4,
+        "diff": "Beginner"
+      },
+      {
+        "name": "247CTF",
+        "url": "https://247ctf.com",
+        "desc": "Always-on challenges — no competition schedule. Great for solo grinding.",
+        "stars": 4,
+        "diff": "Mid"
+      },
+      {
+        "name": "Dreamhack Wargames",
+        "url": "https://dreamhack.io",
+        "desc": "Korean platform with high-quality pwn, web, and RE. 1500+ challenges.",
+        "stars": 5,
+        "diff": "Mid"
+      },
+      {
+        "name": "Root-Me",
+        "url": "https://www.root-me.org",
+        "desc": "Massive French platform — 400+ challenges across all domains.",
+        "stars": 5,
+        "diff": "Mid"
+      },
+      {
+        "name": "RingZer0",
+        "url": "https://ringzer0ctf.com",
+        "desc": "Points-based CTF with wide challenge variety.",
+        "stars": 3,
+        "diff": "Mid"
+      },
+      {
+        "name": "pwnable.xyz",
+        "url": "https://pwnable.xyz",
+        "desc": "Binary exploitation focused challenges.",
+        "stars": 4,
+        "diff": "Mid"
+      },
+      {
+        "name": "WeChall",
+        "url": "https://www.wechall.net",
+        "desc": "Aggregates your scores from multiple wargame platforms.",
+        "stars": 3,
+        "diff": "All"
+      },
+      {
+        "name": "SmashTheStack",
+        "url": "https://smashthestack.org",
+        "desc": "Classic old-school wargame — IO, Blowfish, Loki layers.",
+        "stars": 3,
+        "diff": "Hard"
+      },
+      {
+        "name": "316CTF",
+        "url": "https://play.316ctf.com/challenges",
+        "desc": "Active CTF platform with varied challenge pool.",
+        "stars": 3,
+        "diff": "Mid"
+      },
+      {
+        "name": "AlpacaHack",
+        "url": "https://alpacahack.com/ctfs",
+        "desc": "Japanese CTF platform with regular events.",
+        "stars": 3,
+        "diff": "Mid"
+      },
+      {
+        "name": "CyberEDU",
+        "url": "https://app.cyber-edu.co/?tenant=cyberedu",
+        "desc": "Romanian platform — solid challenge quality.",
+        "stars": 4,
+        "diff": "Mid"
+      },
+      {
+        "name": "Hackropole",
+        "url": "https://hackropole.fr/en/challenges/",
+        "desc": "French CTF archive with high-quality challenges.",
+        "stars": 4,
+        "diff": "Mid"
+      },
+      {
+        "name": "Viblo CTF",
+        "url": "https://ctf.viblo.asia/puzzles",
+        "desc": "Vietnamese CTF platform with solid puzzle variety.",
+        "stars": 3,
+        "diff": "Mid"
+      },
+      {
+        "name": "Atenea",
+        "url": "https://atenea.ccn-cert.cni.es/challenges",
+        "desc": "Spain's CCN-CERT official CTF platform.",
+        "stars": 3,
+        "diff": "Mid"
+      },
+      {
+        "name": "0xf.at",
+        "url": "https://0xf.at/",
+        "desc": "Classic hackits-style CTF site.",
+        "stars": 3,
+        "diff": "Mid"
+      },
+      {
+        "name": "CTFtime",
+        "url": "https://ctftime.org",
+        "desc": "Global CTF calendar, team rankings, writeup aggregator.",
+        "stars": 5,
+        "diff": "All"
+      },
+      {
+        "name": "Plaid CTF 2025",
+        "url": "https://plaidctf.com/challenge",
+        "desc": "PPP's elite annual CTF — very hard.",
+        "stars": 5,
+        "diff": "Expert"
+      },
+      {
+        "name": "YesWeHack Dojo",
+        "url": "https://dojo-yeswehack.com/challenge-of-the-month",
+        "desc": "Monthly challenge from major bug bounty platform.",
+        "stars": 3,
+        "diff": "Mid"
+      },
+      {
+        "name": "w3challs",
+        "url": "https://w3challs.com/",
+        "desc": "Web and misc CTF challenges.",
+        "stars": 3,
+        "diff": "Beginner"
+      },
+      {
+        "name": "hackxor",
+        "url": "https://hackxor.net/",
+        "desc": "Realistic web app hacking challenges.",
+        "stars": 4,
+        "diff": "Mid"
+      },
+      {
+        "name": "OSIRIS RecruitCTF",
+        "url": "https://recruit.osiris.cyber.nyu.edu/challenges",
+        "desc": "NYU OSIRIS team recruitment CTF.",
+        "stars": 4,
+        "diff": "Mid"
+      },
+      {
+        "name": "MysteryTwister",
+        "url": "https://mysterytwister.org/challenges",
+        "desc": "Crypto-focused challenge platform — historical and modern.",
+        "stars": 4,
+        "diff": "Mid"
+      },
+      {
+        "name": "HackBBS",
+        "url": "https://hackbbs.org/index.php",
+        "desc": "Old-school hacking forum with challenges and wargames.",
+        "stars": 3,
+        "diff": "Mid"
+      },
+      {
+        "name": "Sinfocol Wargames",
+        "url": "https://wow.sinfocol.org/",
+        "desc": "Spanish wargame platform with varied challenges.",
+        "stars": 3,
+        "diff": "Mid"
+      },
+      {
+        "name": "Yoire",
+        "url": "https://yoire.com/",
+        "desc": "CTF challenge platform.",
+        "stars": 3,
+        "diff": "Mid"
+      },
+      {
+        "name": "CodeShell",
+        "url": "https://codeshell.kr/challenges/search/",
+        "desc": "Korean CTF challenge platform.",
+        "stars": 3,
+        "diff": "Mid"
+      },
+      {
+        "name": "TDHack",
+        "url": "https://www.tdhack.com/",
+        "desc": "Hacking challenge platform.",
+        "stars": 3,
+        "diff": "Mid"
+      },
+      {
+        "name": "NSA Codebreaker",
+        "url": "https://nsa-codebreaker.org/resources",
+        "desc": "NSA's annual reverse engineering challenge for students.",
+        "stars": 5,
+        "diff": "Hard"
+      },
+      {
+        "name": "CTFCyber Practice",
+        "url": "https://practice.ctfcyber.org/challenges",
+        "desc": "Practice CTF challenges.",
+        "stars": 3,
+        "diff": "Mid"
+      },
+      {
+        "name": "DiceCTF",
+        "url": "https://ctf.dicega.ng/",
+        "desc": "DiceGang's CTF — high quality web, crypto, and pwn challenges.",
+        "stars": 5,
+        "diff": "Hard"
+      },
+      {
+        "name": "CyberTruck Challenge",
+        "url": "https://www.cybertruckchallenge.org/",
+        "desc": "Automotive and embedded hardware security CTF.",
+        "stars": 4,
+        "diff": "Hard"
+      },
+      {
+        "name": "MITRE eCTF",
+        "url": "https://ectfmitre.gitlab.io/ectf-website/2024/index.html",
+        "desc": "MITRE embedded systems CTF — hardware security focused.",
+        "stars": 4,
+        "diff": "Hard"
+      },
+      {
+        "name": "SunshineCTF",
+        "url": "https://sunshinectf.org/",
+        "desc": "International CTF competition — annual event.",
+        "stars": 4,
+        "diff": "Mid"
+      },
+      {
+        "name": "JerseyCTF",
+        "url": "https://ctf.jerseyctf.com/challenges",
+        "desc": "NJIT's annual CTF event.",
+        "stars": 3,
+        "diff": "Mid"
+      },
+      {
+        "name": "FSU CTF",
+        "url": "https://ctf.cs.fsu.edu/challenges",
+        "desc": "Florida State University CTF challenge archive.",
+        "stars": 4,
+        "diff": "Mid"
+      },
+      {
+        "name": "0x0539",
+        "url": "https://0x0539.net/play",
+        "desc": "Interactive hacking challenges and CTF platform.",
+        "stars": 4,
+        "diff": "Mid"
+      },
+      {
+        "name": "Flagyard",
+        "url": "https://flagyard.com/",
+        "desc": "Practice cybersecurity challenges in an esports-like arena.",
+        "stars": 4,
+        "diff": "Mid"
+      },
+      {
+        "name": "HBH",
+        "url": "https://hbh.sh/home",
+        "desc": "Hackers Bowling Hall — classic community hacking challenge site.",
+        "stars": 4,
+        "diff": "Mid"
+      },
+      {
+        "name": "YEHD 2015 CTF",
+        "url": "https://2015-yehd-ctf.meiji-ncc.tech/",
+        "desc": "Archived Japanese collegiate CTF challenges.",
+        "stars": 3,
+        "diff": "Mid"
+      },
+      {
+        "name": "MNCTF",
+        "url": "https://mnctf.info/",
+        "desc": "Community security challenge platform and resources.",
+        "stars": 3,
+        "diff": "Mid"
+      },
+      {
+        "name": "PwnerRank",
+        "url": "https://pwnerrank.com/",
+        "desc": "Global ranking and aggregator for CTF players and teams.",
+        "stars": 4,
+        "diff": "All Levels"
+      },
+      {
+        "name": "Spaidy's Labs",
+        "url": "https://spaidyslabs.com/rooms",
+        "desc": "Cybersecurity training rooms and hands-on labs.",
+        "stars": 4,
+        "diff": "Mid"
+      },
+      {
+        "name": "ExploitThis (CTFd)",
+        "url": "https://exploitthis.ctfd.io/challenges",
+        "desc": "Hardware and binary exploitation CTFd challenges.",
+        "stars": 4,
+        "diff": "Hard"
+      },
+      {
+        "name": "Net-Force Challenges",
+        "url": "https://net-force.nl/challenges/",
+        "desc": "Classic Dutch security challenges across crypto, web, and logic.",
+        "stars": 4,
+        "diff": "Mid"
+      },
+      {
+        "name": "Hacking-Lab",
+        "url": "https://hacking-lab.com/",
+        "desc": "European cyber security competition platform and ranges.",
+        "stars": 4,
+        "diff": "Mid"
+      },
+      {
+        "name": "echoCTF",
+        "url": "https://echoctf.red/",
+        "desc": "Compete in live target environments and vulnerable infra.",
+        "stars": 4,
+        "diff": "Mid"
+      },
+      {
+        "name": "CTF365",
+        "url": "https://ctf365.com/",
+        "desc": "User-built cyber ranges and defensive/offensive wargames.",
+        "stars": 4,
+        "diff": "Mid"
+      },
+      {
+        "name": "SecDim Challenges",
+        "url": "https://play.secdim.com/",
+        "desc": "Hands-on secure coding and AppSec exploitation challenges.",
+        "stars": 4,
+        "diff": "Mid"
+      },
+      {
+        "name": "FRA Challenge",
+        "url": "https://challenge.fra.se/",
+        "desc": "Swedish National Defence Radio Establishment puzzle challenge.",
+        "stars": 4,
+        "diff": "Hard"
+      },
+      {
+        "name": "LearnCyber Collections",
+        "url": "https://learn-cyber.net/collections",
+        "desc": "Curated cybersecurity CTF challenge collections.",
+        "stars": 4,
+        "diff": "Beginner"
+      },
+      {
+        "name": "Wargames Batamladen",
+        "url": "https://wargames.batamladen.com/home.html",
+        "desc": "Indonesian community security wargames.",
+        "stars": 3,
+        "diff": "Mid"
+      },
+      {
+        "name": "WarZone.elhacker",
+        "url": "https://warzone.elhacker.net/",
+        "desc": "Spanish security community hacking wargames.",
+        "stars": 4,
+        "diff": "Mid"
+      },
+      {
+        "name": "Revolution Elite",
+        "url": "https://revolutionelite.co.uk/",
+        "desc": "UK hacking challenges and CTF community.",
+        "stars": 3,
+        "diff": "Mid"
+      },
+      {
+        "name": "CPAW CTF",
+        "url": "https://ctf.cpaw.site/",
+        "desc": "Beginner-friendly Japanese CTF platform.",
+        "stars": 4,
+        "diff": "Beginner"
+      },
+      {
+        "name": "Themed Puzzles",
+        "url": "https://enigmes-a-thematiques.fr/front/",
+        "desc": "French cryptography and steganography riddle platform.",
+        "stars": 3,
+        "diff": "Beginner"
+      },
+      {
+        "name": "NewbieContest",
+        "url": "https://www.newbiecontest.org/",
+        "desc": "French security portal with 300+ challenges.",
+        "stars": 4,
+        "diff": "Beginner"
+      },
+      {
+        "name": "CyberTalents",
+        "url": "https://cybertalents.com/challenges",
+        "desc": "Global cybersecurity talent platform with diverse CTFs.",
+        "stars": 4,
+        "diff": "Mid"
+      },
+      {
+        "name": "MetaCTF",
+        "url": "https://app.metactf.com/login",
+        "desc": "Corporate and educational CTF competition portal.",
+        "stars": 4,
+        "diff": "Mid"
+      },
+      {
+        "name": "Hackster CTF",
+        "url": "https://ctf.hackstersec.in/events",
+        "desc": "Indian cybersecurity community CTF events.",
+        "stars": 3,
+        "diff": "Mid"
+      },
+      {
+        "name": "Google CTF",
+        "url": "https://capturetheflag.withgoogle.com/",
+        "desc": "Google's premier annual CTF and archive of past challenges.",
+        "stars": 5,
+        "diff": "Hard"
+      },
+      {
+        "name": "picoCTF",
+        "url": "https://play.picoctf.org/",
+        "desc": "CMU's beginner-friendly CTF platform with thousands of challenges.",
+        "stars": 5,
+        "diff": "Beginner"
+      },
+      {
+        "name": "CTF101",
+        "url": "https://ctf101.org/intro/what-is-a-ctf/",
+        "desc": "Beginner's guide covering everything you need to start CTFs.",
+        "stars": 5,
+        "diff": "Beginner"
+      },
+      {
+        "name": "Parrot CTFs",
+        "url": "https://parrot-ctfs.com/",
+        "desc": "Modern cybersecurity challenges and training.",
+        "stars": 4,
+        "diff": "Mid"
+      },
+      {
+        "name": "PWNTillDawn Online",
+        "url": "https://online.pwntilldawn.com/",
+        "desc": "Real-world infrastructure CTF with rolling vulnerable targets.",
+        "stars": 5,
+        "diff": "Hard"
+      },
+      {
+        "name": "HackThisSite",
+        "url": "https://www.hackthissite.org/",
+        "desc": "Legendary hacker training ground with varied difficulty levels.",
+        "stars": 4,
+        "diff": "Beginner"
+      },
+      {
+        "name": "Hacker101 CTF",
+        "url": "https://www.hacker101.com/",
+        "desc": "HackerOne's beginner CTF designed to qualify for private bounty programs.",
+        "stars": 4,
+        "diff": "Beginner"
+      },
+      {
+        "name": "hacker.org",
+        "url": "https://www.hacker.org/",
+        "desc": "Online puzzles, brainteasers, and hacking challenges.",
+        "stars": 4,
+        "diff": "Mid"
+      },
+      {
+        "name": "Rankk",
+        "url": "https://www.rankk.org/",
+        "desc": "Pyramid-style challenge progression based on classic mod_tamper.",
+        "stars": 4,
+        "diff": "Mid"
+      },
+      {
+        "name": "TryThis0ne",
+        "url": "http://www.trythis0ne.com/",
+        "desc": "Web and system hacking challenge site.",
+        "stars": 3,
+        "diff": "Mid"
+      },
+      {
+        "name": "try2hack",
+        "url": "https://www.try2hack.nl/",
+        "desc": "One of the oldest challenge sites on the internet.",
+        "stars": 3,
+        "diff": "Beginner"
+      },
+      {
+        "name": "0ops.sjtu.cn",
+        "url": "https://0ops.sjtu.cn/",
+        "desc": "Shanghai Jiao Tong University 0ops team challenges.",
+        "stars": 4,
+        "diff": "Hard"
+      },
+      {
+        "name": "247CTF",
+        "url": "https://247ctf.com/dashboard",
+        "desc": "Always-on individual CTF with web, crypto, pwn, and reversing.",
+        "stars": 4,
+        "diff": "Mid"
+      },
+      {
+        "name": "dreamhack wargame",
+        "url": "https://dreamhack.io/wargame",
+        "desc": "Top Korean wargame platform with world-class pwn/web challenges.",
+        "stars": 5,
+        "diff": "Mid"
+      },
+      {
+        "name": "los.rubiya.kr",
+        "url": "https://los.rubiya.kr/gate.php",
+        "desc": "Lord of SQLInjection classic Korean SQLi challenges.",
+        "stars": 5,
+        "diff": "Mid"
+      },
+      {
+        "name": "imaginaryCTF challenges",
+        "url": "https://imaginaryctf.org/Challenges",
+        "desc": "Daily CTF challenges and competition archive.",
+        "stars": 4,
+        "diff": "Mid"
+      },
+      {
+        "name": "SecureFlag",
+        "url": "https://www.secureflag.com/",
+        "desc": "Interactive secure coding training platform.",
+        "stars": 4,
+        "diff": "Mid"
+      },
+      {
+        "name": "CodeEngn RCE Mobile Challenge",
+        "url": "https://codeengn.com/challenge/rce_mobile",
+        "desc": "Reverse engineering and mobile security challenges.",
+        "stars": 4,
+        "diff": "Hard"
+      },
+      {
+        "name": "SANS Holiday Hack Challenge",
+        "url": "https://www.sans.org/cyber-ranges/holiday-hack-challenge",
+        "desc": "Annual festive story-driven security challenge with world-class audio/visuals.",
+        "stars": 5,
+        "diff": "All Levels"
+      },
+      {
+        "name": "BelkaCTF",
+        "url": "https://belkasoft.com/ctf",
+        "desc": "Digital forensics and incident response CTF archive.",
+        "stars": 4,
+        "diff": "Mid"
+      },
+      {
+        "name": "MITRE Cyber Academy",
+        "url": "https://github.com/mitre-cyber-academy/",
+        "desc": "MITRE's collegiate CTF challenges and educational material.",
+        "stars": 4,
+        "diff": "Mid"
+      }
+    ]
+  },
+  "Boot2Root / Labs": {
+    "tag": "ctf",
+    "color": "var(--c-ctf)",
+    "emoji": "🖥️",
+    "items": [
+      {
+        "name": "Hack The Box",
+        "url": "https://hackthebox.com",
+        "desc": "Industry standard — machines, ProLabs, Battlegrounds. Competitive ranking.",
+        "stars": 5,
+        "diff": "Mid"
+      },
+      {
+        "name": "TryHackMe",
+        "url": "https://tryhackme.com",
+        "desc": "Guided rooms with learning paths. Best onboarding experience.",
+        "stars": 5,
+        "diff": "Beginner"
+      },
+      {
+        "name": "VulnHub",
+        "url": "https://www.vulnhub.com",
+        "desc": "Download-and-run vulnerable VMs. Huge archive of machines.",
+        "stars": 4,
+        "diff": "Mid"
+      },
+      {
+        "name": "HackMyVM",
+        "url": "https://hackmyvm.eu",
+        "desc": "Community-built vulnerable machines.",
+        "stars": 3,
+        "diff": "Mid"
+      },
+      {
+        "name": "HackingClub",
+        "url": "https://app.hackingclub.com/",
+        "desc": "Boot2root platform — good quality.",
+        "stars": 4,
+        "diff": "Mid"
+      },
+      {
+        "name": "SEED Labs",
+        "url": "https://seedsecuritylabs.org/",
+        "desc": "Syracuse University structured lab exercises with full instructor materials.",
+        "stars": 5,
+        "diff": "Beginner"
+      },
+      {
+        "name": "Exploit Education",
+        "url": "https://exploit.education",
+        "desc": "VMs designed specifically for exploit development practice.",
+        "stars": 4,
+        "diff": "Mid"
+      },
+      {
+        "name": "Roppers Academy",
+        "url": "https://www.roppers.org/",
+        "desc": "CTF bootcamp and fundamentals training.",
+        "stars": 4,
+        "diff": "Beginner"
+      },
+      {
+        "name": "OverTheWire",
+        "url": "https://overthewire.org/wargames/",
+        "desc": "Learn security concepts in the form of fun wargames (Bandit, Leviathan, Narnia).",
+        "stars": 5,
+        "diff": "Beginner"
+      },
+      {
+        "name": "UnderTheWire",
+        "url": "https://underthewire.tech/wargames",
+        "desc": "Hands-on wargames for Windows PowerShell and Active Directory.",
+        "stars": 4,
+        "diff": "Beginner"
+      },
+      {
+        "name": "cmdchallenge",
+        "url": "https://cmdchallenge.com/",
+        "desc": "Interactive command-line tasks for mastering Bash.",
+        "stars": 4,
+        "diff": "Beginner"
+      }
+    ]
+  },
+  "Binary Exploitation": {
+    "tag": "pwn",
+    "color": "var(--c-pwn)",
+    "emoji": "💀",
+    "items": [
+      {
+        "name": "pwn.college",
+        "url": "https://pwn.college",
+        "desc": "ASU's flagship pwn dojo — structured from basics to kernel. The gold standard.",
+        "stars": 5,
+        "diff": "Mid"
+      },
+      {
+        "name": "ROP Emporium",
+        "url": "https://ropemporium.com/",
+        "desc": "Dedicated ROP chain challenges, escalating complexity. Essential.",
+        "stars": 5,
+        "diff": "Mid"
+      },
+      {
+        "name": "pwnable.tw",
+        "url": "https://pwnable.tw/",
+        "desc": "High-quality binary exploitation — hard.",
+        "stars": 5,
+        "diff": "Hard"
+      },
+      {
+        "name": "pwnable.kr",
+        "url": "https://pwnable.kr",
+        "desc": "Classic Korean pwn wargame — tiered difficulty.",
+        "stars": 4,
+        "diff": "Mid"
+      },
+      {
+        "name": "Microcorruption",
+        "url": "https://microcorruption.com/login",
+        "desc": "Embedded CTF in MSP430 assembly. Unique and excellent.",
+        "stars": 4,
+        "diff": "Mid"
+      },
+      {
+        "name": "Nightmare",
+        "url": "https://guyinatuxedo.github.io/",
+        "desc": "CTF-based pwn and RE course by guyinatuxedo. Comprehensive.",
+        "stars": 5,
+        "diff": "Mid"
+      },
+      {
+        "name": "RPISEC MBE",
+        "url": "https://security.cs.rpi.edu/courses/binexp/",
+        "desc": "RPI Modern Binary Exploitation — full slides + labs. Must-have.",
+        "stars": 5,
+        "diff": "Hard"
+      },
+      {
+        "name": "ir0nstone Notes",
+        "url": "https://ir0nstone.gitbook.io/",
+        "desc": "Structured binary exploitation notes — stack, heap, format strings.",
+        "stars": 5,
+        "diff": "Mid"
+      },
+      {
+        "name": "RET2 / deusx64",
+        "url": "https://deusx64.ai/",
+        "desc": "AI-guided RE and pwn training from RET2 Systems.",
+        "stars": 4,
+        "diff": "Mid"
+      },
+      {
+        "name": "Azeria Labs",
+        "url": "https://azeria-labs.com/",
+        "desc": "ARM exploitation full course — assembly to shellcode.",
+        "stars": 5,
+        "diff": "Mid"
+      },
+      {
+        "name": "xcellerator",
+        "url": "https://xcellerator.github.io/",
+        "desc": "Linux kernel exploitation writeup series — deep technical content.",
+        "stars": 5,
+        "diff": "Expert"
+      },
+      {
+        "name": "Georgia Tech CS6265",
+        "url": "https://tc.gts3.org/cs6265/",
+        "desc": "InfoSec Lab — full slides + labs. Pwn and RE focused.",
+        "stars": 5,
+        "diff": "Hard"
+      },
+      {
+        "name": "pwnable.kr",
+        "url": "https://pwnable.kr/play.php",
+        "desc": "Classic Korean binary exploitation wargame site by lokihardt.",
+        "stars": 5,
+        "diff": "Mid"
+      },
+      {
+        "name": "pwn.tn",
+        "url": "https://pwn.tn/",
+        "desc": "Tunisian CTF team binary exploitation training wargames.",
+        "stars": 3,
+        "diff": "Mid"
+      },
+      {
+        "name": "ret2.systems wargames",
+        "url": "https://wargames.ret2.systems/",
+        "desc": "Interactive browser-based reverse engineering & exploitation platform.",
+        "stars": 5,
+        "diff": "Mid"
+      },
+      {
+        "name": "reversing.kr",
+        "url": "http://reversing.kr",
+        "desc": "Classic reverse engineering challenge portal.",
+        "stars": 4,
+        "diff": "Hard"
+      },
+      {
+        "name": "Azeria Labs ARM Assembly",
+        "url": "https://azeria-labs.com/writing-arm-assembly-part-1/",
+        "desc": "The definitive guide to ARM architecture and assembly exploitation.",
+        "stars": 5,
+        "diff": "Mid"
+      },
+      {
+        "name": "Roppers Academy",
+        "url": "https://www.roppers.org/enrollments",
+        "desc": "Free structured introductory courses in computing fundamentals and CTFs.",
+        "stars": 4,
+        "diff": "Beginner"
+      },
+      {
+        "name": "how2heap",
+        "url": "https://github.com/shellphish/how2heap",
+        "desc": "Repository teaching glibc heap exploitation techniques by Shellphish.",
+        "stars": 5,
+        "diff": "Hard"
+      },
+      {
+        "name": "gef",
+        "url": "https://github.com/hugsy/gef",
+        "desc": "GDB Enhanced Features for exploit developers and reverse engineers.",
+        "stars": 5,
+        "diff": "Mid"
+      },
+      {
+        "name": "Corelan",
+        "url": "https://www.corelan.be/",
+        "desc": "Legendary Windows exploit development tutorial series by corelanc0d3r.",
+        "stars": 5,
+        "diff": "Hard"
+      }
+    ]
+  },
+  "Web Security": {
+    "tag": "web",
+    "color": "var(--c-web)",
+    "emoji": "🌐",
+    "items": [
+      {
+        "name": "PortSwigger Academy",
+        "url": "https://portswigger.net/web-security",
+        "desc": "The definitive web security platform. Labs for every vuln class. Free.",
+        "stars": 5,
+        "diff": "All"
+      },
+      {
+        "name": "WebhackingKr",
+        "url": "https://webhacking.kr/",
+        "desc": "Korean web wargame — creative challenge design.",
+        "stars": 4,
+        "diff": "Mid"
+      },
+      {
+        "name": "Websec.fr",
+        "url": "https://websec.fr/",
+        "desc": "French web security challenges.",
+        "stars": 3,
+        "diff": "Mid"
+      },
+      {
+        "name": "PayloadsAllTheThings",
+        "url": "https://github.com/swisskyrepo/PayloadsAllTheThings",
+        "desc": "Comprehensive payload reference by swisskyrepo. Bookmark forever.",
+        "stars": 5,
+        "diff": "All"
+      },
+      {
+        "name": "HackTricks",
+        "url": "https://book.hacktricks.xyz",
+        "desc": "Living pentest reference — web, privesc, AD, everything.",
+        "stars": 5,
+        "diff": "All"
+      },
+      {
+        "name": "OWASP Juice Shop",
+        "url": "https://owasp.org/www-project-juice-shop",
+        "desc": "Intentionally vulnerable Node app — all OWASP Top 10.",
+        "stars": 5,
+        "diff": "Beginner"
+      },
+      {
+        "name": "Lord of SQLi",
+        "url": "https://los.rubiya.kr/",
+        "desc": "SQL injection wargame — 50 levels escalating.",
+        "stars": 4,
+        "diff": "Mid"
+      },
+      {
+        "name": "XSS Game (Google)",
+        "url": "https://xss-game.appspot.com/",
+        "desc": "Google's XSS challenge game — 6 levels.",
+        "stars": 4,
+        "diff": "Beginner"
+      },
+      {
+        "name": "DomGoat",
+        "url": "https://domgo.at/cxss/intro",
+        "desc": "Client-side XSS learning — DOM-based attacks.",
+        "stars": 4,
+        "diff": "Mid"
+      },
+      {
+        "name": "Stanford CS253",
+        "url": "https://web.stanford.edu/class/cs253/",
+        "desc": "Feross Aboukhadijeh's Stanford web security — full lecture videos public.",
+        "stars": 5,
+        "diff": "Mid"
+      },
+      {
+        "name": "appsec.guide",
+        "url": "https://appsec.guide/",
+        "desc": "Web app security reference guide.",
+        "stars": 4,
+        "diff": "All"
+      },
+      {
+        "name": "SQLNoir",
+        "url": "https://www.sqlnoir.com/",
+        "desc": "Learn SQL by solving detective cases — gamified.",
+        "stars": 3,
+        "diff": "Beginner"
+      },
+      {
+        "name": "BugForge",
+        "url": "https://app.bugforge.io/login",
+        "desc": "Bug bounty style web app challenges.",
+        "stars": 3,
+        "diff": "Mid"
+      },
+      {
+        "name": "WebVerse Labs Pro",
+        "url": "https://webverselabs-pro.com/labs",
+        "desc": "Pro web security labs — hands-on vulnerability practice.",
+        "stars": 3,
+        "diff": "Mid"
+      },
+      {
+        "name": "WebVerse Labs",
+        "url": "https://webverselabs.com/labs",
+        "desc": "Interactive web security practice labs and vulnerabilities.",
+        "stars": 4,
+        "diff": "Mid"
+      },
+      {
+        "name": "HackingHub",
+        "url": "https://app.hackinghub.io/hubs?type=challenge",
+        "desc": "Hands-on real-world web vulnerability hubs and challenges.",
+        "stars": 4,
+        "diff": "Mid"
+      },
+      {
+        "name": "Google Gruyere",
+        "url": "https://google-gruyere.appspot.com/",
+        "desc": "Google's intentionally vulnerable web application for learning web app security.",
+        "stars": 4,
+        "diff": "Beginner"
+      },
+      {
+        "name": "Hack The Web",
+        "url": "https://hack.arrrg.de/",
+        "desc": "German hacker community web exploitation wargame.",
+        "stars": 4,
+        "diff": "Beginner"
+      },
+      {
+        "name": "XSS Game (sudo.co.il)",
+        "url": "http://sudo.co.il/xss/",
+        "desc": "Collection of challenging XSS puzzles and bypasses.",
+        "stars": 4,
+        "diff": "Mid"
+      },
+      {
+        "name": "HackerTest",
+        "url": "https://www.hackertest.net/",
+        "desc": "20 levels of web security and logic puzzles.",
+        "stars": 3,
+        "diff": "Beginner"
+      },
+      {
+        "name": "Hacksplaining Lessons",
+        "url": "https://www.hacksplaining.com/lessons",
+        "desc": "Clear, visual interactive lessons explaining web vulnerabilities.",
+        "stars": 4,
+        "diff": "Beginner"
+      },
+      {
+        "name": "XSSGame",
+        "url": "http://www.xssgame.com/",
+        "desc": "Multi-level XSS challenge game.",
+        "stars": 4,
+        "diff": "Mid"
+      },
+      {
+        "name": "PortSwigger Web Security Academy Materials",
+        "url": "https://portswigger.net/web-security/all-materials",
+        "desc": "The definitive web security learning platform with theory & labs.",
+        "stars": 5,
+        "diff": "All Levels"
+      },
+      {
+        "name": "Invicti SQL Injection Cheat Sheet",
+        "url": "https://www.invicti.com/blog/web-security/sql-injection-cheat-sheet",
+        "desc": "Comprehensive SQL injection syntax and filter bypass cheat sheet.",
+        "stars": 4,
+        "diff": "Mid"
+      },
+      {
+        "name": "Acunetix SQLi Example",
+        "url": "https://www.acunetix.com/blog/articles/exploiting-sql-injection-example/",
+        "desc": "Step-by-step practical SQL injection exploitation guide.",
+        "stars": 4,
+        "diff": "Beginner"
+      },
+      {
+        "name": "PentesterLab",
+        "url": "https://pentesterlab.com/",
+        "desc": "High quality web penetration testing exercises from basics to advanced.",
+        "stars": 5,
+        "diff": "Mid"
+      },
+      {
+        "name": "pwn.guide",
+        "url": "https://pwn.guide/app",
+        "desc": "Modern interactive web security and CTF reference guides.",
+        "stars": 4,
+        "diff": "Mid"
+      },
+      {
+        "name": "HackerOne",
+        "url": "https://www.hackerone.com/",
+        "desc": "World's leading bug bounty and vulnerability coordination platform.",
+        "stars": 5,
+        "diff": "All Levels"
+      },
+      {
+        "name": "BugForge",
+        "url": "http://bugforge.io/",
+        "desc": "Real-world web vulnerability challenges and labs.",
+        "stars": 4,
+        "diff": "Mid"
+      }
+    ]
+  },
+  "Cryptography": {
+    "tag": "crypto",
+    "color": "var(--c-crypto)",
+    "emoji": "🔐",
+    "items": [
+      {
+        "name": "CryptoHack",
+        "url": "https://cryptohack.org/challenges/",
+        "desc": "Best crypto CTF platform. Covers RSA, ECC, block ciphers, protocols.",
+        "stars": 5,
+        "diff": "Mid"
+      },
+      {
+        "name": "Cryptopals",
+        "url": "https://cryptopals.com/",
+        "desc": "Matasano crypto challenges — build attacks from scratch. Essential.",
+        "stars": 5,
+        "diff": "Mid"
+      },
+      {
+        "name": "id0-rsa",
+        "url": "https://id0-rsa.pub/",
+        "desc": "RSA and related crypto challenges.",
+        "stars": 4,
+        "diff": "Mid"
+      },
+      {
+        "name": "MysteryTwister",
+        "url": "https://mysterytwister.org/challenges",
+        "desc": "Historical and modern crypto challenges.",
+        "stars": 4,
+        "diff": "Mid"
+      },
+      {
+        "name": "Boneh+Shoup Textbook",
+        "url": "https://toc.cryptobook.us/",
+        "desc": "A Graduate Course in Applied Cryptography — free full textbook.",
+        "stars": 5,
+        "diff": "All"
+      },
+      {
+        "name": "Boneh Crypto (Stanford)",
+        "url": "https://crypto.stanford.edu/~dabo/courses/OnlineCrypto/",
+        "desc": "Boneh's full crypto course slides.",
+        "stars": 5,
+        "diff": "All"
+      },
+      {
+        "name": "Katz Crypto (UMD)",
+        "url": "https://www.cs.umd.edu/~jkatz/teaching/",
+        "desc": "Jonathan Katz's intro and graduate crypto courses.",
+        "stars": 4,
+        "diff": "All"
+      },
+      {
+        "name": "SpiderLabs CryptOMG",
+        "url": "https://github.com/SpiderLabs/CryptOMG",
+        "desc": "Crypto CTF challenges on GitHub.",
+        "stars": 3,
+        "diff": "Mid"
+      }
+    ]
+  },
+  "Reverse Engineering": {
+    "tag": "re",
+    "color": "var(--c-re)",
+    "emoji": "🔬",
+    "items": [
+      {
+        "name": "ReversingHero",
+        "url": "https://www.reversinghero.com/",
+        "desc": "Structured RE challenges from beginner to advanced.",
+        "stars": 5,
+        "diff": "All"
+      },
+      {
+        "name": "Reverse.Challenges",
+        "url": "https://challenges.re/",
+        "desc": "RE challenges by Dennis Yurichev — author of RE4B.",
+        "stars": 5,
+        "diff": "All"
+      },
+      {
+        "name": "Binary Auditing",
+        "url": "https://www.binary-auditing.com/",
+        "desc": "Rolf Rolles — free full RE course, high quality.",
+        "stars": 5,
+        "diff": "Mid"
+      },
+      {
+        "name": "xorpd",
+        "url": "https://www.xorpd.net/",
+        "desc": "Assembly puzzles and RE learning.",
+        "stars": 4,
+        "diff": "Mid"
+      },
+      {
+        "name": "Max Kersten Binary Analysis",
+        "url": "https://maxkersten.nl/binary-analysis-course/",
+        "desc": "Free binary analysis course.",
+        "stars": 4,
+        "diff": "Mid"
+      },
+      {
+        "name": "Malware Unicorn",
+        "url": "https://malwareunicorn.org/",
+        "desc": "RE workshops — malware-focused.",
+        "stars": 5,
+        "diff": "Mid"
+      },
+      {
+        "name": "Frida Labs",
+        "url": "https://github.com/DERE-ad2001/Frida-Labs",
+        "desc": "Frida dynamic instrumentation labs.",
+        "stars": 4,
+        "diff": "Mid"
+      },
+      {
+        "name": "learnfrida.info",
+        "url": "https://learnfrida.info/",
+        "desc": "Structured Frida learning resource.",
+        "stars": 4,
+        "diff": "Mid"
+      },
+      {
+        "name": "io.netgarage",
+        "url": "https://io.netgarage.org/",
+        "desc": "Classic RE/pwn wargame — old school, still solid.",
+        "stars": 3,
+        "diff": "Mid"
+      }
+    ]
+  },
+  "Malware Analysis": {
+    "tag": "malware",
+    "color": "var(--c-malware)",
+    "emoji": "🦠",
+    "items": [
+      {
+        "name": "MalwareTech Labs",
+        "url": "https://malwaretech.com/labs/",
+        "desc": "Marcus Hutchins' malware analysis labs.",
+        "stars": 5,
+        "diff": "Mid"
+      },
+      {
+        "name": "Malops.io",
+        "url": "https://malops.io/challenges",
+        "desc": "Malware-focused CTF challenges.",
+        "stars": 3,
+        "diff": "Mid"
+      },
+      {
+        "name": "VX Underground",
+        "url": "https://vx-underground.org/",
+        "desc": "Largest malware archive + research papers. Essential.",
+        "stars": 5,
+        "diff": "All"
+      },
+      {
+        "name": "hasherezade",
+        "url": "https://hasherezade.github.io/",
+        "desc": "Deep malware analysis, PE internals — top researcher.",
+        "stars": 5,
+        "diff": "Hard"
+      },
+      {
+        "name": "cocomelonc",
+        "url": "https://cocomelonc.github.io/",
+        "desc": "Windows maldev and shellcoding writeups.",
+        "stars": 5,
+        "diff": "Hard"
+      },
+      {
+        "name": "0xdarkvortex",
+        "url": "https://0xdarkvortex.dev/",
+        "desc": "Maldev and offensive research.",
+        "stars": 4,
+        "diff": "Hard"
+      },
+      {
+        "name": "Maldev Academy",
+        "url": "https://maldevacademy.com/",
+        "desc": "Structured malware development course.",
+        "stars": 5,
+        "diff": "Hard"
+      },
+      {
+        "name": "Contagio Dump",
+        "url": "https://contagiodump.blogspot.com/",
+        "desc": "Malware sample dump — real samples for analysis.",
+        "stars": 4,
+        "diff": "Mid"
+      },
+      {
+        "name": "embee research",
+        "url": "https://www.embeeresearch.io/",
+        "desc": "Practical malware analysis writeups.",
+        "stars": 5,
+        "diff": "Mid"
+      },
+      {
+        "name": "dr4k0nia",
+        "url": "https://dr4k0nia.github.io/",
+        "desc": ".NET reversing and maldev.",
+        "stars": 4,
+        "diff": "Hard"
+      },
+      {
+        "name": "Netresec PCAP Files",
+        "url": "https://www.netresec.com/?page=PcapFiles",
+        "desc": "Repository of public PCAP captures from CTFs, malware, and SCADA.",
+        "stars": 4,
+        "diff": "All Levels"
+      },
+      {
+        "name": "Malware Traffic Analysis",
+        "url": "https://malware-traffic-analysis.net/about.html",
+        "desc": "Brad Duncan's regular packet captures & malware analysis exercises.",
+        "stars": 5,
+        "diff": "Mid"
+      },
+      {
+        "name": "ThreatFox",
+        "url": "https://threatfox.abuse.ch/",
+        "desc": "Abuse.ch community platform for sharing Indicators of Compromise (IOCs).",
+        "stars": 5,
+        "diff": "All Levels"
+      },
+      {
+        "name": "tria.ge",
+        "url": "https://tria.ge/",
+        "desc": "Hatching modern interactive automated malware analysis sandbox.",
+        "stars": 5,
+        "diff": "All Levels"
+      },
+      {
+        "name": "LOLDrivers",
+        "url": "https://www.loldrivers.io/",
+        "desc": "Living Off The Land Drivers used in Bring Your Own Vulnerable Driver attacks.",
+        "stars": 5,
+        "diff": "Mid"
+      },
+      {
+        "name": "VX Vault",
+        "url": "http://vxvault.net/ViriList.php",
+        "desc": "Active malicious URLs, malware samples, and MD5 hashes.",
+        "stars": 4,
+        "diff": "Mid"
+      },
+      {
+        "name": "Fum's Malware Analysis Tutorials",
+        "url": "https://fumalwareanalysis.blogspot.com/p/malware-analysis-tutorials-reverse.html",
+        "desc": "In-depth tutorials on dissecting real-world malware.",
+        "stars": 4,
+        "diff": "Mid"
+      },
+      {
+        "name": "captmeelo maldev",
+        "url": "https://captmeelo.com/category/maldev",
+        "desc": "Quality blog posts on offensive security and malware development.",
+        "stars": 4,
+        "diff": "Hard"
+      },
+      {
+        "name": "0xpat: Malware dev part 1",
+        "url": "https://0xpat.github.io/Malware_development_part_1/",
+        "desc": "Step-by-step introduction to malware development concepts.",
+        "stars": 5,
+        "diff": "Hard"
+      }
+    ]
+  },
+  "Blue Team / DFIR": {
+    "tag": "blue",
+    "color": "var(--c-blue)",
+    "emoji": "🛡️",
+    "items": [
+      {
+        "name": "CyberDefenders",
+        "url": "https://cyberdefenders.org/",
+        "desc": "Blue team CTF platform — DFIR, threat hunting, forensics.",
+        "stars": 5,
+        "diff": "Mid"
+      },
+      {
+        "name": "Blue Team Labs Online",
+        "url": "https://blueteamlabs.online/",
+        "desc": "Free blue team challenges — log analysis, malware, forensics.",
+        "stars": 5,
+        "diff": "Beginner"
+      },
+      {
+        "name": "Malware Traffic Analysis",
+        "url": "https://www.malware-traffic-analysis.net/",
+        "desc": "PCAP exercises with real malware traffic.",
+        "stars": 5,
+        "diff": "Mid"
+      },
+      {
+        "name": "Digital Corpora",
+        "url": "https://digitalcorpora.org/",
+        "desc": "DFIR disk images and forensic datasets.",
+        "stars": 4,
+        "diff": "Mid"
+      },
+      {
+        "name": "Splunk BOTS",
+        "url": "https://bots.splunk.com/",
+        "desc": "Boss of the SOC — SOC analyst simulation.",
+        "stars": 5,
+        "diff": "Mid"
+      },
+      {
+        "name": "KC7 Cyber",
+        "url": "https://kc7cyber.com/",
+        "desc": "KQL-based threat hunting game.",
+        "stars": 4,
+        "diff": "Mid"
+      },
+      {
+        "name": "The DFIR Report",
+        "url": "https://thedfirreport.com/",
+        "desc": "Real incident reports — initial access to ransomware.",
+        "stars": 5,
+        "diff": "Mid"
+      },
+      {
+        "name": "MemLabs",
+        "url": "https://github.com/stuxnet999/MemLabs",
+        "desc": "Memory forensics CTF labs.",
+        "stars": 4,
+        "diff": "Mid"
+      },
+      {
+        "name": "Wireshark Samples",
+        "url": "https://wiki.wireshark.org/SampleCaptures",
+        "desc": "Official Wireshark sample capture collection.",
+        "stars": 4,
+        "diff": "Beginner"
+      },
+      {
+        "name": "Defcon Blue Team Village Content",
+        "url": "https://s3.us-west-2.amazonaws.com/media.blueteamvillage.org/index.html",
+        "desc": "DEF CON Blue Team Village presentations, talks, and workshop archives.",
+        "stars": 4,
+        "diff": "All Levels"
+      },
+      {
+        "name": "Elastic Security Labs",
+        "url": "https://www.elastic.co/security-labs",
+        "desc": "Threat research, detection rules, and security analytics publications.",
+        "stars": 5,
+        "diff": "All Levels"
+      }
+    ]
+  },
+  "OSINT": {
+    "tag": "osint",
+    "color": "var(--c-osint)",
+    "emoji": "🕵️",
+    "items": [
+      {
+        "name": "Trace Labs",
+        "url": "https://www.tracelabs.org/",
+        "desc": "OSINT CTF for missing persons — real-world impact.",
+        "stars": 5,
+        "diff": "Mid"
+      },
+      {
+        "name": "Gralhix Exercises",
+        "url": "https://gralhix.com/list-of-osint-exercises/",
+        "desc": "Sofia Santos' OSINT exercises — geolocation, image analysis.",
+        "stars": 5,
+        "diff": "Beginner"
+      },
+      {
+        "name": "OSINT Industries CTF",
+        "url": "https://ctf.osint.industries/",
+        "desc": "OSINT-focused CTF platform.",
+        "stars": 4,
+        "diff": "Mid"
+      },
+      {
+        "name": "Bellingcat Challenge",
+        "url": "https://challenge.bellingcat.com/",
+        "desc": "OSINT challenges from world's top investigative collective.",
+        "stars": 5,
+        "diff": "Mid"
+      },
+      {
+        "name": "UK OSINT CTF",
+        "url": "https://ctf.osint.uk/",
+        "desc": "UK OSINT community CTF.",
+        "stars": 3,
+        "diff": "Mid"
+      },
+      {
+        "name": "inteltechniques.com",
+        "url": "https://inteltechniques.com/",
+        "desc": "Michael Bazzell's OSINT resources — deep web, social media.",
+        "stars": 5,
+        "diff": "All"
+      },
+      {
+        "name": "OSINT Framework",
+        "url": "https://osintframework.com/",
+        "desc": "Mind map of OSINT tools by category.",
+        "stars": 5,
+        "diff": "All"
+      },
+      {
+        "name": "sourcing.games",
+        "url": "https://sourcing.games/",
+        "desc": "OSINT sourcing games — intuition building.",
+        "stars": 4,
+        "diff": "Beginner"
+      },
+      {
+        "name": "GeoGuessr",
+        "url": "https://www.geoguessr.com/",
+        "desc": "Geolocation game — essential GEOINT training.",
+        "stars": 4,
+        "diff": "Beginner"
+      },
+      {
+        "name": "Hacktoria",
+        "url": "https://hacktoria.com/",
+        "desc": "Narrative OSINT CTF — case-based investigations.",
+        "stars": 4,
+        "diff": "Mid"
+      },
+      {
+        "name": "OSINT Dojo",
+        "url": "https://www.osintdojo.com/",
+        "desc": "Free structured curriculum and rank progression for open source intelligence.",
+        "stars": 5,
+        "diff": "Beginner"
+      },
+      {
+        "name": "Hackers Arise OSINT",
+        "url": "https://hackers-arise.com/getting-started/osint/",
+        "desc": "Getting started tutorials on OSINT techniques and methodology.",
+        "stars": 4,
+        "diff": "Beginner"
+      },
+      {
+        "name": "OSINT Industries",
+        "url": "https://ctf.osint.industries/login",
+        "desc": "Investigation CTF focusing on email, phone, and identity pivots.",
+        "stars": 5,
+        "diff": "Mid"
+      },
+      {
+        "name": "OSINT UK",
+        "url": "https://ctf.osint.uk/login",
+        "desc": "UK-based community open source intelligence challenges.",
+        "stars": 4,
+        "diff": "Mid"
+      },
+      {
+        "name": "OSINTOPIA",
+        "url": "https://osintopia.fr/",
+        "desc": "French OSINT challenge community and resource index.",
+        "stars": 4,
+        "diff": "Mid"
+      },
+      {
+        "name": "MetaOSINT Chart",
+        "url": "https://metaosint.github.io/chart",
+        "desc": "Interactive mind map of OSINT investigative tools and data sources.",
+        "stars": 5,
+        "diff": "All Levels"
+      },
+      {
+        "name": "OSINT Collection",
+        "url": "https://github.com/Ph055a/OSINT_Collection",
+        "desc": "Extensive curated collection of OSINT tools, links, and guides.",
+        "stars": 4,
+        "diff": "All Levels"
+      },
+      {
+        "name": "OSINT Starter Challenges",
+        "url": "https://www.osintstarter.com/challenges/",
+        "desc": "Beginner-friendly challenges for learning verification and searching.",
+        "stars": 4,
+        "diff": "Beginner"
+      }
+    ]
+  },
+  "Cloud Security": {
+    "tag": "cloud",
+    "color": "var(--c-cloud)",
+    "emoji": "☁️",
+    "items": [
+      {
+        "name": "flAWS.cloud",
+        "url": "http://flaws.cloud/",
+        "desc": "AWS security challenges — misconfig, IAM, S3. Must-do.",
+        "stars": 5,
+        "diff": "Mid"
+      },
+      {
+        "name": "flAWS2.cloud",
+        "url": "http://flaws2.cloud/",
+        "desc": "flAWS sequel — attacker and defender paths.",
+        "stars": 5,
+        "diff": "Mid"
+      },
+      {
+        "name": "Big IAM Challenge",
+        "url": "https://bigiamchallenge.com/challenge/1",
+        "desc": "IAM policy exploitation challenges.",
+        "stars": 5,
+        "diff": "Mid"
+      },
+      {
+        "name": "EKS Cluster Games",
+        "url": "https://eksclustergames.com/",
+        "desc": "Kubernetes/EKS security challenges.",
+        "stars": 4,
+        "diff": "Hard"
+      },
+      {
+        "name": "Kubernetes LAN Party",
+        "url": "https://k8slanparty.com/",
+        "desc": "Wiz's K8s network security challenge.",
+        "stars": 4,
+        "diff": "Hard"
+      },
+      {
+        "name": "CloudGoat",
+        "url": "https://github.com/RhinoSecurityLabs/cloudgoat",
+        "desc": "Rhino Security's vulnerable-by-design AWS tool.",
+        "stars": 4,
+        "diff": "Mid"
+      },
+      {
+        "name": "Broken Azure",
+        "url": "https://www.brokenazure.cloud/",
+        "desc": "Azure security training challenges.",
+        "stars": 4,
+        "diff": "Mid"
+      },
+      {
+        "name": "PwnedLabs",
+        "url": "https://pwnedlabs.io/",
+        "desc": "Cloud pentesting labs — AWS, Azure, GCP scenarios.",
+        "stars": 4,
+        "diff": "Mid"
+      },
+      {
+        "name": "Infinity Learning",
+        "url": "https://infinity.cyberwarfare.live/home",
+        "desc": "Multi-cloud on-demand hands-on labs and simulations.",
+        "stars": 4,
+        "diff": "Mid"
+      },
+      {
+        "name": "Hacking the Cloud: CI/CDon't",
+        "url": "https://hackingthe.cloud/aws/capture_the_flag/cicdont/",
+        "desc": "AWS CI/CD security review and attack path walkthroughs.",
+        "stars": 4,
+        "diff": "Mid"
+      },
+      {
+        "name": "CloudLabs (Invictus)",
+        "url": "https://cloudlabs.invictus-ir.com/",
+        "desc": "Cloud incident response and DFIR labs.",
+        "stars": 4,
+        "diff": "Mid"
+      },
+      {
+        "name": "sadcloud",
+        "url": "https://github.com/nccgroup/sadcloud",
+        "desc": "NCC Group's tool for creating insecure AWS infrastructure.",
+        "stars": 4,
+        "diff": "Mid"
+      },
+      {
+        "name": "AWSGoat",
+        "url": "https://github.com/ine-labs/AWSGoat",
+        "desc": "Vulnerable AWS deployment by INE Labs demonstrating Top 10 cloud flaws.",
+        "stars": 4,
+        "diff": "Mid"
+      },
+      {
+        "name": "GCPGoat",
+        "url": "https://github.com/ine-labs/GCPGoat",
+        "desc": "Vulnerable GCP deployment by INE Labs showcasing GCP security issues.",
+        "stars": 4,
+        "diff": "Mid"
+      },
+      {
+        "name": "KodeKloud",
+        "url": "https://kodekloud.com/",
+        "desc": "Interactive DevOps, Linux, Docker, and Kubernetes training.",
+        "stars": 4,
+        "diff": "Beginner"
+      }
+    ]
+  },
+  "Mobile Security": {
+    "tag": "mobile",
+    "color": "var(--c-mobile)",
+    "emoji": "📱",
+    "items": [
+      {
+        "name": "Mobile Hacking Lab",
+        "url": "https://www.mobilehackinglab.com/",
+        "desc": "Labs and courses for Android/iOS security.",
+        "stars": 5,
+        "diff": "Mid"
+      },
+      {
+        "name": "hpAndro AppSec",
+        "url": "https://hpandro.raviramesh.info/",
+        "desc": "Free Android AppSec challenges.",
+        "stars": 4,
+        "diff": "Mid"
+      },
+      {
+        "name": "8ksec Android Labs",
+        "url": "https://academy.8ksec.io/course/android-application-exploitation-challenges?register=true",
+        "desc": "Android exploitation challenge labs.",
+        "stars": 4,
+        "diff": "Mid"
+      },
+      {
+        "name": "Android App RE 101",
+        "url": "https://www.ragingrock.com/AndroidAppRE/index.html",
+        "desc": "Free Android reverse engineering course.",
+        "stars": 5,
+        "diff": "Mid"
+      },
+      {
+        "name": "OWASP MAS",
+        "url": "https://mas.owasp.org/",
+        "desc": "OWASP Mobile Application Security guide and verification standards.",
+        "stars": 5,
+        "diff": "All Levels"
+      },
+      {
+        "name": "DIVA Android",
+        "url": "https://github.com/payatu/diva-android",
+        "desc": "Damn Insecure and vulnerable App for Android by Payatu.",
+        "stars": 4,
+        "diff": "Beginner"
+      },
+      {
+        "name": "OVAA",
+        "url": "https://github.com/oversecured/ovaa",
+        "desc": "Oversecured Vulnerable Android App with modern security vulnerabilities.",
+        "stars": 5,
+        "diff": "Mid"
+      },
+      {
+        "name": "InsecureBankv2",
+        "url": "https://github.com/dineshshetty/Android-InsecureBankv2",
+        "desc": "Vulnerable Android banking application for security testers.",
+        "stars": 4,
+        "diff": "Beginner"
+      },
+      {
+        "name": "Learn Frida",
+        "url": "https://learnfrida.info/introduction/",
+        "desc": "Comprehensive tutorial on dynamic instrumentation using Frida.",
+        "stars": 5,
+        "diff": "Mid"
+      }
+    ]
+  },
+  "Blockchain / Web3": {
+    "tag": "ctf",
+    "color": "var(--c-ctf)",
+    "emoji": "⛓️",
+    "items": [
+      {
+        "name": "Capture the Ether",
+        "url": "https://capturetheether.com/challenges/",
+        "desc": "Classic Ethereum smart contract security challenges.",
+        "stars": 4,
+        "diff": "Mid"
+      },
+      {
+        "name": "Ethernaut",
+        "url": "https://github.com/OpenZeppelin/ethernaut",
+        "desc": "OpenZeppelin's Web3/Solidity wargame.",
+        "stars": 5,
+        "diff": "Mid"
+      },
+      {
+        "name": "Damn Vulnerable DeFi",
+        "url": "https://www.damnvulnerabledefi.xyz/",
+        "desc": "DeFi protocol exploitation challenges — advanced.",
+        "stars": 5,
+        "diff": "Hard"
+      },
+      {
+        "name": "Node Guardians",
+        "url": "https://nodeguardians.io/campaigns",
+        "desc": "Gamified blockchain programming campaigns.",
+        "stars": 3,
+        "diff": "Mid"
+      },
+      {
+        "name": "Cyfrin Updraft",
+        "url": "https://updraft.cyfrin.io/courses",
+        "desc": "Blockchain security courses.",
+        "stars": 4,
+        "diff": "Mid"
+      }
+    ]
+  },
+  "University Courses": {
+    "tag": "uni",
+    "color": "var(--c-uni)",
+    "emoji": "🎓",
+    "items": [
+      {
+        "name": "MIT 6.858 (Zeldovich)",
+        "url": "https://css.csail.mit.edu/6.858/",
+        "desc": "MIT Systems Security — live labs, full readings. Best academic security course.",
+        "stars": 5,
+        "diff": "Hard"
+      },
+      {
+        "name": "Stanford CS253 (Feross)",
+        "url": "https://web.stanford.edu/class/cs253/",
+        "desc": "Stanford Web Security — full videos public, deep XSS/CSRF/CSP coverage.",
+        "stars": 5,
+        "diff": "Mid"
+      },
+      {
+        "name": "UC Berkeley CS161",
+        "url": "https://sp26.cs161.org/",
+        "desc": "Berkeley's flagship security course. Slides + labs public.",
+        "stars": 5,
+        "diff": "Mid"
+      },
+      {
+        "name": "Georgia Tech CS6265",
+        "url": "https://tc.gts3.org/cs6265/",
+        "desc": "InfoSec Lab — full slides + labs. Pwn and RE focused.",
+        "stars": 5,
+        "diff": "Hard"
+      },
+      {
+        "name": "ASU mahaloz",
+        "url": "https://cse194.mahaloz.re/",
+        "desc": "Binary exploitation course — ASU.",
+        "stars": 5,
+        "diff": "Mid"
+      },
+      {
+        "name": "RPI MBE",
+        "url": "https://rpis.ec/",
+        "desc": "RPISEC Modern Binary Exploitation — full course public.",
+        "stars": 5,
+        "diff": "Hard"
+      },
+      {
+        "name": "CMU Brumley",
+        "url": "https://users.ece.cmu.edu/~dbrumley/courses/",
+        "desc": "David Brumley's binary analysis + exploitation courses.",
+        "stars": 5,
+        "diff": "Hard"
+      },
+      {
+        "name": "EPFL HexHive",
+        "url": "https://hexhive.epfl.ch/education/",
+        "desc": "Mathias Payer's lab — sanitizers, fuzzing, exploitation. Elite.",
+        "stars": 5,
+        "diff": "Expert"
+      },
+      {
+        "name": "Boneh Crypto (Stanford)",
+        "url": "https://crypto.stanford.edu/~dabo/courses/OnlineCrypto/",
+        "desc": "Boneh's full crypto course slides.",
+        "stars": 5,
+        "diff": "Mid"
+      },
+      {
+        "name": "UMD Dumitra",
+        "url": "https://user.eng.umd.edu/~tdumitra/courses/",
+        "desc": "UMD Cybersecurity — slides + labs.",
+        "stars": 4,
+        "diff": "Mid"
+      },
+      {
+        "name": "Cornell CS5434",
+        "url": "https://www.cs.cornell.edu/courses/cs5434/",
+        "desc": "Cornell Defending Computer Networks.",
+        "stars": 4,
+        "diff": "Mid"
+      },
+      {
+        "name": "UC Irvine Goodrich",
+        "url": "https://ics.uci.edu/~goodrich/teach/cs201p/",
+        "desc": "Full lecture notes — BOF to crypto.",
+        "stars": 4,
+        "diff": "Mid"
+      },
+      {
+        "name": "OpenSecurityTraining2",
+        "url": "https://p.ost2.fyi/",
+        "desc": "OST2 — free structured courses: malware, RE, kernel exploitation.",
+        "stars": 5,
+        "diff": "All"
+      },
+      {
+        "name": "OpenSecurityTraining",
+        "url": "https://opensecuritytraining.info/",
+        "desc": "Xeno Kovah's full courses — malware, RE, x86. Slides + videos.",
+        "stars": 5,
+        "diff": "All"
+      },
+      {
+        "name": "Naval Postgrad Cyber",
+        "url": "https://nps.edu/web/c3o/cyber/",
+        "desc": "Naval Postgraduate School cyber curriculum.",
+        "stars": 4,
+        "diff": "Mid"
+      },
+      {
+        "name": "MIT OCW 6.858",
+        "url": "https://ocw.mit.edu/courses/6-858-computer-systems-security-fall-2014/",
+        "desc": "MIT Computer Systems Security covering memory corruption to web isolation.",
+        "stars": 5,
+        "diff": "Hard"
+      },
+      {
+        "name": "Stanford CS155",
+        "url": "https://cs155.stanford.edu/",
+        "desc": "Stanford Computer and Network Security principles and lab assignments.",
+        "stars": 5,
+        "diff": "Hard"
+      },
+      {
+        "name": "UC Berkeley CS161 Archive",
+        "url": "https://inst.eecs.berkeley.edu/~cs161/archive/fa08/papers/",
+        "desc": "UC Berkeley Computer Security lectures, exams, and reading lists.",
+        "stars": 4,
+        "diff": "Hard"
+      }
+    ]
+  },
+  "Research Blogs": {
+    "tag": "blog",
+    "color": "var(--c-blog)",
+    "emoji": "✍️",
+    "items": [
+      {
+        "name": "ired.team",
+        "url": "https://www.ired.team/",
+        "desc": "Red team notes — living doc, extremely comprehensive.",
+        "stars": 5,
+        "diff": "All"
+      },
+      {
+        "name": "0xdf",
+        "url": "https://0xdf.gitlab.io/",
+        "desc": "HTB writeups + deep technical dives.",
+        "stars": 5,
+        "diff": "All"
+      },
+      {
+        "name": "secret.club",
+        "url": "https://secret.club/",
+        "desc": "Elite RE and exploit research — low-level, serious content.",
+        "stars": 5,
+        "diff": "Expert"
+      },
+      {
+        "name": "dayzerosec",
+        "url": "https://dayzerosec.com/",
+        "desc": "Vuln research and binary exploitation.",
+        "stars": 5,
+        "diff": "Expert"
+      },
+      {
+        "name": "zerosum0x0",
+        "url": "https://zerosum0x0.blogspot.com/",
+        "desc": "Kernel exploits and vulnerability research.",
+        "stars": 5,
+        "diff": "Expert"
+      },
+      {
+        "name": "perfect.blue",
+        "url": "https://perfect.blue/",
+        "desc": "Top CTF team blog — high quality technical writeups.",
+        "stars": 5,
+        "diff": "Hard"
+      },
+      {
+        "name": "xcellerator",
+        "url": "https://xcellerator.github.io/",
+        "desc": "Linux kernel exploitation series.",
+        "stars": 5,
+        "diff": "Expert"
+      },
+      {
+        "name": "wrongbaud",
+        "url": "https://wrongbaud.github.io/",
+        "desc": "Hardware and firmware hacking.",
+        "stars": 5,
+        "diff": "Hard"
+      },
+      {
+        "name": "voidstarsec",
+        "url": "https://voidstarsec.com/",
+        "desc": "Hardware security blog.",
+        "stars": 4,
+        "diff": "Hard"
+      },
+      {
+        "name": "samwho.dev",
+        "url": "https://samwho.dev/",
+        "desc": "Low-level systems — beautifully visualized.",
+        "stars": 5,
+        "diff": "All"
+      },
+      {
+        "name": "exploitreversing",
+        "url": "https://exploitreversing.com/",
+        "desc": "Exploit + RE research.",
+        "stars": 4,
+        "diff": "Hard"
+      },
+      {
+        "name": "redops.at",
+        "url": "https://redops.at/",
+        "desc": "Red team and C2 research.",
+        "stars": 4,
+        "diff": "Hard"
+      },
+      {
+        "name": "blog.bushidotoken",
+        "url": "https://blog.bushidotoken.net/",
+        "desc": "Threat intel and APT research.",
+        "stars": 4,
+        "diff": "All"
+      },
+      {
+        "name": "cocomelonc",
+        "url": "https://cocomelonc.github.io/",
+        "desc": "Windows maldev and shellcoding writeups.",
+        "stars": 5,
+        "diff": "Hard"
+      },
+      {
+        "name": "securelist",
+        "url": "https://securelist.com/",
+        "desc": "Kaspersky threat research.",
+        "stars": 4,
+        "diff": "All"
+      },
+      {
+        "name": "guidedhacking",
+        "url": "https://guidedhacking.com/",
+        "desc": "Game hacking and low-level systems.",
+        "stars": 4,
+        "diff": "Mid"
+      }
+    ]
+  },
+  "CTF Archives": {
+    "tag": "archive",
+    "color": "var(--c-archive)",
+    "emoji": "📦",
+    "items": [
+      {
+        "name": "DEF CON CTF Archive",
+        "url": "https://archive.ooo/",
+        "desc": "Official DEF CON CTF archive — OOO.",
+        "stars": 5,
+        "diff": "All"
+      },
+      {
+        "name": "DownUnderCTF Archive",
+        "url": "https://archives.duc.tf/",
+        "desc": "DownUnderCTF challenge archive — Australian CTF team.",
+        "stars": 4,
+        "diff": "All"
+      },
+      {
+        "name": "ImaginaryCTF Archive",
+        "url": "https://imaginaryctf.org/ArchivedChallenges/",
+        "desc": "ImaginaryCTF permanent challenge archive.",
+        "stars": 4,
+        "diff": "All"
+      },
+      {
+        "name": "Shell-Storm CTF",
+        "url": "https://shell-storm.org/repo/CTF/",
+        "desc": "Large CTF challenge and writeup repo.",
+        "stars": 4,
+        "diff": "All"
+      },
+      {
+        "name": "CTFtime Writeups",
+        "url": "https://ctftime.org/writeups/",
+        "desc": "Massive writeup collection from CTFtime.",
+        "stars": 5,
+        "diff": "All"
+      },
+      {
+        "name": "github/ctfs",
+        "url": "https://github.com/ctfs/",
+        "desc": "Massive CTF writeup and challenge org on GitHub.",
+        "stars": 5,
+        "diff": "All"
+      },
+      {
+        "name": "awesome-ctf",
+        "url": "https://github.com/apsdehal/awesome-ctf/",
+        "desc": "Awesome CTF list — tools, resources, platforms.",
+        "stars": 5,
+        "diff": "All"
+      },
+      {
+        "name": "Project SEKAI CTF",
+        "url": "https://github.com/project-sekai-ctf/",
+        "desc": "Project SEKAI CTF challenges.",
+        "stars": 4,
+        "diff": "Hard"
+      },
+      {
+        "name": "xairy Linux Kernel",
+        "url": "https://github.com/xairy/linux-kernel-exploitation/",
+        "desc": "Linux kernel exploitation resource collection.",
+        "stars": 5,
+        "diff": "Expert"
+      },
+      {
+        "name": "MemLabs (GitHub)",
+        "url": "https://github.com/stuxnet999/MemLabs/",
+        "desc": "Memory forensics CTF labs.",
+        "stars": 4,
+        "diff": "Mid"
+      },
+      {
+        "name": "Fuzzing 101 Solutions",
+        "url": "https://github.com/epi052/fuzzing-101-solutions/",
+        "desc": "Fuzzing101 exercise solutions.",
+        "stars": 4,
+        "diff": "Mid"
+      },
+      {
+        "name": "VX Underground Archive",
+        "url": "https://vx-underground.org/Archive/",
+        "desc": "VX Underground malware and paper archive.",
+        "stars": 5,
+        "diff": "All"
+      },
+      {
+        "name": "HITCON",
+        "url": "https://hitcon.org/",
+        "desc": "Taiwan HITCON CTF archive.",
+        "stars": 4,
+        "diff": "All"
+      },
+      {
+        "name": "Nautilus Institute",
+        "url": "https://nautilus.institute/",
+        "desc": "DEF CON 30/31 CTF organizing team archive.",
+        "stars": 4,
+        "diff": "All"
+      }
+    ]
+  },
+  "Courses & Certifications": {
+    "tag": "course",
+    "color": "var(--c-course)",
+    "emoji": "📜",
+    "items": [
+      {
+        "name": "HackSmarter",
+        "url": "https://www.hacksmarter.org/",
+        "desc": "Free cybersecurity training and certification prep.",
+        "stars": 3,
+        "diff": "Beginner"
+      },
+      {
+        "name": "Cyber Aces",
+        "url": "https://www.cyberaces.org/courses.html",
+        "desc": "SANS Cyber Aces tutorials on operating systems, networking, and system admin.",
+        "stars": 4,
+        "diff": "Beginner"
+      },
+      {
+        "name": "IBM YourLearning Cybersecurity Track",
+        "url": "https://students.yourlearning.ibm.com/recommended/aoi/TECHNICAL_SKILLS/CYBERSECURITY",
+        "desc": "IBM's student training track with free badges and certificates.",
+        "stars": 4,
+        "diff": "Beginner"
+      },
+      {
+        "name": "ost2.fyi",
+        "url": "https://ost2.fyi/",
+        "desc": "OpenSecurityTraining2: free deep-dive courses on x86, firmware, and RE.",
+        "stars": 5,
+        "diff": "Hard"
+      },
+      {
+        "name": "AttackIQ Academy",
+        "url": "https://www.academy.attackiq.com/catalog",
+        "desc": "Free adversary emulation, MITRE ATT&CK, and breach simulation courses.",
+        "stars": 5,
+        "diff": "Beginner"
+      },
+      {
+        "name": "IBM SkillsBuild",
+        "url": "https://skillsbuild.org",
+        "desc": "Free credential-earning cybersecurity courses from IBM.",
+        "stars": 4,
+        "diff": "Beginner"
+      },
+      {
+        "name": "Cisco SkillsForAll",
+        "url": "https://skillsforall.com/course/introduction-to-cybersecurity",
+        "desc": "Cisco Networking Academy's free introductory cybersecurity pathway.",
+        "stars": 4,
+        "diff": "Beginner"
+      }
+    ]
+  },
+  "References & Lists": {
+    "tag": "reference",
+    "color": "var(--c-ref)",
+    "emoji": "📚",
+    "items": [
+      {
+        "name": "CAE Cyber Atlas",
+        "url": "https://cyber-atlas.caecommunity.org/",
+        "desc": "NSA CAE community cybersecurity resource atlas.",
+        "stars": 4,
+        "diff": "All"
+      },
+      {
+        "name": "HackTricks",
+        "url": "https://hacktricks.wiki/en",
+        "desc": "The definitive encyclopedia of hacking techniques, commands, and bypasses.",
+        "stars": 5,
+        "diff": "All Levels"
+      },
+      {
+        "name": "PayloadsAllTheThings",
+        "url": "https://swisskyrepo.github.io/PayloadsAllTheThings/",
+        "desc": "Swiss army knife of web attack payloads, methodologies, and cheat sheets.",
+        "stars": 5,
+        "diff": "All Levels"
+      },
+      {
+        "name": "Rapid7 Research",
+        "url": "https://www.rapid7.com/research/",
+        "desc": "Vulnerability analysis, emerging threat reports, and Metasploit research.",
+        "stars": 4,
+        "diff": "All Levels"
+      },
+      {
+        "name": "List of Hacking Wargames",
+        "url": "https://github.com/d4rkr00t-ctf/List-of-hacking-wargames",
+        "desc": "Curated catalog of classic and modern hacking wargames.",
+        "stars": 4,
+        "diff": "All Levels"
+      },
+      {
+        "name": "awesome-ctf-resources",
+        "url": "https://github.com/devploit/awesome-ctf-resources",
+        "desc": "Awesome list of frameworks, libraries, tools, and tutorials for CTFs.",
+        "stars": 4,
+        "diff": "All Levels"
+      },
+      {
+        "name": "0x00sec",
+        "url": "https://0x00sec.org/",
+        "desc": "Hacker community discussing malware, reversing, and offensive tradecraft.",
+        "stars": 4,
+        "diff": "Mid"
+      },
+      {
+        "name": "MrsOSINT Start Here",
+        "url": "https://www.mrsosint.com/start-here/",
+        "desc": "Beginner guide and resources for starting out in OSINT.",
+        "stars": 4,
+        "diff": "Beginner"
+      },
+      {
+        "name": "OSINTCurio.us",
+        "url": "https://www.osintcurio.us/",
+        "desc": "Webinars, instructional blogs, and podcasts on OSINT exploration.",
+        "stars": 4,
+        "diff": "Mid"
+      },
+      {
+        "name": "CyberArsenal malware-dev forum",
+        "url": "https://cyberarsenal.org/forums/malware-dev.68/",
+        "desc": "Offensive malware development discussions and analysis.",
+        "stars": 3,
+        "diff": "Hard"
+      },
+      {
+        "name": "guitmz posts",
+        "url": "https://www.guitmz.com/post/page/4/",
+        "desc": "Detailed technical posts on binary analysis, emulation, and reversing.",
+        "stars": 4,
+        "diff": "Mid"
+      },
+      {
+        "name": "AppSec Explained",
+        "url": "https://appsecexplained.gitbook.io/appsecexplained",
+        "desc": "Gitbook clarifying application security concepts and workflows.",
+        "stars": 4,
+        "diff": "Beginner"
+      },
+      {
+        "name": "ir0nstone notes",
+        "url": "https://ir0nstone.gitbook.io/notes",
+        "desc": "Clear, beautifully organized notes on binary exploitation & pwn.",
+        "stars": 5,
+        "diff": "Beginner"
+      },
+      {
+        "name": "Addie LaMarr Cybersecurity Mastery",
+        "url": "https://publish.obsidian.md/addielamarr/01+Cybersecurity+Mastery",
+        "desc": "Obsidian knowledge graph on learning cybersecurity concepts.",
+        "stars": 4,
+        "diff": "All Levels"
+      },
+      {
+        "name": "Devpost Hackathons",
+        "url": "https://devpost.com/hackathons",
+        "desc": "Global directory of developer hackathons and competitions.",
+        "stars": 4,
+        "diff": "All Levels"
+      },
+      {
+        "name": "Prompt Riddle",
+        "url": "https://promptriddle.com/",
+        "desc": "AI prompt engineering and security injection riddle challenge.",
+        "stars": 4,
+        "diff": "Beginner"
+      },
+      {
+        "name": "Linux Journey (LabEx)",
+        "url": "https://labex.io/linuxjourney",
+        "desc": "Interactive command-line Linux tutorial exercises.",
+        "stars": 4,
+        "diff": "Beginner"
+      }
+    ]
+  },
+  "Programming & CS": {
+    "tag": "code",
+    "color": "var(--c-web)",
+    "emoji": "💻",
+    "items": [
+      {
+        "name": "SQLZoo",
+        "url": "https://sqlzoo.net/wiki/SQL_Tutorial",
+        "desc": "Interactive SQL tutorial with immediate query execution feedback.",
+        "stars": 4,
+        "diff": "Beginner"
+      },
+      {
+        "name": "Exercism",
+        "url": "https://exercism.org/",
+        "desc": "Code practice and mentorship for 70+ programming languages.",
+        "stars": 5,
+        "diff": "Beginner"
+      },
+      {
+        "name": "CSES",
+        "url": "https://cses.fi/problemset/",
+        "desc": "Standard algorithmic problem set for learning algorithms & data structures.",
+        "stars": 5,
+        "diff": "Hard"
+      },
+      {
+        "name": "Kattis",
+        "url": "https://open.kattis.com/",
+        "desc": "Archive of competitive programming problems with instant online judge.",
+        "stars": 4,
+        "diff": "Mid"
+      },
+      {
+        "name": "SPOJ",
+        "url": "https://www.spoj.com/problems/classical/",
+        "desc": "Sphere Online Judge with thousands of coding challenges.",
+        "stars": 4,
+        "diff": "Mid"
+      },
+      {
+        "name": "CP-Algorithms",
+        "url": "https://cp-algorithms.com/index.html",
+        "desc": "Detailed algorithms and data structure explanations with implementations.",
+        "stars": 5,
+        "diff": "Hard"
+      },
+      {
+        "name": "CPlusPlus.com",
+        "url": "https://cplusplus.com/",
+        "desc": "Complete reference and tutorials for C++ standard library.",
+        "stars": 4,
+        "diff": "Beginner"
+      },
+      {
+        "name": "SQL Island",
+        "url": "https://sql-island.informatik.uni-kl.de/",
+        "desc": "Adventure game played entirely through SQL queries.",
+        "stars": 4,
+        "diff": "Beginner"
+      },
+      {
+        "name": "Elevator Saga",
+        "url": "https://play.elevatorsaga.com/",
+        "desc": "Programming game to code elevator algorithms in JavaScript.",
+        "stars": 4,
+        "diff": "Beginner"
+      },
+      {
+        "name": "Bitburner",
+        "url": "https://bitburner-official.github.io/",
+        "desc": "Cyberpunk text-based incremental RPG programmed in JavaScript.",
+        "stars": 5,
+        "diff": "Mid"
+      },
+      {
+        "name": "StrataScratch",
+        "url": "https://platform.stratascratch.com/coding",
+        "desc": "Real interview coding questions in SQL and Python.",
+        "stars": 4,
+        "diff": "Mid"
+      },
+      {
+        "name": "NeuraPrep",
+        "url": "https://www.neuraprep.com/coding/",
+        "desc": "AI and machine learning coding challenges.",
+        "stars": 3,
+        "diff": "Mid"
+      },
+      {
+        "name": "Screeps",
+        "url": "https://screeps.com/",
+        "desc": "MMO strategy sandbox game for programmers where you code your units.",
+        "stars": 5,
+        "diff": "Hard"
+      },
+      {
+        "name": "web.dev learn",
+        "url": "https://web.dev/learn",
+        "desc": "Google's structured courses on HTML, CSS, JavaScript, and accessibility.",
+        "stars": 5,
+        "diff": "Beginner"
+      }
+    ]
+  }
 }
