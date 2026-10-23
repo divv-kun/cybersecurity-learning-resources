@@ -21,6 +21,24 @@ This repository focuses on hands-on practice and real-world skills.
 - Hack The Web — https://hacktheweb.org
 - Exploit Education — https://exploit.education
 - SuNiNaTaS — http://www.suninatas.com
+- HackBBS — https://hackbbs.org/index.php
+- Sinfocol Wargames — https://wow.sinfocol.org/
+- Yoire — https://yoire.com/
+- CodeShell — https://codeshell.kr/challenges/search/
+- TDHack — https://www.tdhack.com/
+- NSA Codebreaker — https://nsa-codebreaker.org/resources
+- CTFCyber Practice — https://practice.ctfcyber.org/challenges
+- DiceCTF — https://ctf.dicega.ng/
+- CyberTruck Challenge — https://www.cybertruckchallenge.org/
+- MITRE eCTF — https://ectfmitre.gitlab.io/ectf-website/2024/index.html
+
+---
+
+# CTF Events & Archives
+
+- SunshineCTF — https://sunshinectf.org/
+- JerseyCTF — https://ctf.jerseyctf.com/challenges
+- DownUnderCTF Archive — https://archives.duc.tf/
 
 ---
 
@@ -53,6 +71,13 @@ This repository focuses on hands-on practice and real-world skills.
 - BugForge — https://app.bugforge.io/login
 - XSS Game — https://xss-game.appspot.com
 - OverTheWire Narnia — https://overthewire.org/wargames/narnia
+- WebVerse Labs Pro — https://webverselabs-pro.com/labs
+
+---
+
+# Cloud Security
+
+- PwnedLabs — https://pwnedlabs.io/
 
 ---
 
@@ -115,6 +140,7 @@ This repository focuses on hands-on practice and real-world skills.
 - IBM SkillsBuild — https://skillsbuild.org
 - Cisco SkillsForAll — https://skillsforall.com/course/introduction-to-cybersecurity
 - Google Cybersecurity Certificate — https://skills.google.com
+- HackSmarter — https://www.hacksmarter.org/
 
 ---
 
@@ -137,6 +163,7 @@ This repository focuses on hands-on practice and real-world skills.
 - ired.team Notes — https://www.ired.team
 - 0xdf Writeups — https://0xdf.gitlab.io
 - CISA Advisories — https://www.cisa.gov/news-events/cybersecurity-advisories
+- CAE Cyber Atlas — https://cyber-atlas.caecommunity.org/
 
 ## Web Security
 

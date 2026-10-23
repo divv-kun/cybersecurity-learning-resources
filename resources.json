@@ -164,6 +164,90 @@
               "desc": "Crypto-focused challenge platform — historical and modern.",
               "stars": 4,
               "diff": "Mid"
+            },
+            {
+              "name": "HackBBS",
+              "url": "https://hackbbs.org/index.php",
+              "desc": "Old-school hacking forum with challenges and wargames.",
+              "stars": 3,
+              "diff": "Mid"
+            },
+            {
+              "name": "Sinfocol Wargames",
+              "url": "https://wow.sinfocol.org/",
+              "desc": "Spanish wargame platform with varied challenges.",
+              "stars": 3,
+              "diff": "Mid"
+            },
+            {
+              "name": "Yoire",
+              "url": "https://yoire.com/",
+              "desc": "CTF challenge platform.",
+              "stars": 3,
+              "diff": "Mid"
+            },
+            {
+              "name": "CodeShell",
+              "url": "https://codeshell.kr/challenges/search/",
+              "desc": "Korean CTF challenge platform.",
+              "stars": 3,
+              "diff": "Mid"
+            },
+            {
+              "name": "TDHack",
+              "url": "https://www.tdhack.com/",
+              "desc": "Hacking challenge platform.",
+              "stars": 3,
+              "diff": "Mid"
+            },
+            {
+              "name": "NSA Codebreaker",
+              "url": "https://nsa-codebreaker.org/resources",
+              "desc": "NSA's annual reverse engineering challenge for students.",
+              "stars": 5,
+              "diff": "Hard"
+            },
+            {
+              "name": "CTFCyber Practice",
+              "url": "https://practice.ctfcyber.org/challenges",
+              "desc": "Practice CTF challenges.",
+              "stars": 3,
+              "diff": "Mid"
+            },
+            {
+              "name": "DiceCTF",
+              "url": "https://ctf.dicega.ng/",
+              "desc": "DiceGang's CTF — high quality web, crypto, and pwn challenges.",
+              "stars": 5,
+              "diff": "Hard"
+            },
+            {
+              "name": "CyberTruck Challenge",
+              "url": "https://www.cybertruckchallenge.org/",
+              "desc": "Automotive and embedded hardware security CTF.",
+              "stars": 4,
+              "diff": "Hard"
+            },
+            {
+              "name": "MITRE eCTF",
+              "url": "https://ectfmitre.gitlab.io/ectf-website/2024/index.html",
+              "desc": "MITRE embedded systems CTF — hardware security focused.",
+              "stars": 4,
+              "diff": "Hard"
+            },
+            {
+              "name": "SunshineCTF",
+              "url": "https://sunshinectf.org/",
+              "desc": "International CTF competition — annual event.",
+              "stars": 4,
+              "diff": "Mid"
+            },
+            {
+              "name": "JerseyCTF",
+              "url": "https://ctf.jerseyctf.com/challenges",
+              "desc": "NJIT's annual CTF event.",
+              "stars": 3,
+              "diff": "Mid"
             }
           ]
         },
@@ -414,6 +498,13 @@
               "name": "BugForge",
               "url": "https://app.bugforge.io/login",
               "desc": "Bug bounty style web app challenges.",
+              "stars": 3,
+              "diff": "Mid"
+            },
+            {
+              "name": "WebVerse Labs Pro",
+              "url": "https://webverselabs-pro.com/labs",
+              "desc": "Pro web security labs — hands-on vulnerability practice.",
               "stars": 3,
               "diff": "Mid"
             }
@@ -829,6 +920,13 @@
               "desc": "Azure security training challenges.",
               "stars": 4,
               "diff": "Mid"
+            },
+            {
+              "name": "PwnedLabs",
+              "url": "https://pwnedlabs.io/",
+              "desc": "Cloud pentesting labs — AWS, Azure, GCP scenarios.",
+              "stars": 4,
+              "diff": "Mid"
             }
           ]
         },
@@ -1153,6 +1251,13 @@
               "diff": "All"
             },
             {
+              "name": "DownUnderCTF Archive",
+              "url": "https://archives.duc.tf/",
+              "desc": "DownUnderCTF challenge archive — Australian CTF team.",
+              "stars": 4,
+              "diff": "All"
+            },
+            {
               "name": "ImaginaryCTF Archive",
               "url": "https://imaginaryctf.org/ArchivedChallenges/",
               "desc": "ImaginaryCTF permanent challenge archive.",
@@ -1233,6 +1338,34 @@
               "name": "Nautilus Institute",
               "url": "https://nautilus.institute/",
               "desc": "DEF CON 30/31 CTF organizing team archive.",
+              "stars": 4,
+              "diff": "All"
+            }
+          ]
+        },
+        "Courses & Certifications": {
+          "tag": "course",
+          "color": "var(--c-course)",
+          "emoji": "📜",
+          "items": [
+            {
+              "name": "HackSmarter",
+              "url": "https://www.hacksmarter.org/",
+              "desc": "Free cybersecurity training and certification prep.",
+              "stars": 3,
+              "diff": "Beginner"
+            }
+          ]
+        },
+        "References & Lists": {
+          "tag": "reference",
+          "color": "var(--c-ref)",
+          "emoji": "📚",
+          "items": [
+            {
+              "name": "CAE Cyber Atlas",
+              "url": "https://cyber-atlas.caecommunity.org/",
+              "desc": "NSA CAE community cybersecurity resource atlas.",
               "stars": 4,
               "diff": "All"
             }
