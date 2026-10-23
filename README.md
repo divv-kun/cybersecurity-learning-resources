@@ -210,6 +210,4 @@ This repository focuses on hands-on practice and real-world skills.
 
 ---
 
-# Contributors
 
-- [@Manish1618](https://github.com/Manish1618)
